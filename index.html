@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Student Profile</title>
+  <title>Fabian G | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+      <div id="particles-js" style="position:fixed; width:100%; height:100%;"></div>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+      <script src="Javascript/backgroundBubbles.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!--<script src="script.js"></script>-->
@@ -32,7 +37,7 @@
         </ul>
     </div>
 
-  <div class="main"> 
+  <div class="main section fade-delay-1"> 
 
 
 
@@ -70,7 +75,7 @@
     </div>
       
   </div>
-  <div class="aboutMe" id="aboutMe_section">
+  <div class="aboutMe section fade-delay-2" id="aboutMe_section">
       
       <img src="img/portraits/self_portrait.png" alt="Profile Picture" class="profile-image2">
       
@@ -136,15 +141,15 @@
 
         <p> I frequently work with tools like <b>Visual Studio</b>, <b>Visual Studio Code</b>, and <b></b>MySQL Workbench</b>.  I also have experience with <b>XAMPP</b> for local server setups, <b>Cisco Packet Tracer</b> for network simulation, and the <b>Arduino IDE</b> for embedded systems programming.</p>
 
-        <p>Additionally, I’ve worked with cloud platforms like <b>Amazon AWS</b> and manage code versioning using <b>Git</b> & <b>GitHub</b>.</p>
+        <p>Additionally, I’ve worked with cloud platforms like <b>Amazon AWS</b> and manage code versioning using <b>GitHub</b>.</p>
 
     
           
           
               <center><h3>Leaving Certificate</h3></center>
               <hr class="Title_underline">
-              
-            <p>I have completed a total of 8 subjects in the leaving certificate with the total points aquired of 443.</p>
+
+            <p>I have completed a total of <b>8</b> subjects in the leaving certificate with the total points aquired of <b>443</b>.</p>
             <p>The following subjects and their grade are the following: </p>
              <ul>
                 <li>Polish <b>H1</b></li>
@@ -157,7 +162,7 @@
                 <li>Irish <b>F1</b></li>
              </ul>
               
-              <hr id="aboutme_educationTotal">
+              <center><hr id="aboutme_educationTotal"></center>
               <p><b>TOTAL: 443</b></p>
               <br>
               <br>
@@ -185,7 +190,7 @@
     
     
     
-  <div class="Portfolio" id="portfolio_section">
+  <div class="Portfolio section fade-delay-3" id="portfolio_section">
     
 
       <h2><center>Portfolio</center></h2>
@@ -222,7 +227,7 @@
     
     
     
-<div class="contactME">
+<div class="contactME section fade-delay-4" id="contactMe_section">
   <h2>GET IN TOUCH</h2>
   <hr>
 
@@ -245,10 +250,11 @@
     <div class="form_contactME" id="contactMe_section">
       <div class="form_container">
         <div class="form_information">
-          <form action="https://formsubmit.co/fabiollo@gmail.com" method="POST">
-            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+          
+          <form action="https://formsubmit.co/13e5f2c2b4c05db14cc10a435d59b30e" method="POST">
+            <input type="hidden" name="_next" value="https://fabiollooo.github.io/github-portfolio">
             <input type="hidden" name="_captcha" value="false">
-            
+
             <p><input type="text" name="fname" id="name" placeholder="Name" required></p>
             <p><input type="email" name="email" id="email" placeholder="E-mail" required></p>
             <p><input type="text" name="subject" id="subject" placeholder="Subject"></p>
@@ -267,6 +273,10 @@
 
 </div>
 
+<button id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
 
 <footer>
   <div class="footer-content">
@@ -282,7 +292,7 @@
       <p><i class="fas fa-phone"></i> +353 899 709 174</p>
     </div>
     <div class="footer-copy">
-      <p>&copy; 2024 Fabian Golebiowski. All rights reserved.</p>
+      <p>&copy; 2025 Fabian Golebiowski. All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -290,48 +300,14 @@
 
 
 
+<!-- Add possible language change to Polish-->
+ <!-- Fix Project Sections -->
+  <!-- Fix form-->
+   <!-- Also add Icon and name in the tab-->
 
-<script>
-particlesJS("particles-js", {
-    "particles": {
-        "number": {
-            "value": 80,
-            "density": { "enable": true, "value_area": 800 }
-        },
-        "color": { "value": "#d4af37" }, /* Gold Color */
-        "shape": { "type": "circle" },
-        "opacity": {
-            "value": 0.5,
-            "random": true
-        },
-        "size": {
-            "value": 3,
-            "random": true
-        },
-        "line_linked": {
-            "enable": false
-        },
-        "move": {
-            "enable": true,
-            "speed": 0.6,  /* Slow movement for elegance */
-            "direction": "none",
-            "random": true,
-            "out_mode": "out"
-        }
-    },
-    "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-            "onhover": { "enable": true, "mode": "repulse" },
-            "onclick": { "enable": false }
-        },
-        "modes": {
-            "repulse": { "distance": 50 }
-        }
-    },
-    "retina_detect": true
-});
-</script>
+
+
+
 
 <script>
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -363,6 +339,33 @@ particlesJS("particles-js", {
         });
     });
 </script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeSections = document.querySelectorAll(
+        '.main.section, .aboutMe.section, .Portfolio.section, .contactME.section'
+    );
+
+    fadeSections.forEach(section => {
+        section.classList.add('fade-in-section');
+    });
+
+    function handleFadeIn() {
+        fadeSections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 60) {
+                section.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', handleFadeIn);
+    handleFadeIn(); 
+});
+</script>
+
 
 
  
