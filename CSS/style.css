@@ -135,7 +135,7 @@ body a:hover {
 .main{
    
     max-width: 800px;
-    margin: 40px auto;
+    margin: 10em auto 10em auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 12px;
@@ -503,7 +503,7 @@ h3 > span > span {
 
 .Portfolio {
     max-width: 800px;
-    margin: 40px auto;
+    margin:  0 auto;
     background: rgba(255, 255, 255, 0.1);
     padding: 30px;
     border-radius: 12px;
@@ -536,7 +536,12 @@ h3 > span > span {
     .portfolio_items {
         display: flex;
         flex-wrap: wrap;
+    }
 
+    .portfolio_items h3 {
+        color: #FFD700 !important;
+        text-shadow: 0 0 1px #FFD700, 0 0 10px #FFD700, 0 0 2px #FFD700;
+        
     }
 
     .portfolio_item1,
@@ -588,9 +593,6 @@ h3 > span > span {
     
 }
 
-.contactME form {
-  
-}
 
 .contactME h2 {
     text-align: center;
@@ -628,6 +630,10 @@ h3 > span > span {
     padding-top: 2em;
 }
 
+.description_contactME h3{
+    
+    color: #FFD700 !important;
+}
 
 
 .form_contactME {
@@ -643,6 +649,7 @@ h3 > span > span {
     border-radius: 10px;
     width: 80%;
     max-width: 400px; /* Possible issue*/
+    margin: auto 0;
 }
 
 
@@ -692,34 +699,32 @@ h3 > span > span {
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
-    font-size: 8px;
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease;
-} */
-
+}
 
 #submit-btn {
-    background: linear-gradient(45deg, #FFD700, #FFA500);
-    color: #000;
+    background: #FFD700 !important;
+    color: black !important;
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
 }
 
 
 #submit-btn:hover:enabled {
+   
     box-shadow: 0 6px 15px rgba(255, 215, 0, 0.7);
     transform: translateY(-2px);
 }
 
-#submit-btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-}
+
  
 .form_contactME input[type="reset"] {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
 }
+
+
 
 
 .map_wrapper {
@@ -742,7 +747,6 @@ h3 > span > span {
     transform: scale(1.01);
     box-shadow: 0 6px 18px rgba(255, 215, 0, 0.4);
 }
-
 
 
 
@@ -852,6 +856,26 @@ footer {
 
 
 
+  /* 6 --------External Projects-------- */
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1;
+    margin: 0 auto;
+  }
+
+  .coding_projects {
+  
+  }
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .navBar {
@@ -867,6 +891,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin: 2em auto;
     }
     .profile-image {
         width: 50%;
