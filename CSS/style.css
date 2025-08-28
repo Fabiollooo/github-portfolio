@@ -1,3 +1,47 @@
+:root {
+  /* Primary background and gradients */
+  --color-bg-main: #1e1e1e;
+  --color-bg-gradient-start: #0d0d0d;
+  --color-bg-gradient-end: #1a1a1a;
+  --color-bg-footer-start: #181818;
+  --color-bg-footer-end: #222;
+
+  /* Accent and highlight colours */
+  --color-gold: #FFD700;
+  --color-gold-light: #FFE066;
+  --color-gold-dark: #B8860B;
+
+  /* Text colours */
+  --color-text-main: #CCCCCC;
+  --color-text-muted: #999999;
+  --color-text-strong: #E0E0E0;
+  --color-text-title: #2c3e50;
+  --color-text-white: #fff;
+  --color-text-black: black;
+
+  /* Shadows and borders */
+  --color-shadow-gold: #FFD700;
+  --color-shadow-gold-light: #FFD70044;
+  --color-shadow-gold-lighter: #FFD70022;
+  --color-shadow-gold-medium: #FFD70077;
+  --color-shadow-gold-dark: #FFD70088;
+  --color-shadow-gold-muted: #FFD70033;
+
+  /* Misc */
+  --color-bg-white: white;
+  --color-bg-black: #333;
+  --color-bg-black-hover: #555;
+  --color-bg-transparent-white: rgba(255, 255, 255, 0.1);
+  --color-bg-transparent-white-2: rgba(255, 255, 255, 0.05);
+  --color-bg-transparent-white-3: rgba(255, 255, 255, 0.2);
+  --color-shadow-black: rgba(0,0,0,0.1);
+  --color-shadow-black-strong: rgba(0,0,0,0.2);
+  --color-shadow-footer: rgba(255, 215, 0, 0.08);
+  --color-shadow-map: rgba(255, 215, 0, 0.4);
+  --color-shadow-map-hover: rgba(255, 215, 0, 0.7);
+  --color-shadow-icon: rgba(0,0,0,0.1);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -6,11 +50,11 @@ html {
 
 body {
    font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
+    background-color: var(--color-bg-main);
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-    color: #CCCCCC;
+    background: linear-gradient(135deg, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
+    color: var(--color-text-main);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     word-spacing: 2px;
@@ -19,7 +63,7 @@ body {
 }
 
 body a {
-    color: #FFE066; /* Gold */
+    color: var(--color-gold); /* Gold */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -58,9 +102,9 @@ body a:hover {
     /* 1--------NavBar--------*/
 
 .navBar {
-    background-color: #1e1e1e; /* Fix the missing # */
-    border-bottom: 3px solid #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px;
+    background-color: var(--color-bg-main); /* Fix the missing # */
+    border-bottom: 3px solid var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,12 +121,12 @@ body a:hover {
     display: flex;
     align-items: center;
     column-gap: 20px;
-    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    text-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
 }
 
 .navBar_left,
 .navBar_left * {
-    color: #FFD700 !important;
+    color: var(--color-gold) !important;
 }
 
 
@@ -111,7 +155,7 @@ body a:hover {
 
 .navBar ul li a:hover {
     
-    color: #FFD700;
+    color: var(--color-gold);
     
 }
 
@@ -136,7 +180,7 @@ body a:hover {
    
     max-width: 800px;
     margin: 10em auto 10em auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-transparent-white);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -147,7 +191,7 @@ body a:hover {
 
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: var(--color-text-title);
 }
 
 .email a{
@@ -168,8 +212,8 @@ email a:hover {
     height: 20em;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    border: 4px solid var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
   
 }
 
@@ -184,17 +228,17 @@ email a:hover {
 .info p {
     font-size: 16px;
     margin: 10px 0;
-    color: #CCCCCC;
+    color: var(--color-text-main);
     
 }
 
 .info h2{
-    text-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
-    color: #FFD700;
+    text-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    color: var(--color-gold);
 }
 
 .info strong {
-    color: #E0E0E0;
+    color: var(--color-text-strong);
 }
 
 
@@ -202,7 +246,7 @@ email a:hover {
 h3 > span {
     position: relative;
     display: inline-block;
-    color: #FFD700 !important;
+    color: var(--color-gold) !important;
     height: 1.25em;
     vertical-align: bottom;
     overflow: hidden;
@@ -232,14 +276,14 @@ h3 > span > span {
 #description {
     padding-right: 10em;
     padding-bottom: 1.5em;
-    color: #CCCCCC !important;
+    color: var(--color-text-main) !important;
 
 }
 
 .button_myCV {
-    background-color: #FFD700;
-    border: 8px solid #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px;
+    background-color: var(--color-gold);
+    border: 8px solid var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
     text-decoration: none;
@@ -250,15 +294,15 @@ h3 > span > span {
 }
 
 .button_contactMe {
-    border: 2px solid #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px;
+    border: 2px solid var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
     text-decoration: none;
     border-radius: 10px;
     padding: 8px;
     margin: 0 0 0 10px;
-    color: #FFD700;
+    color: var(--color-gold);
 
 }
 
@@ -318,7 +362,7 @@ h3 > span > span {
 .aboutMe {
     max-width: 800px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-transparent-white);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -333,8 +377,8 @@ h3 > span > span {
 }
 
 .aboutMe h2 {
-    text-shadow: 0 0 1px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
-    color: #FFD700;
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    color: var(--color-gold);
 }
 
 
@@ -353,8 +397,8 @@ h3 > span > span {
     height: 20em;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    border: 4px solid var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
 }
 
 
@@ -378,8 +422,8 @@ h3 > span > span {
 .toggle-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     cursor: pointer;
     border-radius: 5px;
     margin-top: 30px;
@@ -390,8 +434,8 @@ h3 > span > span {
 #aboutme_education {
     border: none;
     height: 2px;
-    background-color: #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     width: 15%;
 }
 
@@ -400,8 +444,8 @@ h3 > span > span {
 #aboutme_educationTotal {
     border: none;
     height: 2px;
-    background-color: #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     width: 20%;
     margin: 0 auto 0 20px;
 }
@@ -411,8 +455,8 @@ h3 > span > span {
 .Title_underline {
     border: none;
     height: 2px;
-    background-color: #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     width: 15%;
 }
 
@@ -483,14 +527,14 @@ h3 > span > span {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.2;
-    color: #FFD700;
-    text-shadow: 0 0 2px #FFD700, 0 0 5px #FFD700, 0 0 10px #FFD700;
+    color: var(--color-gold);
+    text-shadow: 0 0 2px var(--color-gold), 0 0 5px var(--color-gold), 0 0 10px var(--color-gold);
     
 }
 
 .aboutMe h3 {
-    color: #FFD700;
-    text-shadow: 0 0 1px #FFD700, 0 0 1px #FFD700, 0 0 5px #FFD700;
+    color: var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 1px var(--color-gold), 0 0 5px var(--color-gold);
     padding-top: 10px;
 }
 
@@ -504,7 +548,7 @@ h3 > span > span {
 .Portfolio {
     max-width: 800px;
     margin:  0 auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-transparent-white);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -512,8 +556,8 @@ h3 > span > span {
 }
 
 .Portfolio h2 {
-    color: #FFD700;
-    text-shadow: 0 0 1px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    color: var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
 
     /* opacity: 0;
     transform: translateY(-30px);
@@ -523,8 +567,8 @@ h3 > span > span {
 .Portfolio hr {
     border: none;
     height: 2px;
-    background-color: #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     width: 15%;
 }
 
@@ -539,15 +583,15 @@ h3 > span > span {
     }
 
     .portfolio_items h3 {
-        color: #FFD700 !important;
-        text-shadow: 0 0 1px #FFD700, 0 0 10px #FFD700, 0 0 2px #FFD700;
+        color: var(--color-gold) !important;
+        text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 2px var(--color-gold);
         
     }
 
     .portfolio_item1,
     .portfolio_item2,
     .portfolio_item3 {
-        background: rgba(255, 255, 255, 0.1);
+        background: var(--color-bg-transparent-white);
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -582,7 +626,7 @@ h3 > span > span {
 .contactME {
     max-width: 800px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-transparent-white);
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -596,8 +640,8 @@ h3 > span > span {
 
 .contactME h2 {
     text-align: center;
-    color: #FFD700;
-    text-shadow: 0 0 1px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    color: var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     
     /* opacity: 0;
     transform: translateY(-30px);
@@ -607,8 +651,8 @@ h3 > span > span {
 .contactME hr {
     border: none;
     height: 2px;
-    background-color: #FFD700;
-    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700;
+    background-color: var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
     width: 15%;
 }
 
@@ -632,7 +676,7 @@ h3 > span > span {
 
 .description_contactME h3{
     
-    color: #FFD700 !important;
+    color: var(--color-gold) !important;
 }
 
 
@@ -644,7 +688,7 @@ h3 > span > span {
 }
 
 .form_container {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--color-bg-transparent-white-2);
     padding: 15px;
     border-radius: 10px;
     width: 80%;
@@ -665,7 +709,7 @@ h3 > span > span {
 .form_contactME textarea {
     width: 85%;
     padding: 8px 10px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-transparent-white);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     color: #fff;
@@ -684,8 +728,8 @@ h3 > span > span {
 
 .form_contactME input:focus,
 .form_contactME textarea:focus {
-    border-color: #FFD700;
-    box-shadow: 0 0 10px #FFD700;
+    border-color: var(--color-gold);
+    box-shadow: 0 0 10px var(--color-gold);
 }
 
 
@@ -705,7 +749,7 @@ h3 > span > span {
 }
 
 #submit-btn {
-    background: #FFD700 !important;
+    background: var(--color-gold) !important;
     color: black !important;
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4);
 }
@@ -720,7 +764,7 @@ h3 > span > span {
 
  
 .form_contactME input[type="reset"] {
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-bg-transparent-white);
     color: #fff;
 }
 
@@ -762,7 +806,7 @@ h3 > span > span {
     right: 20px;
     opacity: 0;
     visibility: hidden;
-    background-color: #333;
+    background-color: var(--color-bg-black);
     color: white;
     border: none;
     padding: 12px 16px;
@@ -779,7 +823,7 @@ h3 > span > span {
 }
 
 #scrollToTopBtn:hover {
-    background-color: #555;
+    background-color: var(--color-bg-black-hover);
 }
 
 
@@ -787,10 +831,10 @@ h3 > span > span {
  /* 5 --------Footer--------*/
 
 footer {
-    background: linear-gradient(135deg, #181818 60%, #222 100%);
-    border-top: 2px solid #FFD700;
-    box-shadow: 0 -2px 12px rgba(255, 215, 0, 0.08);
-    color: #CCCCCC;
+    background: linear-gradient(135deg, var(--color-bg-footer-start) 60%, var(--color-bg-footer-end) 100%);
+    border-top: 2px solid var(--color-gold);
+    box-shadow: 0 -2px 12px var(--color-shadow-footer);
+    color: var(--color-text-main);
     padding: 32px 0 12px 0;
     margin-top: 40px;
     font-size: 1em;
@@ -815,31 +859,31 @@ footer {
 }
 
 .footer-social a {
-    color: #FFD700;
+    color: var(--color-gold);
     font-size: 2.5em;
     transition: color 0.3s, transform 0.3s;
-    text-shadow: 0 0 6px #FFD70044, 0 0 12px #FFD70022;
+    text-shadow: 0 0 6px var(--color-gold-light), 0 0 12px var(--color-gold-light);
 }
 
 .footer-social a:hover {
     color: #fffbe6;
     transform: scale(1.18) rotate(-8deg);
-    text-shadow: 0 0 12px #FFD700, 0 0 24px #FFD70077;
+    text-shadow: 0 0 12px var(--color-gold), 0 0 24px var(--color-gold-medium);
 }
 
 .footer-contact {
-    color: #CCCCCC;
+    color: var(--color-text-main);
     font-size: 1em;
     line-height: 1.7;
     margin-bottom: 10px;
 }
 
 .footer-contact i {
-    color: #FFD700;
+    color: var(--color-gold);
     margin-right: 8px;
     font-size: 1.1em;
     vertical-align: middle;
-    text-shadow: 0 0 4px #FFD70088;
+    text-shadow: 0 0 4px var(--color-gold-dark);
 }
 
 .footer-copy {
@@ -849,7 +893,7 @@ footer {
     font-size: 0.95em;
     margin-top: 18px;
     letter-spacing: 1px;
-    text-shadow: 0 0 2px #FFD70033;
+    text-shadow: 0 0 2px var(--color-gold);
 }
   /* -----------------------*/
 
@@ -970,6 +1014,11 @@ footer {
         display: block;
         margin: 10px auto;
 
+    }
+
+    .vertical-text{
+        flex-direction: row;
+       
     }
 
      ul, li {
