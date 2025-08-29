@@ -10,14 +10,13 @@
       <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
       <script src="Javascript/backgroundBubbles.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 
   
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="js/myParticles.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/myParticles.js"></script>
 
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   </head>
@@ -238,7 +237,7 @@
       <h3>Let's work together !</h3>
       <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, please waste no more time getting in touch !</p>
       
-      <!-- Moved map to separate wrapper for styling -->
+      
       <div class="map_wrapper">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8011.763446637831!2d-8.625313043378446!3d52.66504132156196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5d18997bdd13%3A0xe1f2a1f56e5a2e5a!2sIM%20Properties!5e1!3m2!1sen!2spl!4v1754594709181!5m2!1sen!2spl"
@@ -256,9 +255,9 @@
             <input type="hidden" name="_next" value="https://fabiollooo.github.io/github-portfolio">
             <input type="hidden" name="_captcha" value="false">
 
-            <p><input class="input-box" type="text" name="fname" id="name" placeholder="Name" required></p>
+            <p><input class="input-box" type="text" name="fname" id="name" placeholder="Name" autocomplete="off" required></p>
             <p><input class="input-box" type="email" name="email" id="email" placeholder="E-mail" required></p>
-            <p><input class="input-box" type="text" name="subject" id="subject" placeholder="Subject"></p>
+            <p><input class="input-box" type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off" required></p>
             <textarea class="input-box" id="comment" name="query" placeholder="Enter your comment" required></textarea>
             <p>
               <input type="submit" value="Submit" id="submit-btn">
@@ -304,8 +303,7 @@
 
 <!-- Add possible language change to Polish-->
  <!-- Fix Project Sections -->
-  <!-- Fix form-->
-   <!-- Also add Icon and name in the tab-->
+
 
 
 
@@ -370,8 +368,161 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
- 
+<!-- Palette Switcher Button & Slider -->
+<div id="paletteSwitcher">
+  <button id="paletteBtn">
+    <i class="fas fa-palette"></i>
+  </button>
+  <div id="paletteSlider">
+    <ul>
+      <li data-step="0" title="Default"></li>
+      <li data-step="1" title="Ocean"></li>
+      <li data-step="2" title="Sunset"></li>
+      <li data-step="3" title="Forest"></li>
+      <li data-step="4" title="Rose"></li>
+      <li data-step="5" title="Night"></li>
+      <li data-step="6" title="Sky"></li>
+      <li data-step="7" title="Candy"></li>
+      <li data-step="8" title="Mono"></li>
+    </ul>
+  </div>
+</div>
 
+<script>
+// Palette definitions
+const palettes = [
+  // Default
+  {
+    '--color-bg-main': '#1e1e1e',
+    '--color-bg-gradient-start': '#0d0d0d',
+    '--color-bg-gradient-end': '#1a1a1a',
+    '--color-gold': '#FFD700',
+    '--color-gold-light': '#FFE066',
+    '--color-gold-dark': '#B8860B',
+    '--color-text-main': '#CCCCCC',
+    '--color-text-title': '#2c3e50'
+  },
+  // Ocean 
+  {
+    '--color-bg-main': '#2c5364',
+    '--color-bg-gradient-start': '#0f2027',
+    '--color-bg-gradient-end': '#2c5364',
+    '--color-gold': '#00c3ff',
+    '--color-gold-light': '#74ebd5',
+    '--color-gold-dark': '#005a87',
+    '--color-text-main': '#e0f7fa',
+    '--color-text-title': '#145374'
+  },
+  // Sunset
+  {
+    '--color-bg-main': '#f7cac9',
+    '--color-bg-gradient-start': '#ffe5d9',
+    '--color-bg-gradient-end': '#f7cac9',
+    '--color-gold': '#e29578',
+    '--color-gold-light': '#ffd6a5',
+    '--color-gold-dark': '#b5838d',
+    '--color-text-main': '#5e5e5e',
+    '--color-text-title': '#e29578'
+  },
+  // Forest 
+  {
+    '--color-bg-main': '#b7e4c7',
+    '--color-bg-gradient-start': '#a7c7a7',
+    '--color-bg-gradient-end': '#b7e4c7',
+    '--color-gold': '#6b9080',
+    '--color-gold-light': '#b7e4c7',
+    '--color-gold-dark': '#386641',
+    '--color-text-main': '#35524a',
+    '--color-text-title': '#6b9080'
+  },
+  // Rose
+  {
+    '--color-bg-main': '#f8bbd0',
+    '--color-bg-gradient-start': '#fce4ec',
+    '--color-bg-gradient-end': '#f8bbd0',
+    '--color-gold': '#c48b9f',
+    '--color-gold-light': '#f8bbd0',
+    '--color-gold-dark': '#ad1457',
+    '--color-text-main': '#5e5e5e',
+    '--color-text-title': '#c48b9f'
+  },
+  // Night 
+  {
+    '--color-bg-main': '#232526',
+    '--color-bg-gradient-start': '#232526',
+    '--color-bg-gradient-end': '#414345',
+    '--color-gold': '#7f8c8d',
+    '--color-gold-light': '#bdc3c7',
+    '--color-gold-dark': '#232526',
+    '--color-text-main': '#dfe6e9',
+    '--color-text-title': '#414345'
+  },
+  // Sky
+  {
+    '--color-bg-main': '#cce3f6',
+    '--color-bg-gradient-start': '#b3cde0',
+    '--color-bg-gradient-end': '#cce3f6',
+    '--color-gold': '#7bb7fa',
+    '--color-gold-light': '#cce3f6',
+    '--color-gold-dark': '#2980b9',
+    '--color-text-main': '#3a3a3a',
+    '--color-text-title': '#7bb7fa'
+  },
+  // Candy 
+  {
+    '--color-bg-main': '#fd1d1d',
+    '--color-bg-gradient-start': '#fcb045',
+    '--color-bg-gradient-end': '#833ab4',
+    '--color-gold': 'white',
+    '--color-gold-light': '#fcb045',
+    '--color-gold-dark': '#833ab4',
+    '--color-text-main': '#fff0f6',
+    '--color-text-title': '#fd1d1d'
+  },
+  // Mono 
+  {
+    '--color-bg-main': '#e0e0e0',
+    '--color-bg-gradient-start': '#bdbdbd',
+    '--color-bg-gradient-end': '#e0e0e0',
+    '--color-gold': '#757575',
+    '--color-gold-light': '#bdbdbd',
+    '--color-gold-dark': '#424242',
+    '--color-text-main': '#424242',
+    '--color-text-title': '#757575'
+  }
+];
 
+const paletteBtn = document.getElementById('paletteBtn');
+const paletteSlider = document.getElementById('paletteSlider');
+const paletteSteps = paletteSlider.querySelectorAll('li');
+
+let currentStep = 0;
+
+// Toggle slider
+paletteBtn.addEventListener('click', () => {
+  paletteSlider.classList.toggle('active');
+});
+
+// Change palette
+paletteSteps.forEach((step, idx) => {
+  step.addEventListener('click', () => {
+    setPalette(idx);
+    paletteSlider.classList.remove('active');
+  });
+});
+
+function setPalette(idx) {
+  currentStep = idx;
+  paletteSteps.forEach(s => s.classList.remove('selected'));
+  paletteSteps[idx].classList.add('selected');
+  const palette = palettes[idx];
+  Object.keys(palette).forEach(key => {
+    document.documentElement.style.setProperty(key, palette[key]);
+  });
+}
+
+// Initialize default palette
+setPalette(0);
+</script>
 </body>
 </html>

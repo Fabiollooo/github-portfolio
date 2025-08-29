@@ -63,21 +63,16 @@ body {
 }
 
 body a {
-    color: var(--color-gold); /* Gold */
+    color: var(--color-gold); 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 body a:hover {
-    color: lightyellow; /* Brighter Gray */
+    color: lightyellow; 
 }
 
-/*  
-    Primary Text (Body)	#CCCCCC	Soft Light Gray
-    Secondary Text / Muted	#999999	Medium Gray
-    Strong Highlight Text	#E0E0E0	Brighter Gray (for important text blocks)
-    Alternative Accent (Optional)	#B8860B	Dark Goldenrod (if you want a secondary golden tone for variety)
-*/
+
 
 #particles-js {
     position: fixed;
@@ -102,7 +97,7 @@ body a:hover {
     /* 1--------NavBar--------*/
 
 .navBar {
-    background-color: var(--color-bg-main); /* Fix the missing # */
+    background-color: var(--color-bg-main);
     border-bottom: 3px solid var(--color-gold);
     box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
     display: flex;
@@ -280,6 +275,7 @@ h3 > span > span {
 
 }
 
+
 .button_myCV {
     background-color: var(--color-gold);
     border: 8px solid var(--color-gold);
@@ -290,7 +286,6 @@ h3 > span > span {
     border-radius: 10px;
     color: black;
 
-    
 }
 
 .button_contactMe {
@@ -445,7 +440,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
     width: 20%;
     margin: 0 auto 0 20px;
 }
@@ -456,7 +451,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -557,7 +552,7 @@ h3 > span > span {
 
 .Portfolio h2 {
     color: var(--color-gold);
-    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
 
     /* opacity: 0;
     transform: translateY(-30px);
@@ -568,7 +563,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -584,7 +579,7 @@ h3 > span > span {
 
     .portfolio_items h3 {
         color: var(--color-gold) !important;
-        text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 2px var(--color-gold);
+        text-shadow: 0 0 1px var(--color-gold), 0 0 10px var,--color-gold), 0 0 2px var,--color-gold);
         
     }
 
@@ -641,7 +636,7 @@ h3 > span > span {
 .contactME h2 {
     text-align: center;
     color: var(--color-gold);
-    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
     
     /* opacity: 0;
     transform: translateY(-30px);
@@ -652,7 +647,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -910,15 +905,92 @@ footer {
     margin: 0 auto;
   }
 
-  .coding_projects {
-  
-  }
 
 
+/* Palette Switcher Styles */
+    #paletteSwitcher {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    z-index: 100;
+    }
 
+    #paletteBtn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: var(--color-gold);
+    color: #222;
+    border: none;
+    box-shadow: 0 0 10px var(--color-gold-light);
+    font-size: 2em;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
+    #paletteBtn:hover {
+    background: var(--color-gold-dark);
+    box-shadow: 0 0 18px var(--color-gold);
+    }
 
+    #paletteSlider {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 54px;
+    background: var(--color-bg-transparent-white-2);
+    border-radius: 30px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+    padding: 10px 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    }
 
+    #paletteSlider.active {
+    opacity: 1;
+    pointer-events: auto;
+    }
+
+    #paletteSlider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    #paletteSlider li {
+    width: 36px;
+    height: 36px;
+    margin: 10px auto;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    #paletteSlider li.selected {
+    border: 3px solid var(--color-gold);
+    box-shadow: 0 0 12px var(--color-gold-light);
+    transform: scale(1.15);
+    }
+
+    /* Palette preview colors */
+    #paletteSlider li[data-step="0"] { background: linear-gradient(135deg, #0d0d0d, #FFD700); }
+    #paletteSlider li[data-step="1"] { background: linear-gradient(135deg, #0f2027, #2c5364); }
+    #paletteSlider li[data-step="2"] { background: linear-gradient(135deg, #ff9966, #ff5e62); }
+    #paletteSlider li[data-step="3"] { background: linear-gradient(135deg, #11998e, #38ef7d); }
+    #paletteSlider li[data-step="4"] { background: linear-gradient(135deg, #f857a6, #ff5858); }
+    #paletteSlider li[data-step="5"] { background: linear-gradient(135deg, #232526, #414345); }
+    #paletteSlider li[data-step="6"] { background: linear-gradient(135deg, #2980b9, #6dd5fa); }
+    #paletteSlider li[data-step="7"] { background: linear-gradient(135deg, #fcb045, #fd1d1d, #833ab4); }
+    #paletteSlider li[data-step="8"] { background: linear-gradient(135deg, #232526, #bdc3c7); }
 
 
 @media (max-width: 768px) {
