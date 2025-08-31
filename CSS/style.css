@@ -290,7 +290,7 @@ h3 > span > span {
 
 .button_contactMe {
     border: 2px solid var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
     text-decoration: none;
@@ -372,7 +372,7 @@ h3 > span > span {
 }
 
 .aboutMe h2 {
-    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
     color: var(--color-gold);
 }
 
@@ -393,7 +393,7 @@ h3 > span > span {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
 }
 
 
@@ -418,7 +418,7 @@ h3 > span > span {
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     cursor: pointer;
     border-radius: 5px;
     margin-top: 30px;
@@ -430,7 +430,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -440,7 +440,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
+    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 20%;
     margin: 0 auto 0 20px;
 }
@@ -451,7 +451,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
+    box-shadow: 0 0 5px var,--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -523,13 +523,13 @@ h3 > span > span {
     font-weight: bold;
     line-height: 1.2;
     color: var(--color-gold);
-    text-shadow: 0 0 2px var(--color-gold), 0 0 5px var(--color-gold), 0 0 10px var(--color-gold);
+    text-shadow: 0 0 2px var(--color-gold), 0 0 5px var(--color-gold), 0 0 10px var,--color-gold);
     
 }
 
 .aboutMe h3 {
     color: var(--color-gold);
-    text-shadow: 0 0 1px var(--color-gold), 0 0 1px var(--color-gold), 0 0 5px var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 1px var,--color-gold), 0 0 5px var,--color-gold);
     padding-top: 10px;
 }
 
@@ -563,7 +563,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
+    box-shadow: 0 0 5px var,--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -636,7 +636,7 @@ h3 > span > span {
 .contactME h2 {
     text-align: center;
     color: var(--color-gold);
-    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     
     /* opacity: 0;
     transform: translateY(-30px);
@@ -647,7 +647,7 @@ h3 > span > span {
     border: none;
     height: 2px;
     background-color: var(--color-gold);
-    box-shadow: 0 0 5px var(--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
+    box-shadow: 0 0 5px var,--color-gold), 0 0 10px var,--color-gold), 0 0 20px var,--color-gold);
     width: 15%;
 }
 
@@ -863,7 +863,7 @@ footer {
 .footer-social a:hover {
     color: #fffbe6;
     transform: scale(1.18) rotate(-8deg);
-    text-shadow: 0 0 12px var(--color-gold), 0 0 24px var(--color-gold-medium);
+    text-shadow: 0 0 12px var(--color-gold), 0 0 24px var,--color-gold);
 }
 
 .footer-contact {
@@ -897,33 +897,23 @@ footer {
 
   /* 6 --------External Projects-------- */
 
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-grow: 1;
-    margin: 0 auto;
-  }
-
 
   aside {
     width: 260px;
     background: var(--color-bg-transparent-white);
     padding: 10px;
-    margin-left: 15px;
     border: 1px solid var(--color-gold);
     border-radius: 10px;
-    /* position: absolute; */
-    top: 0;
-   /*  height: 100vh; */
-   overflow-y: auto;
+    margin: 0;
+    
+    
   }
 
   aside h2 {
     text-align: left;
     color: var(--color-gold);
-    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
-    
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var(--color-gold);
+
   }
 
   .dropdown {
@@ -945,7 +935,7 @@ footer {
 
     .dropdown button:hover {
         background: var(--color-bg-transparent-white-3);
-        box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
+        
         border-radius: 5px;
     }
 
@@ -977,8 +967,56 @@ footer {
     }
 
 
+    main {
+        flex: 1;
+        padding: 0;
+    }
 
+    main h1 {
+        color: var(--color-gold);
+    }
 
+    .project-card {
+        background: var(--color-bg-transparent-white);
+        border: 1px solid var(--color-gold);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    }
+
+    .project-card h2 {
+        margin-top: 0;
+        color: var(--color-gold-dark);
+    }
+
+    .project-card h3 {
+        margin-top: 0;
+        color: var(--color-shadow-gold-medium);
+        padding: 10px 0px 10px 0px;
+    }
+
+    .project-card img{
+
+    }
+
+    .tech-list, .feature-list {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    .links a {
+        display: inline-block;
+        margin-right: 15px;
+        text-decoration: none;
+        color: var(--color-gold);
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+        color: var(--color-gold-light);
+    }
 
 
 
@@ -1078,6 +1116,14 @@ footer {
     #paletteSlider li[data-step="6"] { background: linear-gradient(135deg, #2980b9, #6dd5fa); }
     #paletteSlider li[data-step="7"] { background: linear-gradient(135deg, #fcb045, #fd1d1d, #833ab4); }
     #paletteSlider li[data-step="8"] { background: linear-gradient(135deg, #232526, #bdc3c7); }
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -1213,6 +1259,25 @@ footer {
 }
 .fade-in-section.fade-delay-4 {
     transition-delay: 0.2s;
+}
+
+.projects-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.projects-layout aside {
+  flex: 0 0 260px;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.projects-layout main {
+  flex: 1;
+  min-width: 0;
 }
 
 
