@@ -20,7 +20,7 @@
 
     <div class="navBar">
         <ul class="navBar_left">
-            <li><a href="index.html">fabiollo();</a></li>
+            <li><a href="index.html">fabian();</a></li>
         </ul>
         
         <ul class="navBar_right">
@@ -33,33 +33,87 @@
 
 
     <header>
-        <h1>In construction</h1>
+        <h1>My Coding Projects</h1>
     </header>
+    
+    <aside>
+         <h2>Projects</h2>
 
+         <div class="dropdown">
+         <button>To Do App▾</button>
+         <ul>
+             <li><a href="#project1-overview">Overview</a></li>
+             <li><a href="#project1-tech">Technologies</a></li>
+             <li><a href="#project1-features">Features</a></li>
+             <li><a href="#project1-screenshots">Screenshots</a></li>
+             <li><a href="#project1-learning">What I Learned</a></li>
+             <li><a href="#project1-links">Links</a></li>
+         </ul>
+         </div>
+
+         <div class="dropdown">
+         <button>Patient Management System ▾</button>
+         <ul>
+             <li><a href="#project2-overview">Overview</a></li>
+             <li><a href="#project2-tech">Technologies</a></li>
+             <li><a href="#project2-features">Features</a></li>
+             <li><a href="#project2-screenshots">Screenshots</a></li>
+             <li><a href="#project2-learning">What I Learned</a></li>
+             <li><a href="#project2-links">Links</a></li>
+         </ul>
+         </div>
+
+      <!--    <div class="dropdown">
+         <button>Patient Management System ▾</button>
+         <ul>
+             <li><a href="#project3-overview">Overview</a></li>
+             <li><a href="#project3-tech">Technologies</a></li>
+             <li><a href="#project3-features">Features</a></li>
+             <li><a href="#project3-screenshots">Screenshots</a></li>
+             <li><a href="#project3-learning">What I Learned</a></li>
+             <li><a href="#project3-links">Links</a></li>
+         </ul>
+         </div> -->
+     </aside>
 
     <main>
-        <div class="projects">
-            <div class="coding_projects" id="coding_project1">
-                <h2>Project 1</h2>
-                <p>Description of Project 1.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
+       
 
-            <div class="coding_projects" id="coding_project2">
-                <h2>Project 2</h2>
-                <p>Description of Project 2.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-        </div>
+        <section></section>
 
     </main>
+
+
+
     <footer>
-        <p>&copy; 2025 My Profile</p>
+    <div class="footer-content">
+        <div class="footer-social">
+        <!--<a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
+        <a href="https://github.com/Fabiollooo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/Fabiollooo" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/fabiollooo" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-contact">
+        <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> +353 899 709 174</p>
+        </div>
+        <div class="footer-copy">
+        <p>&copy; 2025 Fabian Golebiowski. All rights reserved.</p>
+        </div>
+    </div>
     </footer>
 
 
     
-
+    <script>
+        // Toggle dropdown menus
+        document.querySelectorAll(".dropdown button").forEach(btn => {
+        btn.addEventListener("click", () => {
+            btn.parentElement.classList.toggle("active");
+        });
+        });
+    </script>
 
 
 

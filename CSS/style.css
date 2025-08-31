@@ -906,6 +906,93 @@ footer {
   }
 
 
+  aside {
+    width: 260px;
+    background: var(--color-bg-transparent-white);
+    padding: 10px;
+    margin-left: 15px;
+    border: 1px solid var(--color-gold);
+    border-radius: 10px;
+    /* position: absolute; */
+    top: 0;
+   /*  height: 100vh; */
+   overflow-y: auto;
+  }
+
+  aside h2 {
+    text-align: left;
+    color: var(--color-gold);
+    text-shadow: 0 0 1px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px var,--color-gold);
+    
+  }
+
+  .dropdown {
+    margin-bottom: 10px;
+  }
+
+  .dropdown button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: crosshair;
+    color: var(--color-gold);
+    font-weight: bold;
+    
+  }
+
+    .dropdown button:hover {
+        background: var(--color-bg-transparent-white-3);
+        box-shadow: 0 0 5px var(--color-gold), 0 0 10px var(--color-gold), 0 0 20px;
+        border-radius: 5px;
+    }
+
+    .dropdown ul {
+        list-style: none;
+        padding-left: 15px;
+        margin: 0;
+        display: none;
+       
+    }
+
+    .dropdown ul li {
+        margin: 8px 0;
+    }
+
+    .dropdown ul a {
+        text-decoration: none;
+        color: var(--color-gold-dark);
+        font-size: 0.9rem;
+    }
+
+    .dropdown ul a:hover {
+       
+        color: var(--color-gold);
+    }
+
+    .dropdown.active ul {
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Palette Switcher Styles */
     #paletteSwitcher {
