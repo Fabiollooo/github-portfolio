@@ -1107,6 +1107,233 @@ footer {
 
 
 
+.fade-in-section.fade-delay-1 {
+    transition-delay: 0.1s;
+}
+.fade-in-section.fade-delay-2 {
+    transition-delay: 0.2s;
+}
+.fade-in-section.fade-delay-3 {
+    transition-delay: 0.2s;
+}
+.fade-in-section.fade-delay-4 {
+    transition-delay: 0.2s;
+}
+
+.projects-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.projects-layout aside {
+  flex: 0 0 260px;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.projects-layout main {
+  flex: 1;
+  min-width: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .navBar_right {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+
+  .navBar_left { 
+    font-size: 1.3rem;
+  }
+
+  .main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 4em auto;
+    max-width: 1000px;
+    margin: 10em auto 15em auto; 
+  }
+
+  
+
+  .info_text-animate,
+  .button_contactMe,
+  .button_myCV{
+    font-size: 1.3rem;
+  }
+
+  #description {
+    font-size: 1.2rem;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: auto;
+  }
+
+
+
+
+  .info {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 700px;
+  }
+
+
+  .aboutMe {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    font-size: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto 10em auto;
+  }
+
+  .profile-image2 {
+    width: 250px;
+    height: auto;
+  }
+
+
+
+  .aboutme_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 400px; /* or something reasonable */
+  }
+
+
+  .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 15em;
+    height: auto;
+  }
+
+
+
+  .Portfolio {
+    max-width: 1000px;
+    
+  }
+
+  
+  .portfolio_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 80px;
+    max-width: 1000px;
+    margin: 0 auto; 
+    font-size: 1.2rem;
+  }
+
+
+  .portfolio_item1,
+  .portfolio_item2,
+  .portfolio_item3 {
+    flex: 1 1 30%;
+  }
+
+
+
+  .leftRight {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px;
+  }
+
+  .form_container {
+    width: 100%;
+  }
+
+
+  .contactME{
+    max-width: 1000px;
+    font-size: 1.2re;;
+  }
+
+
+  .contactME  {
+    font-size: 1.2rem;
+  }
+
+
+
+
+
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .footer-contact {
+    text-align: left;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+  }
+
+  .vertical-text {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  #aboutme_educationTotal {
+    margin: 20px 0;
+    align-items: left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .navBar {
@@ -1228,45 +1455,6 @@ footer {
         padding: 8px 12px;
     }
 }
-
-
-.fade-in-section.fade-delay-1 {
-    transition-delay: 0.1s;
-}
-.fade-in-section.fade-delay-2 {
-    transition-delay: 0.2s;
-}
-.fade-in-section.fade-delay-3 {
-    transition-delay: 0.2s;
-}
-.fade-in-section.fade-delay-4 {
-    transition-delay: 0.2s;
-}
-
-.projects-layout {
-  display: flex;
-  max-width: 1200px;
-  margin: 40px auto;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.projects-layout aside {
-  flex: 0 0 260px;
-  min-width: 220px;
-  max-width: 300px;
-}
-
-.projects-layout main {
-  flex: 1;
-  min-width: 0;
-}
-
-
-
-
-
-
 
 
 
