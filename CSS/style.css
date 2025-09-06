@@ -1088,18 +1088,44 @@ footer {
     transform: scale(1.15);
     }
 
+    
+
     /* Palette preview colors */
-    #paletteSlider li[data-step="0"] { background: linear-gradient(135deg, #0d0d0d, #FFD700); }
-    #paletteSlider li[data-step="1"] { background: linear-gradient(135deg, #0f2027, #2c5364); }
-    #paletteSlider li[data-step="2"] { background: linear-gradient(135deg, #ff9966, #ff5e62); }
-    #paletteSlider li[data-step="3"] { background: linear-gradient(135deg, #11998e, #38ef7d); }
-    #paletteSlider li[data-step="4"] { background: linear-gradient(135deg, #f857a6, #ff5858); }
-    #paletteSlider li[data-step="5"] { background: linear-gradient(135deg, #232526, #414345); }
-    #paletteSlider li[data-step="6"] { background: linear-gradient(135deg, #2980b9, #6dd5fa); }
-    #paletteSlider li[data-step="7"] { background: linear-gradient(135deg, #fcb045, #fd1d1d, #833ab4); }
-    #paletteSlider li[data-step="8"] { background: linear-gradient(135deg, #232526, #bdc3c7); }
+    #paletteSlider li[data-step="0"] { 
+    background: linear-gradient(135deg, #0d0d0d, #FFD700); /* Default */
+    }
 
+    #paletteSlider li[data-step="1"] { 
+    background: linear-gradient(135deg, #0f2027, #00c3ff); /* Ocean */
+    }
 
+    #paletteSlider li[data-step="2"] { 
+    background: linear-gradient(135deg, #ffe5d9, #e29578); /* Sunset */
+    }
+
+    #paletteSlider li[data-step="3"] { 
+    background: linear-gradient(135deg, #0f2e2c, #6df29a); /* Forest */
+    }
+
+    #paletteSlider li[data-step="4"] { 
+    background: linear-gradient(135deg, #330e24, #ff4f81); /* Rose */
+    }
+
+    #paletteSlider li[data-step="5"] { 
+    background: linear-gradient(135deg, #0d1117, #4c9aff); /* Cinematic Night */
+    }
+
+    #paletteSlider li[data-step="6"] { 
+    background: linear-gradient(135deg, #0b1a2e, #79b8ff); /* Nocturne Sky */
+    }
+
+    #paletteSlider li[data-step="7"] { 
+    background: linear-gradient(135deg, #1a001f, #ff5cf0); /* Candy */
+    }
+
+    #paletteSlider li[data-step="8"] { 
+    background: linear-gradient(135deg, #0c0a0f, #9e6eff); /* Obsidian */
+    }
 
 
 
