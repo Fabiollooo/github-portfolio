@@ -89,7 +89,21 @@
                     </ul>
 
                 <h3 id="project1-screenshots">Screenshots</h3>
-                    <img src="#" alt="To Do App Screenshot">
+                    
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&#10094;</button>
+
+                        <div class="carousel-track">
+                            <img src="img/cd_projects/project1/cd_project_img1.png" alt="Screenshot 1" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img2.png" alt="Screenshot 2" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img3.png" alt="Screenshot 3" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img4.png" alt="Screenshot 4" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img5.png" alt="Screenshot 5" class="carousel-image">
+                        </div>
+
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+
 
                 <h3 id="project1-learning">What I Learned</h3>
                     <p>Improved my C# WinForms skills, implemented user authentication and task management, and gained experience collaborating on a duo project.</p>
@@ -132,12 +146,42 @@
     
     <script>
         // Toggle dropdown menus
+
         document.querySelectorAll(".dropdown button").forEach(btn => {
         btn.addEventListener("click", () => {
             btn.parentElement.classList.toggle("active");
         });
         });
     </script>
+
+
+    
+    <script>
+        // IMG Carousel function 
+
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-image');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+    </script>
+
 
 
 

@@ -50,7 +50,7 @@
          </div>
 
          <div class="dropdown">
-         <button>#2 ▾</button>
+         <button>#2 (In construction) ▾</button>
          <ul>
              <li><a href="#project2-overview">Overview</a></li>
              <li><a href="#project2-tech">Technologies</a></li>
@@ -80,10 +80,12 @@
                         <li>MySQL</li>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>JavaScript</li>
                     </ul>
                 
                 <h3 id="project2-features">Features</h3>
                     <ul class="feature-list">
+                        <li>User sallary input</li>
                         <li>Add, edit, and delete expenses</li>
                         <li>Categorize expenses for better tracking</li>
                         <!-- <li>Export Expenses</li>  Possibly in later on update -->
@@ -91,7 +93,18 @@
                     </ul>
 
                 <h3 id="project2-screenshots">Screenshots</h3>
-                    <img src="#" alt="Expense Tracker Screenshot">
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&#10094;</button>
+
+                        <div class="carousel-track">
+                            <img src="img/wd_projects/project1/wd_project1_img1.png" alt="Screenshot 1" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img2.png" alt="Screenshot 2" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img3.png" alt="Screenshot 3" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img4.png" alt="Screenshot 4" class="carousel-image">
+                        </div>
+
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
                 
                 <h3 id="project2-learning">What I Learned</h3>
                     <p>Strengthened my PHP and MySQL skills, learned how to structure a database-driven web application, and practiced building a clean and user-friendly UI for financial tracking.</p>
@@ -135,6 +148,34 @@
         });
         });
     </script>
+
+    
+    <script>
+        // IMG Carousel function 
+
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-image');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+    </script>
+
 
 </body>
 </html>

@@ -1147,6 +1147,72 @@ footer {
 
 
 
+/* Carousel Styles */
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  user-select: none;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
 
 
 @media (min-width: 1200px) {
@@ -1226,7 +1292,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
-    max-width: 400px; /* or something reasonable */
+    max-width: 400px; 
   }
 
 
@@ -1441,6 +1507,29 @@ footer {
         margin: 0;
      }
 
+    .carousel {
+        max-width: 90%;
+    }
+
+    .carousel-btn {
+        font-size: 1.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .projects-layout {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .projects-layout aside {
+        max-width: 100%;
+        flex: unset;
+        margin-bottom: 20px;
+    }
+
+    .projects-layout main {
+        width: 100%;
+    }
 
 }
 @media (max-width: 480px) {
@@ -1454,8 +1543,33 @@ footer {
     .toggle-button {
         padding: 8px 12px;
     }
-}
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.6rem;
+    }
 
+    .carousel {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    .carousel-image {
+        height: auto;
+    }
+
+    .projects-layout {
+        padding: 0 10px;
+        gap: 15px;
+    }
+
+    .projects-layout aside {
+        margin-bottom: 15px;
+    }
+
+    .projects-layout main {
+        font-size: 0.95rem;
+    }
+}
 
 
 
