@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Projects</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+
 
     <div id="particles-js" style="position:fixed; width:100%; height:100%;"></div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
@@ -37,7 +39,7 @@
             <h2>Projects</h2>
 
             <div class="dropdown">
-            <button>#1▾</button>
+            <button>#1 (In construction) ▾</button>
             <ul>
                 <li><a href="#project1-overview">Overview</a></li>
                 <li><a href="#project1-tech">Technologies</a></li>
@@ -95,6 +97,32 @@
         document.querySelectorAll(".dropdown button").forEach(btn => {
             btn.addEventListener("click", () => {
                 btn.parentElement.classList.toggle("active");
+            });
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const track = carousel.querySelector('.carousel-track');
+            const slides = carousel.querySelectorAll('.carousel-image');
+            const prevBtn = carousel.querySelector('.carousel-btn.prev');
+            const nextBtn = carousel.querySelector('.carousel-btn.next');
+
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+            });
+
+            prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateCarousel();
             });
         });
     </script>

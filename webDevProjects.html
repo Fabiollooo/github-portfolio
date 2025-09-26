@@ -97,10 +97,10 @@
                         <button class="carousel-btn prev">&#10094;</button>
 
                         <div class="carousel-track">
-                            <img src="img/wd_projects/project1/wd_project1_img1.png" alt="Screenshot 1" class="carousel-image">
-                            <img src="img/wd_projects/project1/wd_project1_img2.png" alt="Screenshot 2" class="carousel-image">
-                            <img src="img/wd_projects/project1/wd_project1_img3.png" alt="Screenshot 3" class="carousel-image">
-                            <img src="img/wd_projects/project1/wd_project1_img4.png" alt="Screenshot 4" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img1.png" alt="Entry to budget system" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img2.png" alt="Adding new expense" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img3.png" alt="Viewing Expenses" class="carousel-image">
+                            <img src="img/wd_projects/project1/wd_project1_img4.png" alt="Managing a expense" class="carousel-image">
                         </div>
 
                         <button class="carousel-btn next">&#10095;</button>
@@ -151,31 +151,30 @@
 
     
     <script>
-        // IMG Carousel function 
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const track = carousel.querySelector('.carousel-track');
+            const slides = carousel.querySelectorAll('.carousel-image');
+            const prevBtn = carousel.querySelector('.carousel-btn.prev');
+            const nextBtn = carousel.querySelector('.carousel-btn.next');
 
-        const track = document.querySelector('.carousel-track');
-        const slides = document.querySelectorAll('.carousel-image');
-        const prevBtn = document.querySelector('.carousel-btn.prev');
-        const nextBtn = document.querySelector('.carousel-btn.next');
+            let currentIndex = 0;
+            const totalSlides = slides.length;
 
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        function updateCarousel() {
+            function updateCarousel() {
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+            }
 
-        nextBtn.addEventListener('click', () => {
+            nextBtn.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateCarousel();
-        });
+            });
 
-        prevBtn.addEventListener('click', () => {
+            prevBtn.addEventListener('click', () => {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateCarousel();
+            });
         });
     </script>
-
 
 </body>
 </html>

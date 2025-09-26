@@ -94,11 +94,11 @@
                         <button class="carousel-btn prev">&#10094;</button>
 
                         <div class="carousel-track">
-                            <img src="img/cd_projects/project1/cd_project_img1.png" alt="Screenshot 1" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img2.png" alt="Screenshot 2" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img3.png" alt="Screenshot 3" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img4.png" alt="Screenshot 4" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img5.png" alt="Screenshot 5" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img1.png" alt="Log-In/Sign-Up page" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img2.png" alt="Main Tasks Dashboard" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img3.png" alt="Creating Task(s)" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img4.png" alt="Editing Tasks" class="carousel-image">
+                            <img src="img/cd_projects/project1/cd_project_img5.png" alt="Viewing new added Tasks" class="carousel-image">
                         </div>
 
                         <button class="carousel-btn next">&#10095;</button>
@@ -110,6 +110,58 @@
 
                 <p class="links">
                     <a href="https://github.com/Fabiollooo/winforms-todo-app">GitHub Repo</a>
+                </p>
+
+        </section>
+
+
+
+
+        <section id="project2" class="project-card">
+            <h2>Patient Management System</h2>
+                <h3 id="project2-overview">Overview</h3>
+                    <p>A C++ console-based application designed to manage patients in an Accident & Emergency setting.</p>
+                    <p>The system uses a priority queue (heap) to ensure patients with more severe conditions are seen first. Staff can register patients, call the next patient, search by name, and display the current queue.</p>
+
+                <h3 id="project2-tech">Technologies Used</h3>
+                    <ul class="tech-list">
+                        <li>C++</li>
+                        <li>Priority Queue/Heap</li>
+                        <li>Object-Oriented Programming</li>
+                    </ul>
+                
+                <h3 id="project2-features">Features</h3>
+                    <ul class="feature-list">
+                        <li>Add patients with a name and priority (1–5)</li>
+                        <li>Automatically queue patients by severity</li>
+                        <li>Call and remove the next patient</li>
+                        <li>Search for patients by name</li>
+                        <li>Display the full patient queue with priorities</li>
+                    </ul>
+
+                <h3 id="project2-screenshots">Screenshots</h3>
+                    
+                    <div class="carousel">
+                        <button class="carousel-btn prev">&#10094;</button>
+
+                        <div class="carousel-track">
+                            <img src="img/cd_projects/project2/cd_project2_img1.png" alt="Program menu" class="carousel-image">
+                            <img src="img/cd_projects/project2/cd_project2_img2.png" alt="Adding Patients" class="carousel-image">
+                            <img src="img/cd_projects/project2/cd_project2_img3.png" alt="Calling each patient" class="carousel-image">
+                            <img src="img/cd_projects/project2/cd_project2_img4.png" alt="Print current queue" class="carousel-image">
+                            <img src="img/cd_projects/project2/cd_project2_img5.png" alt="Search for patient" class="carousel-image">
+                            <img src="img/cd_projects/project2/cd_project2_img6.png" alt="Display patients" class="carousel-image">
+                        </div>
+
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+
+
+                <h3 id="project2-learning">What I Learned</h3>
+                    <p>I improved my understanding of priority queues and heaps, gained hands-on experience with object-oriented design in C++, and practiced implementing real-world style queue management with searching, validation, and dynamic updates.</p>
+
+                <p class="links">
+                    <a href="https://github.com/Fabiollooo/HospitalQueue">GitHub Repo</a>
                 </p>
 
         </section>
@@ -156,31 +208,32 @@
 
 
     
-    <script>
-        // IMG Carousel function 
+  <script>
+        document.querySelectorAll('.carousel').forEach(carousel => {
+            const track = carousel.querySelector('.carousel-track');
+            const slides = carousel.querySelectorAll('.carousel-image');
+            const prevBtn = carousel.querySelector('.carousel-btn.prev');
+            const nextBtn = carousel.querySelector('.carousel-btn.next');
 
-        const track = document.querySelector('.carousel-track');
-        const slides = document.querySelectorAll('.carousel-image');
-        const prevBtn = document.querySelector('.carousel-btn.prev');
-        const nextBtn = document.querySelector('.carousel-btn.next');
+            let currentIndex = 0;
+            const totalSlides = slides.length;
 
-        let currentIndex = 0;
-        const totalSlides = slides.length;
-
-        function updateCarousel() {
+            function updateCarousel() {
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
+            }
 
-        nextBtn.addEventListener('click', () => {
+            nextBtn.addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateCarousel();
-        });
+            });
 
-        prevBtn.addEventListener('click', () => {
+            prevBtn.addEventListener('click', () => {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateCarousel();
+            });
         });
     </script>
+
 
 
 
