@@ -1,0 +1,1 @@
+//Add common js scripts here so all files inherit at once. 
