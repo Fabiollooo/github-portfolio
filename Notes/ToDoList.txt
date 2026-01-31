@@ -1,0 +1,2 @@
+1. Make the portfolio pages mobile responsive.
+2. In Group project(s) the h3 header "Technologies Used" the bulletpoints are misaligned.

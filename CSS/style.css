@@ -793,7 +793,7 @@ body a:hover {
         color: var(--color-gold);
         font-size: 2.5em;
         transition: color 0.3s, transform 0.3s;
-        text-shadow: 0 0 6px var(--color-gold-light), 0 0 12px var(--color-gold-light);
+        text-shadow: 0 0 4px var(--color-gold-light), 0 0 4px var(--color-gold-light);
     }
 
     .footer-social a:hover {
