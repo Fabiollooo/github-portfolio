@@ -4,45 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fabian G | Gallery</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+  <meta name="description" content="Continuous photo gallery by Fabian Golebiowski in a Pinterest-style masonry feed.">
 
-      <div id="particles-js" style="position:fixed; width:100%; height:100%;"></div>
-      <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-      <script src="Javascript/backgroundBubbles.js"></script>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-    
-
-  
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/myParticles.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
 <body>
-    <div id="particles-js"></div>
+  <div id="particles-js" aria-hidden="true"></div>
 
-    <div class="navBar">
-        <ul class="navBar_left">
-            <li><a href="index.html">fabian();</a></li>
-        </ul>
-        
-        <ul class="navBar_right">
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="index.html#aboutMe_section"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="index.html#portfolio_section"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="index.html#contactMe_section"><i class="fas fa-envelope"></i> Contact</a></li>
-            <li><a href="gallery.html"><i class="fas fa-envelope"></i> Gallery</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg professional-nav sticky-top" aria-label="Primary navigation">
+      <div class="container">
+        <a class="navbar-brand brand-mark" href="index.html">fabian();</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        </ul>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-shell">
+      <div class="container">
+        <div class="glass-panel section-panel page-hero">
+          <p class="eyebrow mb-2">Personal Feed</p>
+          <h1 class="page-title">Photo Gallery</h1>
+          <p class="page-subtitle mb-0">A continuous Pinterest-style stream for photos I take and want to keep visible in one place.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell pt-0">
+      <div class="container">
+        <div class="gallery-controls d-flex flex-wrap align-items-center gap-3 mb-3">
+          <p class="mb-0 gallery-hint"><i class="fas fa-camera-retro"></i> Scroll continuously. Click an image to view it larger.</p>
+        </div>
+
+        <div id="galleryFeed" class="masonry-feed" aria-live="polite"></div>
+        <div id="gallerySentinel" class="gallery-sentinel" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="galleryLightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+    <div class="lightbox-shell glass-panel" role="document">
+      <button id="galleryLightboxClose" class="lightbox-close" type="button" aria-label="Close image preview">
+        <i class="fas fa-xmark"></i>
+      </button>
+
+      <div class="lightbox-layout">
+        <img id="galleryLightboxImg" src="" alt="Expanded gallery image">
+
+        <div class="lightbox-meta">
+          <p id="galleryLightboxCaption" class="lightbox-title"></p>
+          <div class="meta-row">
+            <span class="meta-label">Location</span>
+            <span id="galleryLightboxLocation" class="meta-value">Unknown</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Year</span>
+            <span id="galleryLightboxYear" class="meta-value">Unknown</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!--Look here-->
-    <div class="photoGallery">
-        
+  <footer>
+    <div class="container py-4">
+      <div class="footer-grid">
+        <div class="footer-social">
+          <a href="https://github.com/Fabiollooo" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/Fabiollooo" target="_blank" rel="noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/fabiollooo" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
+        </div>
+      </div>
     </div>
-    
+  </footer>
+
+  <div id="paletteSwitcher" aria-label="Theme palette switcher">
+    <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider">
+      <i class="fas fa-palette"></i>
+    </button>
+    <div id="paletteSlider" role="menu" aria-label="Color palettes">
+      <ul>
+        <li data-step="0" title="Default" role="menuitem" tabindex="0"></li>
+        <li data-step="1" title="Gold" role="menuitem" tabindex="0"></li>
+        <li data-step="2" title="Rose" role="menuitem" tabindex="0"></li>
+        <li data-step="3" title="Obsidian" role="menuitem" tabindex="0"></li>
+        <li data-step="4" title="Ocean" role="menuitem" tabindex="0"></li>
+        <li data-step="5" title="Forest" role="menuitem" tabindex="0"></li>
+        <li data-step="6" title="Night" role="menuitem" tabindex="0"></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="Javascript/backgroundBubbles.js"></script>
+  <script src="Javascript/themeSwitcher.js"></script>
+  <script src="Javascript/galleryFeed.js"></script>
 </body>
 </html>
