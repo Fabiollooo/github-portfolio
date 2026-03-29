@@ -3,258 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Projects</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Coding Projects | Fabian G</title>
+    <meta name="description" content="Coding projects by Fabian Golebiowski including WinForms and C++ system builds.">
+
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
-
-      <div id="particles-js" style="position:fixed; width:100%; height:100%;"></div>
-      <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-      <script src="Javascript/backgroundBubbles.js"></script>
-
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
+<body>
+    <div id="particles-js" aria-hidden="true"></div>
 
+    <header>
+        <nav class="navbar navbar-expand-lg professional-nav sticky-top" aria-label="Primary navigation">
+            <div class="container">
+                <a class="navbar-brand brand-mark" href="index.html">fabian();</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
-<body id="portfolio-body">
-  <div id="particles-js"></div>
-
-  <div class="navBar">
-      <ul class="navBar_left">
-          <li><a href="index.html">fabian();</a></li>
-      </ul>
-      
-      <ul class="navBar_right">
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="index.html#aboutMe_section"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="index.html#portfolio_section"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-          <li><a href="index.html#contactMe_section"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
-  </div>
-
-
-  <header>
-      <h1>My Coding Projects</h1>
-  </header>
-  
-  <div class="projects-layout">
-    <aside>
-         <h2>Projects</h2>
-
-         <div class="dropdown">
-         <button>To Do App▾</button>
-            <ul>
-                <li><a href="#project1-overview">Overview</a></li>
-                <li><a href="#project1-tech">Technologies</a></li>
-                <li><a href="#project1-features">Features</a></li>
-                <li><a href="#project1-screenshots">Screenshots</a></li>
-                <li><a href="#project1-learning">What I Learned</a></li>
-                <li><a href="#project1-links">Links</a></li>
-            </ul>
-         </div>
-
-         <!-- <div class="dropdown">
-         <button>Zelora (In construction) ▾</button>
-         <ul>
-             <li><a href="#project2-overview">Overview</a></li>
-             <li><a href="#project2-tech">Technologies</a></li>
-             <li><a href="#project2-features">Features</a></li>
-             <li><a href="#project2-screenshots">Screenshots</a></li>
-             <li><a href="#project2-learning">What I Learned</a></li>
-             <li><a href="#project2-links">Links</a></li>
-         </ul>
-         </div> -->
-
-
-         <div class="dropdown">
-         <button>Patient Management System ▾</button>
-         <ul>
-             <li><a href="#project3-overview">Overview</a></li>
-             <li><a href="#project3-tech">Technologies</a></li>
-             <li><a href="#project3-features">Features</a></li>
-             <li><a href="#project3-screenshots">Screenshots</a></li>
-             <li><a href="#project3-learning">What I Learned</a></li>
-             <li><a href="#project3-links">Links</a></li>
-         </ul>
-         </div>
-
- 
-     </aside>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main>
-       
-        <section id="project1" class="project-card">
-            <h2>To Do App</h2>
-                <h3 id="project1-overview">Overview</h3>
-                    <p>A WinForms task management application built with my duo partner.</p>
-                    <p> Users can create an account or log in, then create, edit, export and organize their tasks efficiently. The app helps users stay on top of their daily goals with a simple and intuitive interface.</p>
-
-                <h3 id="project1-tech">Technologies Used</h3>
-                    <ul class="tech-list">
-                        <li>WinForms C#</li>
-                    </ul>
-                
-                <h3 id="project1-features">Features</h3>
-                    <ul class="feature-list">
-                        <li>User account creation and login</li>
-                        <li>Add, edit, and remove tasks</li>
-                        <li>Export tasks for backup or sharing</li>
-                        <li>Dynamic task updates</li>
-                    </ul>
-
-                <h3 id="project1-screenshots">Screenshots</h3>
-                    
-                    <div class="carousel">
-                        <button class="carousel-btn prev">&#10094;</button>
-
-                        <div class="carousel-track">
-                            <img src="img/cd_projects/project1/cd_project_img1.png" alt="Log-In/Sign-Up page" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img2.png" alt="Main Tasks Dashboard" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img3.png" alt="Creating Task(s)" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img4.png" alt="Editing Tasks" class="carousel-image">
-                            <img src="img/cd_projects/project1/cd_project_img5.png" alt="Viewing new added Tasks" class="carousel-image">
-                        </div>
-
-                        <button class="carousel-btn next">&#10095;</button>
-                    </div>
-
-
-                <h3 id="project1-learning">What I Learned</h3>
-                    <p>Improved my C# WinForms skills, implemented user authentication and task management, and gained experience collaborating on a duo project.</p>
-
-                <p class="links">
-                    <a href="https://github.com/Fabiollooo/winforms-todo-app">GitHub Repo</a>
-                </p>
-
+        <section class="section-shell reveal-section">
+            <div class="container">
+                <div class="glass-panel section-panel page-hero">
+                    <p class="eyebrow mb-2">Portfolio Category</p>
+                    <h1 class="page-title">Coding Projects</h1>
+                    <p class="page-subtitle mb-0">A focused look at problem-solving projects built with C#, WinForms, and C++ system logic.</p>
+                </div>
+            </div>
         </section>
 
-         <!-- <section id="project2" class="project-card">
-             <h2>Zelora</h2>
-         </section> -->
+        <section class="section-shell pt-0 reveal-section">
+            <div class="container">
+                <div class="projects-layout">
+                    <aside>
+                        <h2 class="project-index-title">Project Index</h2>
 
-
-
-
-        <section id="project3" class="project-card">
-            <h2>Patient Management System</h2>
-                <h3 id="project3-overview">Overview</h3>
-                    <p>A C++ console-based application designed to manage patients in an Accident & Emergency setting.</p>
-                    <p>The system uses a priority queue (heap) to ensure patients with more severe conditions are seen first. Staff can register patients, call the next patient, search by name, and display the current queue.</p>
-
-                <h3 id="project3-tech">Technologies Used</h3>
-                    <ul class="tech-list">
-                        <li>C++</li>
-                        <li>Priority Queue/Heap</li>
-                        <li>Object-Oriented Programming</li>
-                    </ul>
-                
-                <h3 id="project3-features">Features</h3>
-                    <ul class="feature-list">
-                        <li>Add patients with a name and priority (1–5)</li>
-                        <li>Automatically queue patients by severity</li>
-                        <li>Call and remove the next patient</li>
-                        <li>Search for patients by name</li>
-                        <li>Display the full patient queue with priorities</li>
-                    </ul>
-
-                <h3 id="project3-screenshots">Screenshots</h3>
-                    
-                    <div class="carousel">
-                        <button class="carousel-btn prev">&#10094;</button>
-
-                        <div class="carousel-track">
-                            <img src="img/cd_projects/project2/cd_project2_img1.png" alt="Program menu" class="carousel-image">
-                            <img src="img/cd_projects/project2/cd_project2_img2.png" alt="Adding Patients" class="carousel-image">
-                            <img src="img/cd_projects/project2/cd_project2_img3.png" alt="Calling each patient" class="carousel-image">
-                            <img src="img/cd_projects/project2/cd_project2_img4.png" alt="Print current queue" class="carousel-image">
-                            <img src="img/cd_projects/project2/cd_project2_img5.png" alt="Search for patient" class="carousel-image">
-                            <img src="img/cd_projects/project2/cd_project2_img6.png" alt="Display patients" class="carousel-image">
+                        <div class="dropdown">
+                            <button aria-expanded="false">To Do App</button>
+                            <ul>
+                                <li><a href="#project1-overview">Overview</a></li>
+                                <li><a href="#project1-tech">Technologies</a></li>
+                                <li><a href="#project1-features">Features</a></li>
+                                <li><a href="#project1-screenshots">Screenshots</a></li>
+                                <li><a href="#project1-learning">What I Learned</a></li>
+                            </ul>
                         </div>
 
-                        <button class="carousel-btn next">&#10095;</button>
-                    </div>
+                        <div class="dropdown">
+                            <button aria-expanded="false">Patient Management</button>
+                            <ul>
+                                <li><a href="#project3-overview">Overview</a></li>
+                                <li><a href="#project3-tech">Technologies</a></li>
+                                <li><a href="#project3-features">Features</a></li>
+                                <li><a href="#project3-screenshots">Screenshots</a></li>
+                                <li><a href="#project3-learning">What I Learned</a></li>
+                            </ul>
+                        </div>
+                    </aside>
 
+                    <main>
+                        <section id="project1" class="project-card">
+                            <div class="project-header">
+                                <h2>To Do App</h2>
+                                <div class="project-meta">
+                                    <span class="meta-pill">WinForms</span>
+                                    <span class="meta-pill">C#</span>
+                                    <span class="meta-pill">Auth + CRUD</span>
+                                </div>
+                            </div>
 
-                <h3 id="project3-learning">What I Learned</h3>
-                    <p>I improved my understanding of priority queues and heaps, gained hands-on experience with object-oriented design in C++, and practiced implementing real-world style queue management with searching, validation, and dynamic updates.</p>
+                            <h3 id="project1-overview">Overview</h3>
+                            <p>A WinForms task management app built with a duo partner where users can create accounts, log in, and manage tasks in a simple daily workflow.</p>
 
-                <p class="links">
-                    <a href="https://github.com/Fabiollooo/HospitalQueue">GitHub Repo</a>
-                </p>
+                            <h3 id="project1-tech">Technologies Used</h3>
+                            <ul class="tech-list">
+                                <li>WinForms C#</li>
+                            </ul>
 
+                            <h3 id="project1-features">Features</h3>
+                            <ul class="feature-list">
+                                <li>User account creation and login</li>
+                                <li>Add, edit, and remove tasks</li>
+                                <li>Export tasks for backup or sharing</li>
+                                <li>Dynamic task updates</li>
+                            </ul>
+
+                            <h3 id="project1-screenshots">Project Glimpse</h3>
+                            <div class="carousel">
+                                <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                                <div class="carousel-track">
+                                    <img src="img/cd_projects/project1/cd_project_img1.png" alt="Log-In and Sign-Up page" class="carousel-image">
+                                    <img src="img/cd_projects/project1/cd_project_img2.png" alt="Main tasks dashboard" class="carousel-image">
+                                    <img src="img/cd_projects/project1/cd_project_img3.png" alt="Creating tasks" class="carousel-image">
+                                    <img src="img/cd_projects/project1/cd_project_img4.png" alt="Editing tasks" class="carousel-image">
+                                    <img src="img/cd_projects/project1/cd_project_img5.png" alt="Viewing newly added tasks" class="carousel-image">
+                                </div>
+                                <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                            </div>
+
+                            <h3 id="project1-learning">What I Learned</h3>
+                            <p>Improved my C# WinForms skills, implemented authentication and task flows, and gained experience collaborating effectively on a duo project.</p>
+
+                            <p class="project-links"><a href="https://github.com/Fabiollooo/winforms-todo-app" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                        </section>
+
+                        <section id="project3" class="project-card">
+                            <div class="project-header">
+                                <h2>Patient Management System</h2>
+                                <div class="project-meta">
+                                    <span class="meta-pill">C++</span>
+                                    <span class="meta-pill">Heap Queue</span>
+                                    <span class="meta-pill">OOP</span>
+                                </div>
+                            </div>
+
+                            <h3 id="project3-overview">Overview</h3>
+                            <p>A C++ console application for Accident & Emergency triage where patient priority determines service order via a heap-based queue.</p>
+
+                            <h3 id="project3-tech">Technologies Used</h3>
+                            <ul class="tech-list">
+                                <li>C++</li>
+                                <li>Priority Queue and Heap</li>
+                                <li>Object-Oriented Programming</li>
+                            </ul>
+
+                            <h3 id="project3-features">Features</h3>
+                            <ul class="feature-list">
+                                <li>Add patients with priority levels from 1-5</li>
+                                <li>Automatically queue by severity</li>
+                                <li>Call and remove next patient</li>
+                                <li>Search for patients by name</li>
+                                <li>Display queue status with priorities</li>
+                            </ul>
+
+                            <h3 id="project3-screenshots">Project Glimpse</h3>
+                            <div class="carousel">
+                                <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                                <div class="carousel-track">
+                                    <img src="img/cd_projects/project2/cd_project2_img1.png" alt="Program menu" class="carousel-image">
+                                    <img src="img/cd_projects/project2/cd_project2_img2.png" alt="Adding patients" class="carousel-image">
+                                    <img src="img/cd_projects/project2/cd_project2_img3.png" alt="Calling each patient" class="carousel-image">
+                                    <img src="img/cd_projects/project2/cd_project2_img4.png" alt="Printing current queue" class="carousel-image">
+                                    <img src="img/cd_projects/project2/cd_project2_img5.png" alt="Searching for patient" class="carousel-image">
+                                    <img src="img/cd_projects/project2/cd_project2_img6.png" alt="Displaying all patients" class="carousel-image">
+                                </div>
+                                <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                            </div>
+
+                            <h3 id="project3-learning">What I Learned</h3>
+                            <p>I strengthened my understanding of heaps and queue behavior, practiced object-oriented C++ design, and improved validation and dynamic update handling.</p>
+
+                            <p class="project-links"><a href="https://github.com/Fabiollooo/HospitalQueue" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                        </section>
+                    </main>
+                </div>
+            </div>
         </section>
-
-        
-        
-
     </main>
-  </div>
 
-
-
-
-  <footer>
-    <div class="footer-content">
-        <div class="footer-social">
-        <!--<a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
-        <a href="https://github.com/Fabiollooo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.facebook.com/Fabiollooo" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/fabiollooo" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <footer>
+        <div class="container py-4">
+            <div class="footer-grid">
+                <div class="footer-social">
+                    <a href="https://github.com/Fabiollooo" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/Fabiollooo" target="_blank" rel="noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fabiollooo" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        <div class="footer-contact">
-        <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
-        <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
-        </div>
-        <div class="footer-copy">
-        <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
-        </div>
-    </div>
     </footer>
 
+    <div id="paletteSwitcher" aria-label="Theme palette switcher">
+        <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div id="paletteSlider" role="menu" aria-label="Color palettes">
+            <ul>
+                <li data-step="0" title="Default" role="menuitem" tabindex="0"></li>
+                <li data-step="1" title="Gold" role="menuitem" tabindex="0"></li>
+                <li data-step="2" title="Rose" role="menuitem" tabindex="0"></li>
+                <li data-step="3" title="Obsidian" role="menuitem" tabindex="0"></li>
+                <li data-step="4" title="Ocean" role="menuitem" tabindex="0"></li>
+                <li data-step="5" title="Forest" role="menuitem" tabindex="0"></li>
+                <li data-step="6" title="Night" role="menuitem" tabindex="0"></li>
+            </ul>
+        </div>
+    </div>
 
-    
-    <script>
-        // Toggle dropdown menus
-
-        document.querySelectorAll(".dropdown button").forEach(btn => {
-        btn.addEventListener("click", () => {
-            btn.parentElement.classList.toggle("active");
-        });
-        });
-    </script>
-
-
-    
-    <script>
-        document.querySelectorAll('.carousel').forEach(carousel => {
-            const track = carousel.querySelector('.carousel-track');
-            const slides = carousel.querySelectorAll('.carousel-image');
-            const prevBtn = carousel.querySelector('.carousel-btn.prev');
-            const nextBtn = carousel.querySelector('.carousel-btn.next');
-
-            let currentIndex = 0;
-            const totalSlides = slides.length;
-
-            function updateCarousel() {
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel();
-            });
-
-            prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateCarousel();
-            });
-        });
-    </script>
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="Javascript/backgroundBubbles.js"></script>
+    <script src="Javascript/themeSwitcher.js"></script>
+    <script src="Javascript/projectsUI.js"></script>
 </body>
 </html>

@@ -403,12 +403,54 @@ a:focus-visible {
     color: var(--color-text-title);
 }
 
+.map-wrapper {
+    position: relative;
+    padding: 0.55rem;
+    border-radius: calc(var(--radius-md) + 4px);
+    border: 1px solid var(--color-border-strong);
+    background:
+        linear-gradient(155deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+    box-shadow: var(--shadow-soft), var(--shadow-glow);
+    overflow: hidden;
+}
+
+.map-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, color-mix(in srgb, var(--color-gold) 24%, transparent), transparent 50%);
+    pointer-events: none;
+}
+
+.map-wrapper::after {
+    content: attr(data-location);
+    position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border-strong);
+    background: rgba(0, 0, 0, 0.45);
+    color: var(--color-gold-light);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
 .map-wrapper iframe {
+    position: relative;
+    z-index: 1;
     width: 100%;
     min-height: 280px;
     border: 0;
     border-radius: var(--radius-md);
-    filter: saturate(0.8) contrast(1.02);
+    filter: grayscale(0.38) invert(0.9) hue-rotate(186deg) saturate(0.55) brightness(0.78) contrast(1.12);
+    transition: filter 0.25s ease;
+}
+
+.map-wrapper:hover iframe {
+    filter: grayscale(0.32) invert(0.88) hue-rotate(186deg) saturate(0.62) brightness(0.84) contrast(1.12);
 }
 
 .btn {
@@ -594,6 +636,20 @@ footer {
 #paletteSlider li[data-step="6"] { background: linear-gradient(130deg, #0d1117, #4c9aff); }
 
 /* Compatibility styles for projects pages */
+.page-hero {
+    border-color: var(--color-border-strong);
+}
+
+.page-title {
+    color: var(--color-text-title);
+    margin: 0;
+}
+
+.page-subtitle {
+    color: var(--color-text-muted);
+    max-width: 70ch;
+}
+
 .projects-layout {
     display: flex;
     max-width: 1200px;
@@ -610,6 +666,14 @@ footer {
     border: 1px solid var(--color-border-strong);
     border-radius: var(--radius-md);
     padding: 0.8rem;
+    position: sticky;
+    top: 96px;
+}
+
+.project-index-title {
+    color: var(--color-gold-light);
+    font-size: 1.1rem;
+    margin: 0 0 0.65rem;
 }
 
 .projects-layout main {
@@ -617,10 +681,57 @@ footer {
     min-width: 0;
 }
 
+.projects-layout main > .project-card + .project-card {
+    margin-top: 1.35rem;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.project-header h2 {
+    margin: 0;
+    color: var(--color-text-title);
+}
+
+.project-meta {
+    display: flex;
+    gap: 0.45rem;
+    flex-wrap: wrap;
+}
+
+.meta-pill {
+    border: 1px solid var(--color-border-strong);
+    border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+    font-size: 0.78rem;
+    color: var(--color-gold-light);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.project-links a {
+    display: inline-block;
+    border: 1px solid var(--color-border-strong);
+    border-radius: 8px;
+    padding: 0.45rem 0.8rem;
+    color: var(--color-gold-light);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.project-links a:hover {
+    background: var(--color-gold);
+    color: var(--color-accent-contrast);
+}
+
 .dropdown button {
     width: 100%;
-    background: none;
+    background: rgba(255, 255, 255, 0.03);
     border: 0;
+    border-radius: 8px;
     color: var(--color-gold-light);
     font-weight: 600;
     text-align: left;
@@ -632,6 +743,14 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0 0.65rem;
+}
+
+.dropdown ul li {
+    margin: 0.3rem 0;
+}
+
+.dropdown ul a {
+    display: inline-block;
 }
 
 .dropdown.active ul {
@@ -672,6 +791,7 @@ footer {
     .projects-layout aside {
         max-width: none;
         width: 100%;
+        position: static;
     }
 
     .skills-grid {
@@ -721,6 +841,12 @@ footer {
     #paletteSwitcher {
         left: 0.8rem;
         bottom: 0.8rem;
+    }
+
+    .map-wrapper::after {
+        font-size: 0.65rem;
+        left: 0.65rem;
+        top: 0.65rem;
     }
 
     .skills-grid {

@@ -3,204 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Projects</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <title>Group Projects | Fabian G</title>
+    <meta name="description" content="Group and collaboration projects by Fabian Golebiowski including leadership and delivery-focused work.">
+
     <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
-
-
-    <div id="particles-js" style="position:fixed; width:100%; height:100%;"></div>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="Javascript/backgroundBubbles.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
-
 <body>
-
-    <div class="navBar">
-        <ul class="navBar_left">
-            <li><a href="index.html">fabian();</a></li>
-        </ul>
-        
-        <ul class="navBar_right">
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="index.html#aboutMe_section"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="index.html#portfolio_section"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="index.html#contactMe_section"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </div>
+    <div id="particles-js" aria-hidden="true"></div>
 
     <header>
-        <h1>Group Project(s)</h1>
+        <nav class="navbar navbar-expand-lg professional-nav sticky-top" aria-label="Primary navigation">
+            <div class="container">
+                <a class="navbar-brand brand-mark" href="index.html">fabian();</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto gap-lg-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <div class="projects-layout">
-        <aside>
-            <h2>Projects</h2>
-
-            <div class="dropdown">
-            <button>#1 CampusSync ▾</button>
-            <ul>
-                <li><a href="#project1-overview">Overview</a></li>
-                <li><a href="#project1-roles">Roles</a></li>
-                <li><a href="#project1-team-collaboration">Team & Collaberations</a></li>
-                <li><a href="#project1-screenshots">Screenshots</a></li>
-                <li><a href="#project1-tech">Technologies</a></li>
-                 <li><a href="#project1-features">Features</a></li>
-                <li><a href="#project1-learning">What I Learned</a></li>
-                <li><a href="#project1-links">Links</a></li>
-            </ul>
-            </div>
-
-            <div class="dropdown">
-            <button>#2 Claddaghwatch (In construction) ▾</button>
-            <ul>
-                <li><a href="#project2-overview">Overview</a></li>
-                <li><a href="#project2-roles">Roles</a></li>
-                <li><a href="#project2-team-collaboration">Team & Collaberations</a></li>
-                <li><a href="#project2-screenshots">Screenshots</a></li>
-                <li><a href="#project2-tech">Technologies</a></li>
-                <li><a href="#project2-features">Features</a></li>
-                <li><a href="#project2-learning">What I Learned</a></li>
-                <li><a href="#project2-links">Links</a></li>
-            </ul>
-            </div>
-
-        </aside>
-        <section id="project1" class="project-card">
-            <h2>Campus Sync</h2>
-                <h3 id="project1-overview">Overview</h3>
-                    <p>A WinForms application for college library management, allowing students and staff to book rooms for study, meetings, and other activities.</p>
-                    <p>Built as a 3-person team to deliver a fully functional system with multiple user roles and real-time database integration.</p>
-            
-                <h3 id="project1-roles">Role(s) / Contribution</h3>
-                    <ul class="role-list">
-                        <li>Group leader: coordinated the team, maintained communication via WhatsApp and Discord.</li>
-                        <li>UI designer: Created UI for all user roles.</li>
-                        <li>Programmer: Programmed core coding responsibilities across the app.</li>
-                        <li>Documentation: Created doumentation with instructions & guidance for the team alongside with documenting the journey of the project.</li>
-                        <li>Database admin: Database setup and management (Azure virtual DB, college server DB, local backup).</li>
-                    </ul>
-
-                <h3 id="project1-team-collaboration">Team & Collaberations</h3>
-                    <ul class="team-collaboration-list">
-                        <li>Team size: 3 active members.</li>
-                        <li>Tools: GitHub (version control), DevOps (cloud control), Teams (weekly supervisor/client meetings).</li>
-                        <li>Weekly meetings with roleplay "supervisor" sessions for reporting progress and client feedback.</li>
-                    </ul>
-
-                <h3 id="project1-screenshots">Screenshots</h3>
-                <div class="carousel">
-                        <button class="carousel-btn prev">&#10094;</button>
-
-                        <div class="carousel-track">
-                            <img src="img/default/placeholder.png" alt="Coming soon" class="carousel-image">
-                        </div>
-
-                        <button class="carousel-btn next">&#10095;</button>
+    <main>
+        <section class="section-shell reveal-section">
+            <div class="container">
+                <div class="glass-panel section-panel page-hero">
+                    <p class="eyebrow mb-2">Portfolio Category</p>
+                    <h1 class="page-title">Group Projects</h1>
+                    <p class="page-subtitle mb-0">Team-led builds where leadership, communication, architecture, and delivery mattered as much as code.</p>
                 </div>
-
-                
-
-                <h3 id="project1-tech">Technologies Used</h3>
-                <ul>
-                    <li>C# WinForms</li>
-                    <li>MySQL (Azure, college server, local)</li>
-                    <li>DevOps & GitHub</li>
-                </ul>
-
-              
-                <h3 id="project1-features">Key Features</h3>
-                <ul>
-                    <li>Three user roles: Admin, Staff, Student.</li>
-                    <li>Admin: full CRUD of users and rooms.</li>
-                    <li>Staff & Student: room bookings with real-time validation.</li>
-                    <li>UI designed for each role with smooth user experience.</li>
-                    <li>Validation to prevent invalid bookings.</li>
-                </ul>
-
-                <h3 id="project1-learning">What I Learned</h3> 
-                <ul>
-                    <li>Time management due to semester workload and smaller team size.</li>
-                    <li>Setting up patching unrealiable frameworks.</li>
-                    <li>Managing multiple live databases simultaneously.</li>
-                    <li>Learned leadership, teamwork, real-world coding practices and UI design.</li>
-                </ul>
-
-
-                <p class="links">
-                    <a href="https://github.com/Fabiollooo/TUSAssetManagementSystem">GitHub Repo</a>
-                </p>
+            </div>
         </section>
 
+        <section class="section-shell pt-0 reveal-section">
+            <div class="container">
+                <div class="projects-layout">
+                    <aside>
+                        <h2 class="project-index-title">Project Index</h2>
 
+                        <div class="dropdown">
+                            <button aria-expanded="false">Claddaghwatch</button>
+                            <ul>
+                                <li><a href="#project2-overview">Overview</a></li>
+                                <li><a href="#project2-status">Status</a></li>
+                            </ul>
+                        </div>
 
+                        <div class="dropdown">
+                            <button aria-expanded="false">Campus Sync</button>
+                            <ul>
+                                <li><a href="#project1-overview">Overview</a></li>
+                                <li><a href="#project1-roles">Roles</a></li>
+                                <li><a href="#project1-team-collaboration">Team Collaboration</a></li>
+                                <li><a href="#project1-screenshots">Screenshots</a></li>
+                                <li><a href="#project1-tech">Technologies</a></li>
+                                <li><a href="#project1-features">Features</a></li>
+                                <li><a href="#project1-learning">What I Learned</a></li>
+                            </ul>
+                        </div>
+                    </aside>
 
+                    <main>
+                        <section id="project2" class="project-card">
+                            <div class="project-header">
+                                <h2>Claddaghwatch</h2>
+                                <div class="project-meta">
+                                    <span class="meta-pill">In Progress</span>
+                                    <span class="meta-pill">Team Project</span>
+                                </div>
+                            </div>
 
+                            <h3 id="project2-overview">Overview</h3>
+                            <p>Claddaghwatch is currently in active development. Full scope, screenshots, and delivery notes will be added after the next milestone.</p>
 
+                            <h3 id="project2-status">Status</h3>
+                            <p>Build and planning phase. Roadmap details will be published once architecture and prototype screens are finalized.</p>
+                        </section>
 
+                        <section id="project1" class="project-card">
+                            <div class="project-header">
+                                <h2>Campus Sync</h2>
+                                <div class="project-meta">
+                                    <span class="meta-pill">Team of 3</span>
+                                    <span class="meta-pill">WinForms</span>
+                                    <span class="meta-pill">Leadership</span>
+                                </div>
+                            </div>
 
-    <main>
-     
+                            <h3 id="project1-overview">Overview</h3>
+                            <p>A WinForms application for college room booking where students and staff reserve library spaces for study and meetings with role-based access.</p>
 
+                            <h3 id="project1-roles">Role and Contribution</h3>
+                            <ul class="feature-list">
+                                <li>Group lead with weekly planning and communication workflows</li>
+                                <li>UI designer for all role-specific interfaces</li>
+                                <li>Core developer across booking and validation logic</li>
+                                <li>Documentation owner for setup guides and progress reporting</li>
+                                <li>Database administration across Azure, college server, and local backup</li>
+                            </ul>
+
+                            <h3 id="project1-team-collaboration">Team Collaboration</h3>
+                            <ul class="feature-list">
+                                <li>Team size: 3 active members</li>
+                                <li>Tooling: GitHub, DevOps, Teams, WhatsApp, Discord</li>
+                                <li>Weekly review meetings and feedback loop sessions</li>
+                            </ul>
+
+                            <h3 id="project1-screenshots">Project Glimpse</h3>
+                            <div class="carousel">
+                                <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                                <div class="carousel-track">
+                                    <img src="img/default/placeholder.png" alt="Campus Sync preview placeholder" class="carousel-image">
+                                </div>
+                                <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                            </div>
+
+                            <h3 id="project1-tech">Technologies Used</h3>
+                            <ul class="tech-list">
+                                <li>C# WinForms</li>
+                                <li>MySQL (Azure, college server, local)</li>
+                                <li>DevOps and GitHub</li>
+                            </ul>
+
+                            <h3 id="project1-features">Key Features</h3>
+                            <ul class="feature-list">
+                                <li>Role-based flows: Admin, Staff, Student</li>
+                                <li>Admin-side full CRUD for users and rooms</li>
+                                <li>Real-time booking validation and availability checks</li>
+                                <li>Dedicated UI workflows for each user type</li>
+                            </ul>
+
+                            <h3 id="project1-learning">What I Learned</h3>
+                            <ul class="feature-list">
+                                <li>Prioritizing team delivery under semester constraints</li>
+                                <li>Coordinating code quality with a smaller team</li>
+                                <li>Managing multiple live database environments simultaneously</li>
+                                <li>Practical leadership and real-world collaboration habits</li>
+                            </ul>
+
+                            <p class="project-links"><a href="https://github.com/Fabiollooo/TUSAssetManagementSystem" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </section>
     </main>
-    </div>
-
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-social">
-            <!--<a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
-            <a href="https://github.com/Fabiollooo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.facebook.com/Fabiollooo" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/fabiollooo" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="footer-contact">
-            <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
-            <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
-            </div>
-            <div class="footer-copy">
-            <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
+        <div class="container py-4">
+            <div class="footer-grid">
+                <div class="footer-social">
+                    <a href="https://github.com/Fabiollooo" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/Fabiollooo" target="_blank" rel="noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/fabiollooo" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <div id="paletteSwitcher" aria-label="Theme palette switcher">
+        <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div id="paletteSlider" role="menu" aria-label="Color palettes">
+            <ul>
+                <li data-step="0" title="Default" role="menuitem" tabindex="0"></li>
+                <li data-step="1" title="Gold" role="menuitem" tabindex="0"></li>
+                <li data-step="2" title="Rose" role="menuitem" tabindex="0"></li>
+                <li data-step="3" title="Obsidian" role="menuitem" tabindex="0"></li>
+                <li data-step="4" title="Ocean" role="menuitem" tabindex="0"></li>
+                <li data-step="5" title="Forest" role="menuitem" tabindex="0"></li>
+                <li data-step="6" title="Night" role="menuitem" tabindex="0"></li>
+            </ul>
+        </div>
+    </div>
 
-    <script>
-        // Toggle dropdown menus
-        document.querySelectorAll(".dropdown button").forEach(btn => {
-            btn.addEventListener("click", () => {
-                btn.parentElement.classList.toggle("active");
-            });
-        });
-    </script>
-
-    <script>
-        document.querySelectorAll('.carousel').forEach(carousel => {
-            const track = carousel.querySelector('.carousel-track');
-            const slides = carousel.querySelectorAll('.carousel-image');
-            const prevBtn = carousel.querySelector('.carousel-btn.prev');
-            const nextBtn = carousel.querySelector('.carousel-btn.next');
-
-            let currentIndex = 0;
-            const totalSlides = slides.length;
-
-            function updateCarousel() {
-            track.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
-
-            nextBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel();
-            });
-
-            prevBtn.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-            updateCarousel();
-            });
-        });
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="Javascript/backgroundBubbles.js"></script>
+    <script src="Javascript/themeSwitcher.js"></script>
+    <script src="Javascript/projectsUI.js"></script>
 </body>
 </html>
