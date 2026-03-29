@@ -4,529 +4,326 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fabian G | Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+  <meta name="description" content="Fabian Golebiowski - Software Development student portfolio showcasing coding, web, and group projects.">
 
-      <div id="particles-js" style="position:fixed; width:100%; height:100%;"></div>
-      <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-      <script src="Javascript/backgroundBubbles.js"></script>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-    
-
-  
-
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/myParticles.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  </head>
-    
-    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
 <body>
-  <div id="particles-js"></div>
+  <div id="particles-js" aria-hidden="true"></div>
 
+  <header>
+    <nav class="navbar navbar-expand-lg professional-nav sticky-top" aria-label="Primary navigation">
+      <div class="container">
+        <a class="navbar-brand brand-mark" href="index.html">fabian();</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="navBar">
-        <ul class="navBar_left">
-            <li><a href="index.html">fabian();</a></li>
-        </ul>
-        
-        <ul class="navBar_right">
-            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#aboutMe_section"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#portfolio_section"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="#contactMe_section"><i class="fas fa-envelope"></i> Contact</a></li>
-            <!-- <li><a href="gallery.html"><i class="fas fa-envelope"></i> Gallery</a></li> -->
-
-        </ul>
-    </div>
-
-  <div class="main section fade-delay-1"> 
-
-
-
-    <img src="img/portraits/self_portrait.png" alt="Profile Picture" class="profile-image">
-    
-
-    <div class="info">
-      <div class="info_text-animate">
-        <h3>Hello there, I'm</h3>
-        <h2>Fabian Golebiowski</h2>
-        
-        
-        <h3>
-            And I'm a 
-            <span>
-                <span>CODER</span>
-                <span>PROGRAMMER</span>
-                <span>Developer</span>
-                <span>CODER</span>
-            </span>
-        </h3>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section-shell reveal-section">
+      <div class="container">
+        <div class="glass-panel hero-panel">
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-lg-7 order-2 order-lg-1">
+              <p class="eyebrow mb-2">Software Development Student</p>
+              <h1 class="display-5 hero-title mb-3">Fabian Golebiowski</h1>
+              <p class="hero-roles mb-3">
+                I build as a
+                <span class="role-stack" aria-live="polite">
+                  <span>Coder</span>
+                  <span>Programmer</span>
+                  <span>Developer</span>
+                  <span>Builder</span>
+                </span>
+              </p>
+              <p class="hero-copy mb-4">
+                Dedicated and ambitious Software Development student at TUS Moylish, focused on shipping clean, practical solutions across C++, C#, SQL, and modern web technologies.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="files/Fabian_Golebiowski_CV.pdf" class="btn btn-brand" download="Fabian_Golebiowski_CV.pdf">Download CV</a>
+                <a href="#contact" class="btn btn-outline-brand">Get In Touch</a>
+              </div>
+            </div>
+            <div class="col-lg-5 order-1 order-lg-2 text-center">
+              <div class="portrait-wrap">
+                <img src="img/portraits/self_portrait.png" alt="Portrait of Fabian Golebiowski" class="img-fluid hero-portrait">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-shell reveal-section">
+      <div class="container">
+        <div class="glass-panel section-panel">
+          <div class="row g-4 align-items-start">
+            <div class="col-xl-4 text-center text-xl-start">
+              <img src="img/portraits/self_portrait.png" alt="Fabian Golebiowski profile image" class="img-fluid about-portrait mb-3">
+              <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-xl-start">
+                <span class="chip">Polish (Fluent)</span>
+                <span class="chip">German (Basic)</span>
+                <span class="chip">Ireland Based</span>
+              </div>
+            </div>
+
+            <div class="col-xl-8">
+              <h2 class="section-title">About Me</h2>
+              <p>
+                I am Fabian Golebiowski, a third-year Software Development student at
+                <a href="https://tus.ie/campuses/moylish" target="_blank" rel="noreferrer">TUS Moylish Campus</a>.
+                I enjoy turning ideas into useful digital products, especially in web development and applied software projects.
+              </p>
+              <p>
+                Beyond coursework, I explore Unreal Engine game development, data-heavy workflows in Excel, and practical full-stack foundations.
+              </p>
+
+              <button class="btn btn-outline-brand btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#aboutDetails" aria-expanded="false" aria-controls="aboutDetails">
+                Read More
+              </button>
+
+              <div class="collapse mt-4" id="aboutDetails">
+                <h3 class="subsection-title">Technical Skills & Tools</h3>
+                <div class="skills-block mt-3">
+                  <h4 class="skills-heading">Languages</h4>
+                  <div class="skills-grid">
+                    <div class="text-icon-wrapper" title="HTML">
+                      <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                      <span>HTML</span>
+                    </div>
+                    <div class="text-icon-wrapper" title="CSS">
+                      <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                      <span>CSS</span>
+                    </div>
+                    <div class="text-icon-wrapper" title="PHP">
+                      <i class="fa-brands fa-php" aria-hidden="true"></i>
+                      <span>PHP</span>
+                    </div>
+                    <div class="text-icon-wrapper" title="SQL Server">
+                      <i class="fa-solid fa-database" aria-hidden="true"></i>
+                      <span>SQL</span>
+                    </div>
+                    <div class="text-icon-wrapper" title="C Sharp">
+                      <i class="fa-solid fa-code" aria-hidden="true"></i>
+                      <span>C#</span>
+                    </div>
+                    <div class="text-icon-wrapper" title="C Plus Plus">
+                      <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                      <span>C++</span>
+                    </div>
+                    <div class="text-icon-wrapper" title="Java">
+                      <i class="fa-brands fa-java" aria-hidden="true"></i>
+                      <span>Java</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills-block mt-4">
+                  <h4 class="skills-heading">Tools & Frameworks</h4>
+                  <div class="tool-pill-grid">
+                    <div class="tool-pill"><i class="fa-brands fa-laravel" aria-hidden="true"></i><span>Laravel</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-fire" aria-hidden="true"></i><span>CodeIgniter</span></div>
+                    <div class="tool-pill"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-code" aria-hidden="true"></i><span>VS Code</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span>Visual Studio</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-database" aria-hidden="true"></i><span>MySQL Workbench</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-server" aria-hidden="true"></i><span>XAMPP</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-network-wired" aria-hidden="true"></i><span>Cisco Packet Tracer</span></div>
+                    <div class="tool-pill"><i class="fa-solid fa-microchip" aria-hidden="true"></i><span>Arduino IDE</span></div>
+                    <div class="tool-pill"><i class="fa-brands fa-aws" aria-hidden="true"></i><span>AWS</span></div>
+                  </div>
+                </div>
+
+                <p class="mt-4 mb-2">
+                  I build with practical toolchains that support both software engineering and web development delivery from concept to deployment.
+                </p>
+
+                <h3 class="subsection-title mt-4">Leaving Certificate</h3>
+                <ul class="cert-list mb-2">
+                  <li>Polish: <strong>H1</strong></li>
+                  <li>Maths: <strong>O2</strong></li>
+                  <li>History: <strong>H3</strong></li>
+                  <li>Biology: <strong>H3</strong></li>
+                  <li>Geography: <strong>H3</strong></li>
+                  <li>English: <strong>H5</strong></li>
+                  <li>German: <strong>H5</strong></li>
+                  <li>Irish: <strong>F1</strong></li>
+                </ul>
+                <p class="mb-0"><strong>Total Points: 443</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section-shell reveal-section">
+      <div class="container">
+        <div class="glass-panel section-panel">
+          <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
+            <div>
+              <p class="eyebrow mb-1">Selected Work</p>
+              <h2 class="section-title mb-0">Portfolio</h2>
+            </div>
             
-        <p id="description">A dedicated and hard-working Software Development student at
-            TUS Moylish, eager to apply and expand skills in HTML, C++, C#,
-            SQL, and more through hands-on experience.</p>
-        
-        <a href="files/Fabian_Golebiowski_CV.pdf" download="Fabian_Golebiowski_CV.pdf" class="button_myCV">Download CV !</a>
-        
-        <a href="#contactMe_section" class="button_contactMe">Get in touch !</a> 
-        <!-- Add here -->
-      
-    </div>
-      
-  </div>
-
-  <div class="aboutMe section fade-delay-2" id="aboutMe_section">
-      
-      <img src="img/portraits/self_portrait.png" alt="Profile Picture" class="profile-image2">
-      
-      <div class="aboutMe_description">
-        
-        
-        <h2>About Me</h2>
-
-        <p>My name is Fabian Golebiowski, a <b>Software Development</b> student currently on my third year of studying at the <a href="https://tus.ie/campuses/moylish">TUS Moylish Campus</a>. I’m multilingual, <b>fluent in Polish</b> with <b>basic German</b> proficiency. My hobbies revolve around game <b>development in Unreal Engine</b>, experimenting with <b>Excel</b>, and pursuing my passion for <b>web development</b>.</p>
-
-
-          <input type="checkbox" id="toggleDetails">
-        
-          
-        <div class="extra-content">
-          
-        <br>
-        <h3><center>Technical Skills & Tools</center></h3>  
-        <hr class="Title_underline">  
-        
-
-        <div class="aboutme_icons">
-
-          <div class="icons-grid">
-            <div class="icon-wrapper">
-              <img src="img/icons/html-5.png" alt="iconHTML" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="img/icons/css.png" alt="iconCSS" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="img/icons/php.png" alt="iconPHP" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="img/icons/sql-server.png" alt="iconSQL" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="img/icons/c-sharp.png" alt="iconC#" />
-            </div>
-            <div class="icon-wrapper">
-              <img src="img/icons/c-.png" alt="iconC++" />
-            </div>
           </div>
 
-         <div class="vertical-text">
-            <span>L</span>
-            <span>A</span>
-            <span>N</span>
-            <span>G</span>
-            <span>U</span>
-            <span>A</span>
-            <span>G</span>
-            <span>E</span>
-            <span>S</span>
+          <div class="row g-4 portfolio-grid">
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card h-100">
+                <h3>Coding Projects</h3>
+                <p>Programming-focused builds using C++, C#, and problem-solving fundamentals.</p>
+                <a href="codingProjects.html" class="btn btn-outline-brand mt-auto">View Projects</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card h-100">
+                <h3>Web Development</h3>
+                <p>Responsive website projects built with HTML, CSS, JavaScript, and PHP patterns.</p>
+                <a href="webDevProjects.html" class="btn btn-outline-brand mt-auto">View Projects</a>
+              </article>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card h-100">
+                <h3>Group Projects</h3>
+                <p>Collaborative projects emphasizing planning, communication, and team delivery.</p>
+                <a href="groupProjects.html" class="btn btn-outline-brand mt-auto">View Projects</a>
+              </article>
+            </div>
           </div>
-
         </div>
-        
-        <hr>
+      </div>
+    </section>
 
+    <section id="contact" class="section-shell reveal-section">
+      <div class="container">
+        <div class="glass-panel section-panel">
+          <h2 class="section-title text-center mb-4">Get In Touch</h2>
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-6">
+              <div class="contact-copy h-100">
+                <h3>Let's work together</h3>
+                <p>
+                  I am always interested in new opportunities and impactful projects. If you want to collaborate or discuss a role, send a message and I will get back to you.
+                </p>
 
+                <div class="map-wrapper mt-3">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8011.763446637831!2d-8.625313043378446!3d52.66504132156196!2m3!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5d18997bdd13%3A0xe1f2a1f56e5a2e5a!2sIM%20Properties!5e1!3m2!1sen!2spl!4v1754594709181!5m2!1sen!2spl"
+                    title="Map of Limerick"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-lg-6">
+              <form class="contact-form h-100" action="https://formsubmit.co/13e5f2c2b4c05db14cc10a435d59b30e" method="POST">
+                <input type="hidden" name="_next" value="https://fabiollooo.github.io/github-portfolio">
+                <input type="hidden" name="_captcha" value="false">
 
-        <p> I frequently work with tools like <b>Visual Studio</b>, <b>Visual Studio Code</b>, and <b></b>MySQL Workbench</b>.  I also have experience with <b>XAMPP</b> for local server setups, <b>Cisco Packet Tracer</b> for network simulation, and the <b>Arduino IDE</b> for embedded systems programming.</p>
-        <p>Additionally, I’ve worked with cloud platforms like <b>Amazon AWS</b> and manage code versioning using <b>GitHub</b>.</p>
+                <div class="mb-3">
+                  <label class="form-label" for="name">Name</label>
+                  <input class="form-control" type="text" name="fname" id="name" autocomplete="off" required>
+                </div>
 
-    
-          
-          
-              <center><h3>Leaving Certificate</h3></center>
-              <hr class="Title_underline">
+                <div class="mb-3">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-control" type="email" name="email" id="email" required>
+                </div>
 
-            <p>I have completed a total of <b>8</b> subjects in the leaving certificate with the total points aquired of <b>443</b>.</p>
-            <p>The following subjects and their grade are the following: </p>
-             <ul>
-                <li>Polish: <b>H1</b></li>
-                <li>Maths: <b>O2</b></li>
-                <li>History: <b>H3</b></li>
-                <li>Biology: <b>H3</b></li>
-                <li>Geography: <b>H3</b></li>
-                <li>English: <b>H5</b></li>
-                <li>German: <b>H5</b></li>
-                <li>Irish: <b>F1</b></li>
-             </ul>
-              
-              <hr id="aboutme_educationTotal">
-              <p><b>TOTAL: 443</b></p>
-              <br>
-              <br>
-              
-              
-              <center><h3>Hobbies</h3></center>
-              <hr class="Title_underline">
-              
-              <p>Web development is not just an interest, it’s my passion. I aspire to create websites that are user-friendly, visually engaging, and functional, while continuously expanding my knowledge and sharpening my skills through every project I take on.</p>
-              
-              
-              
+                <div class="mb-3">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input class="form-control" type="text" name="subject" id="subject" autocomplete="off" required>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label" for="comment">Message</label>
+                  <textarea class="form-control" id="comment" name="query" rows="5" required></textarea>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <button type="submit" class="btn btn-brand">Submit</button>
+                  <button type="reset" class="btn btn-outline-brand">Reset</button>
+                </div>
+              </form>
+            </div>
           </div>
-        
-          <label for="toggleDetails" class="toggle-button">Read More</label>
-          
-
-          
-      </div>
-      
-  </div>
-
-    
-    
-    
-    
-    
-    
-  <div class="Portfolio section fade-delay-3" id="portfolio_section">
-    
-
-      <h2><center>Portfolio</center></h2>
-      <hr>
-
-      <div class="portfolio_items">
-        <div class="portfolio_item1 fade-slide-up portfolio_delay1">
-            <h3>Coding Projects</h3>
-            <p>Here are coding projects that showcase my skills in programming languages like C++ and C#.</p>
-            <a href="codingProjects.html" class="button_view">View Projects</a>
         </div>
-        
-        <div class="portfolio_item3 fade-slide-up portfolio_delay2">
-            <h3>Web Dev. Projects</h3>
-            <p>Here are projects that focus on web development using languages like HTML, CSS, PHP, and JavaScript.</p>
-            <a href="webDevProjects.html" class="button_view">View Projects</a>
-        </div>
-
-        <div class="portfolio_item2 fade-slide-up portfolio_delay3">
-            <h3>Group Based Projects</h3>
-            <p>Here are projects developed in teams, showcasing collaboration, problem-solving, and coding skills across different technologies and frameworks.</p>
-            <a href="groupProjects.html" class="button_view">View Projects</a>
-        </div>
-
-       
-    </div>
-
-      
-  </div>    
-    
-    
-    
-    
-    
-    
-    
-<div class="contactME section fade-delay-4" id="contactMe_section">
-  <h2>GET IN TOUCH</h2>
-  <hr>  
-
-  <div class="leftRight">
-    <div class="description_contactME">
-      <h3>Let's work together !</h3>
-      <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, please waste no more time getting in touch !</p>
-      
-      
-      <div class="map_wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8011.763446637831!2d-8.625313043378446!3d52.66504132156196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5d18997bdd13%3A0xe1f2a1f56e5a2e5a!2sIM%20Properties!5e1!3m2!1sen!2spl!4v1754594709181!5m2!1sen!2spl"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
       </div>
-    </div>
+    </section>
+  </main>
 
-    
-    <div class="form_contactME" id="contactMe_section">
-      <div class="form_container">
-        
-          <form action="https://formsubmit.co/13e5f2c2b4c05db14cc10a435d59b30e" method="POST">
-            <input type="hidden" name="_next" value="https://fabiollooo.github.io/github-portfolio">
-            <input type="hidden" name="_captcha" value="false">
-
-            <p><input class="input-box" type="text" name="fname" id="name" placeholder="Name" autocomplete="off" required></p>
-            <p><input class="input-box" type="email" name="email" id="email" placeholder="E-mail" required></p>
-            <p><input class="input-box" type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off" required></p>
-            <textarea class="input-box" id="comment" name="query" placeholder="Enter your comment" required></textarea>
-            <p>
-              <input type="submit" value="Submit" id="submit-btn">
-              <input type="reset">
-            </p>
-          </form>
-        
-
-        
-      </div>
-    </div>
-  </div>
-
-
-</div>
-
-<button id="scrollToTopBtn" title="Go to top">
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
     <i class="fas fa-arrow-up"></i>
-</button>
-
-
-<footer>
-  <div class="footer-content">
-    <div class="footer-social">
-      <!--<a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> -->
-      <a href="https://github.com/Fabiollooo" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.facebook.com/Fabiollooo" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.instagram.com/fabiollooo" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    </div>
-    <div class="footer-contact">
-      <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
-      <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
-      <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
-    </div>
-    <div class="footer-copy">
-      <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
-    </div>
-  </div>
-</footer>
-
-
-
-
-<!-- Add possible language change to Polish-->
-
-
-
-
-
-
-<script>
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-    window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-            scrollToTopBtn.classList.add("show");
-        } else {
-            scrollToTopBtn.classList.remove("show");
-        }
-    });
-
-    scrollToTopBtn.addEventListener("click", () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-</script>
-
-
-<script>
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
-</script>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const fadeSections = document.querySelectorAll(
-        '.main.section, .aboutMe.section, .Portfolio.section, .contactME.section'
-    );
-
-    fadeSections.forEach(section => {
-        section.classList.add('fade-in-section');
-    });
-
-    function handleFadeIn() {
-        fadeSections.forEach(section => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 60) {
-                section.classList.add('visible');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', handleFadeIn);
-    handleFadeIn(); 
-});
-</script>
-
-
-
-<!-- Palette Switcher Button & Slider -->
-<div id="paletteSwitcher">
-  <button id="paletteBtn">
-    <i class="fas fa-palette"></i>
   </button>
-  <div id="paletteSlider">
-    <ul>
-      <li data-step="0" title="Default"></li>
-      <li data-step="1" title="Ocean"></li>
-      <li data-step="2" title="Sunset"></li>
-      <li data-step="3" title="Forest"></li>
-      <li data-step="4" title="Rose"></li>
-      <li data-step="5" title="Night"></li>
-      <li data-step="6" title="Sky"></li>
-      <li data-step="7" title="Candy"></li>
-      <li data-step="8" title="Obsidian"></li>
-    </ul>
+
+  <footer>
+    <div class="container py-4">
+      <div class="footer-grid">
+        <div class="footer-social">
+          <a href="https://github.com/Fabiollooo" target="_blank" rel="noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/Fabiollooo" target="_blank" rel="noreferrer" title="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/fabiollooo" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <div class="footer-contact">
+          <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
+        </div>
+
+        <div class="footer-copy">
+          <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="paletteSwitcher" aria-label="Theme palette switcher">
+    <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider">
+      <i class="fas fa-palette"></i>
+    </button>
+    <div id="paletteSlider" role="menu" aria-label="Color palettes">
+      <ul>
+        <li data-step="0" title="Default" role="menuitem" tabindex="0"></li>
+        <li data-step="1" title="Gold" role="menuitem" tabindex="0"></li>
+        <li data-step="2" title="Rose" role="menuitem" tabindex="0"></li>
+        <li data-step="3" title="Obsidian" role="menuitem" tabindex="0"></li>
+        <li data-step="4" title="Ocean" role="menuitem" tabindex="0"></li>
+        <li data-step="5" title="Forest" role="menuitem" tabindex="0"></li>
+        <li data-step="6" title="Night" role="menuitem" tabindex="0"></li>
+      </ul>
+    </div>
   </div>
-</div>
 
-<script>
-// Palette definitions
-const palettes = [
-  // Default
-  {
-    '--color-bg-main': '#1e1e1e',
-    '--color-bg-gradient-start': '#0d0d0d',
-    '--color-bg-gradient-end': '#1a1a1a',
-    '--color-gold': '#FFD700',
-    '--color-gold-light': '#FFE066',
-    '--color-gold-dark': '#B8860B',
-    '--color-text-main': '#CCCCCC',
-    '--color-text-title': '#2c3e50'
-  },
-  // Ocean 
-  {
-    '--color-bg-main': '#2c5364',
-    '--color-bg-gradient-start': '#0f2027',
-    '--color-bg-gradient-end': '#2c5364',
-    '--color-gold': '#00c3ff',
-    '--color-gold-light': '#74ebd5',
-    '--color-gold-dark': '#005a87',
-    '--color-text-main': '#e0f7fa',
-    '--color-text-title': '#145374'
-  },
-  // Sunset
-  {
-    '--color-bg-main': '#f7cac9',
-    '--color-bg-gradient-start': '#ffe5d9',
-    '--color-bg-gradient-end': '#f7cac9',
-    '--color-gold': '#e29578',
-    '--color-gold-light': '#ffd6a5',
-    '--color-gold-dark': '#b5838d',
-    '--color-text-main': '#5e5e5e',
-    '--color-text-title': '#e29578'
-  },
-  // Forest
-  {
-    '--color-bg-main': '#0f2e2c',                       
-    '--color-bg-gradient-start': '#193c3a',
-    '--color-bg-gradient-end': '#0f2e2c',
-    '--color-gold': '#6df29a',                          
-    '--color-gold-light': '#a0ffd6',
-    '--color-gold-dark': '#1b604b',
-    '--color-text-main': '#d1ffec',                     
-    '--color-text-title': '#6df29a'
-  },
-  // Rose
-  {
-    '--color-bg-main': '#1e0a16',                      
-    '--color-bg-gradient-start': '#330e24',             
-    '--color-bg-gradient-end': '#1e0a16',
-    '--color-gold': '#ff4f81',                         
-    '--color-gold-light': '#ffa0b9',                    
-    '--color-gold-dark': '#7a003f',                     
-    '--color-text-main': '#fce8ef',                    
-    '--color-text-title': '#ff4f81'  
-  },
-  // Cinematic Night 
-  {
-    '--color-bg-main': '#0d1117',                      
-    '--color-bg-gradient-start': '#0d1117',
-    '--color-bg-gradient-end': '#1c1f26',               
-    '--color-gold': '#4c9aff',                         
-    '--color-gold-light': '#a8cfff',                   
-    '--color-gold-dark': '#1a3c6e',                     
-    '--color-text-main': '#d6dde4',                     
-    '--color-text-title': '#4c9aff' 
-  },
-  // Nocturne Sky
-  {
-    '--color-bg-main': '#0b1a2e',                       
-    '--color-bg-gradient-start': '#142c47',
-    '--color-bg-gradient-end': '#0b1a2e',
-    '--color-gold': '#79b8ff',                          
-    '--color-gold-light': '#b3dfff',
-    '--color-gold-dark': '#1e4e8c',
-    '--color-text-main': '#cce6ff',                     
-    '--color-text-title': '#79b8ff'
-  },
-  // Candy
-  {
-    '--color-bg-main': '#1a001f',                       
-    '--color-bg-gradient-start': '#2e0033',
-    '--color-bg-gradient-end': '#1a001f',
-    '--color-gold': '#ff5cf0',                          
-    '--color-gold-light': '#ffb3f5',
-    '--color-gold-dark': '#9b009b',
-    '--color-text-main': '#ffe6fb',                     
-    '--color-text-title': '#ff5cf0'
-  },
-
-  // Obsidian 
-  {
-    '--color-bg-main': '#0c0a0f',                        
-    '--color-bg-gradient-start': '#1a1a2e',
-    '--color-bg-gradient-end': '#0c0a0f',
-    '--color-gold': '#9e6eff',                           
-    '--color-gold-light': '#c8a2ff',                    
-    '--color-gold-dark': '#5e2b97',                      
-    '--color-text-main': '#d8d8e7',                      
-    '--color-text-title': '#9e6eff'                      
-  }
-];
-
-const paletteBtn = document.getElementById('paletteBtn');
-const paletteSlider = document.getElementById('paletteSlider');
-const paletteSteps = paletteSlider.querySelectorAll('li');
-
-let currentStep = 0;
-
-// Toggle slider
-paletteBtn.addEventListener('click', () => {
-  paletteSlider.classList.toggle('active');
-});
-
-// Change palette
-paletteSteps.forEach((step, idx) => {
-  step.addEventListener('click', () => {
-    setPalette(idx);
-    paletteSlider.classList.remove('active');
-  });
-});
-
-function setPalette(idx) {
-  currentStep = idx;
-  paletteSteps.forEach(s => s.classList.remove('selected'));
-  paletteSteps[idx].classList.add('selected');
-  const palette = palettes[idx];
-  Object.keys(palette).forEach(key => {
-    document.documentElement.style.setProperty(key, palette[key]);
-  });
-}
-
-// Initialize default palette
-setPalette(0);
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="Javascript/backgroundBubbles.js"></script>
+  <script src="Javascript/themeSwitcher.js"></script>
+  <script src="Javascript/interactions.js"></script>
 </body>
 </html>
