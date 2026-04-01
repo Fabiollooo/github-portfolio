@@ -141,6 +141,58 @@ a:focus-visible {
     background: var(--color-gold);
 }
 
+.nav-language-item {
+    display: flex;
+    align-items: center;
+}
+
+.lang-toggle {
+    border: 1px solid var(--color-border-strong);
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--color-text-main);
+    border-radius: 999px;
+    padding: 0.2rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.16rem;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    position: relative;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+    border-color: var(--color-gold);
+}
+
+.lang-option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.36rem 0.56rem;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--color-text-main);
+    font-weight: 700;
+    transition: all 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+}
+
+.lang-option.active {
+    background: var(--color-gold);
+    color: var(--color-accent-contrast);
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.28);
+}
+
+.lang-separator {
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    padding: 0 0.08rem;
+    pointer-events: none;
+}
+
 .eyebrow {
     display: inline-flex;
     padding: 0.25rem 0.75rem;

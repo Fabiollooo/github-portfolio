@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fabian G | Portfolio</title>
-  <meta name="description" content="Fabian Golebiowski - Software Development student portfolio showcasing coding, web, and group projects.">
+  <title data-i18n-title="pageTitle">Fabian G | Portfolio</title>
+  <meta name="description" content="Fabian Golebiowski - Software Development student portfolio showcasing coding, web, and group projects." data-i18n-meta-description="pageDescription">
 
   <link rel="icon" type="image/x-icon" href="img/icons/favicon2.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,20 +20,27 @@
   <div id="particles-js" aria-hidden="true"></div>
 
   <header>
-    <nav class="navbar navbar-expand-lg professional-nav sticky-top" aria-label="Primary navigation">
+    <nav class="navbar navbar-expand-lg professional-nav sticky-top" aria-label="Primary navigation" data-i18n-aria-label="primaryNavigation">
       <div class="container">
         <a class="navbar-brand brand-mark" href="index.html">fabian();</a>
-        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" data-i18n-aria-label="toggleNavigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="#home"><i class="bi bi-house-door me-1" aria-hidden="true"></i>Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person me-1" aria-hidden="true"></i>About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="bi bi-briefcase me-1" aria-hidden="true"></i>Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope me-1" aria-hidden="true"></i>Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1" aria-hidden="true"></i>Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#home"><i class="bi bi-house-door me-1" aria-hidden="true"></i><span data-i18n="navHome">Home</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#about"><i class="bi bi-person me-1" aria-hidden="true"></i><span data-i18n="navAbout">About</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="bi bi-briefcase me-1" aria-hidden="true"></i><span data-i18n="navPortfolio">Portfolio</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact"><i class="bi bi-envelope me-1" aria-hidden="true"></i><span data-i18n="navContact">Contact</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1" aria-hidden="true"></i><span data-i18n="navGallery">Gallery</span></a></li>
+            <li class="nav-item nav-language-item">
+              <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language" data-i18n-aria-label="switchLanguage" title="Switch language">
+                <span class="lang-option" data-lang="en">EN</span>
+                <span class="lang-separator">/</span>
+                <span class="lang-option" data-lang="pl">PL</span>
+              </button>
+            </li>
           </ul>
         </div>
       </div>
@@ -46,23 +53,23 @@
         <div class="glass-panel hero-panel">
           <div class="row align-items-center g-4 g-lg-5">
             <div class="col-lg-7 order-2 order-lg-1">
-              <p class="eyebrow mb-2">Software Development Student</p>
+              <p class="eyebrow mb-2" data-i18n="heroEyebrow">Software Development Student</p>
               <h1 class="display-5 hero-title mb-3">Fabian Golebiowski</h1>
               <p class="hero-roles mb-3">
-                I build as a
+                <span data-i18n="heroBuildAs">I build as a</span>
                 <span class="role-stack" aria-live="polite">
-                  <span>Coder</span>
-                  <span>Programmer</span>
-                  <span>Developer</span>
-                  <span>Builder</span>
+                  <span data-i18n="heroRole1">Coder</span>
+                  <span data-i18n="heroRole2">Programmer</span>
+                  <span data-i18n="heroRole3">Developer</span>
+                  <span data-i18n="heroRole4">Builder</span>
                 </span>
               </p>
-              <p class="hero-copy mb-4">
+              <p class="hero-copy mb-4" data-i18n="heroCopy">
                 Dedicated and ambitious Software Development student at TUS Moylish, focused on shipping clean, practical solutions across C++, C#, SQL, and modern web technologies.
               </p>
               <div class="d-flex flex-wrap gap-3">
-                <a href="files/Fabian_Golebiowski_CV.pdf" class="btn btn-brand" download="Fabian_Golebiowski_CV.pdf">Download CV</a>
-                <a href="#contact" class="btn btn-outline-brand">Get In Touch</a>
+                <a href="files/Fabian_Golebiowski_CV.pdf" class="btn btn-brand" download="Fabian_Golebiowski_CV.pdf" data-i18n="downloadCv">Download CV</a>
+                <a href="#contact" class="btn btn-outline-brand" data-i18n="getInTouch">Get In Touch</a>
               </div>
             </div>
             <div class="col-lg-5 order-1 order-lg-2 text-center">
@@ -89,24 +96,24 @@
             </div>
 
             <div class="col-xl-8">
-              <h2 class="section-title">About Me</h2>
-              <p>
+              <h2 class="section-title" data-i18n="aboutTitle">About Me</h2>
+              <p data-i18n-html="aboutP1">
                 I am Fabian Golebiowski, a third-year Software Development student at
                 <a href="https://tus.ie/campuses/moylish" target="_blank" rel="noreferrer">TUS Moylish Campus</a>.
                 I enjoy turning ideas into useful digital products, especially in web development and applied software projects.
               </p>
-              <p>
+              <p data-i18n="aboutP2">
                 Beyond coursework, I explore Unreal Engine game development, data-heavy workflows in Excel, and practical full-stack foundations.
               </p>
 
-              <button class="btn btn-outline-brand btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#aboutDetails" aria-expanded="false" aria-controls="aboutDetails">
+              <button class="btn btn-outline-brand btn-sm mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#aboutDetails" aria-expanded="false" aria-controls="aboutDetails" data-i18n="readMore">
                 Read More
               </button>
 
               <div class="collapse mt-4" id="aboutDetails">
-                <h3 class="subsection-title">Technical Skills & Tools</h3>
+                <h3 class="subsection-title" data-i18n="skillsTitle">Technical Skills & Tools</h3>
                 <div class="skills-block mt-3">
-                  <h4 class="skills-heading">Languages</h4>
+                  <h4 class="skills-heading" data-i18n="skillsLanguages">Languages</h4>
                   <div class="skills-grid">
                     <div class="text-icon-wrapper" title="HTML">
                       <i class="fa-brands fa-html5" aria-hidden="true"></i>
@@ -140,7 +147,7 @@
                 </div>
 
                 <div class="skills-block mt-4">
-                  <h4 class="skills-heading">Tools & Frameworks</h4>
+                  <h4 class="skills-heading" data-i18n="skillsTools">Tools & Frameworks</h4>
                   <div class="tool-pill-grid">
                     <div class="tool-pill"><i class="fa-brands fa-laravel" aria-hidden="true"></i><span>Laravel</span></div>
                     <div class="tool-pill"><i class="fa-solid fa-fire" aria-hidden="true"></i><span>CodeIgniter</span></div>
@@ -155,23 +162,35 @@
                   </div>
                 </div>
 
-                <p class="mt-4 mb-2">
+                <p class="mt-4 mb-2" data-i18n="skillsSummary">
                   I build with practical toolchains that support both software engineering and web development delivery from concept to deployment.
                 </p>
 
-                <h3 class="subsection-title mt-4">Leaving Certificate</h3>
+                <h3 class="subsection-title mt-4" data-i18n="educationTitle">Education</h3>
                 <ul class="cert-list mb-2">
-                  <li>Polish: <strong class="lc-result">H1</strong></li>
-                  <li>Maths: <strong class="lc-result">O2</strong></li>
-                  <li>History: <strong class="lc-result">H3</strong></li>
-                  <li>Biology: <strong class="lc-result">H3</strong></li>
-                  <li>Geography: <strong class="lc-result">H3</strong></li>
-                  <li>English: <strong class="lc-result">H5</strong></li>
-                  <li>German: <strong class="lc-result">H5</strong></li>
-                  <li>Irish: <strong class="lc-result">F1</strong></li>
+                  <li>
+                    <strong data-i18n="educationCollegeLabel">College:</strong> <a href="https://www.tus.ie/" target="_blank" rel="noreferrer">TUS Moylish Campus, Limerick</a>
+                    <br>
+                    <small style="color: var(--color-text-soft);" data-i18n="educationCollegeCourse">BSc in Software Development 2023-2027</small>
+                  </li>
+                  <li class="mt-2">
+                    <strong data-i18n="educationSecondaryLabel">Secondary School:</strong> <a href="https://www.facebook.com/stmunchins" target="_blank" rel="noreferrer"> St. Munchins College, Limerick</a>
+                  </li>
+                </ul>
+
+                <h4 class="skills-heading mt-4" data-i18n="leavingTitle">Leaving Certificate Results</h4>
+                <ul class="cert-list mb-2">
+                  <li><span data-i18n="subjectPolish">Polish:</span> <strong class="lc-result">H1</strong></li>
+                  <li><span data-i18n="subjectMaths">Maths:</span> <strong class="lc-result">O2</strong></li>
+                  <li><span data-i18n="subjectHistory">History:</span> <strong class="lc-result">H3</strong></li>
+                  <li><span data-i18n="subjectBiology">Biology:</span> <strong class="lc-result">H3</strong></li>
+                  <li><span data-i18n="subjectGeography">Geography:</span> <strong class="lc-result">H3</strong></li>
+                  <li><span data-i18n="subjectEnglish">English:</span> <strong class="lc-result">H5</strong></li>
+                  <li><span data-i18n="subjectGerman">German:</span> <strong class="lc-result">H5</strong></li>
+                  <li><span data-i18n="subjectIrish">Irish:</span> <strong class="lc-result">F1</strong></li>
                 </ul>
                 <p class="mb-0" style="color: var(--color-text-main);">
-                  <strong>Total Points: <span class="lc-result">443</span></strong>
+                  <strong><span data-i18n="totalPoints">Total Points:</span> <span class="lc-result">443</span></strong>
                 </p>
               </div>
             </div>
@@ -185,8 +204,8 @@
         <div class="glass-panel section-panel">
           <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
             <div>
-              <p class="eyebrow mb-1">Selected Work</p>
-              <h2 class="section-title mb-0">Portfolio</h2>
+              <p class="eyebrow mb-1" data-i18n="selectedWork">Selected Work</p>
+              <h2 class="section-title mb-0" data-i18n="portfolioTitle">Portfolio</h2>
             </div>
             
           </div>
@@ -194,25 +213,25 @@
           <div class="row g-4 portfolio-grid">
             <div class="col-md-6 col-xl-4">
               <article class="project-card h-100">
-                <h3>Coding Projects</h3>
-                <p>Programming-focused builds using C++, C#, and problem-solving fundamentals.</p>
-                <a href="codingProjects.html" class="btn btn-outline-brand mt-auto">View Projects</a>
+                <h3 data-i18n="codingProjectsTitle">Coding Projects</h3>
+                <p data-i18n="codingProjectsDesc">Programming-focused builds using C++, C#, and problem-solving fundamentals.</p>
+                <a href="codingProjects.html" class="btn btn-outline-brand mt-auto" data-i18n="viewProjects">View Projects</a>
               </article>
             </div>
 
             <div class="col-md-6 col-xl-4">
               <article class="project-card h-100">
-                <h3>Web Development</h3>
-                <p>Responsive website projects built with HTML, CSS, JavaScript, and PHP patterns.</p>
-                <a href="webDevProjects.html" class="btn btn-outline-brand mt-auto">View Projects</a>
+                <h3 data-i18n="webProjectsTitle">Web Development</h3>
+                <p data-i18n="webProjectsDesc">Responsive website projects built with HTML, CSS, JavaScript, and PHP patterns.</p>
+                <a href="webDevProjects.html" class="btn btn-outline-brand mt-auto" data-i18n="viewProjects">View Projects</a>
               </article>
             </div>
 
             <div class="col-md-6 col-xl-4">
               <article class="project-card h-100">
-                <h3>Group Projects</h3>
-                <p>Collaborative projects emphasizing planning, communication, and team delivery.</p>
-                <a href="groupProjects.html" class="btn btn-outline-brand mt-auto">View Projects</a>
+                <h3 data-i18n="groupProjectsTitle">Group Projects</h3>
+                <p data-i18n="groupProjectsDesc">Collaborative projects emphasizing planning, communication, and team delivery.</p>
+                <a href="groupProjects.html" class="btn btn-outline-brand mt-auto" data-i18n="viewProjects">View Projects</a>
               </article>
             </div>
           </div>
@@ -223,16 +242,16 @@
     <section id="contact" class="section-shell reveal-section">
       <div class="container">
         <div class="glass-panel section-panel">
-          <h2 class="section-title text-center mb-4">Get In Touch</h2>
+          <h2 class="section-title text-center mb-4" data-i18n="contactTitle">Get In Touch</h2>
           <div class="row g-4 align-items-stretch">
             <div class="col-lg-6">
               <div class="contact-copy h-100">
-                <h3>Let's work together</h3>
-                <p>
+                <h3 data-i18n="contactHeading">Let's work together</h3>
+                <p data-i18n="contactCopy">
                   I am always interested in new opportunities and impactful projects. If you want to collaborate or discuss a role, send a message and I will get back to you.
                 </p>
 
-                <div class="map-wrapper mt-3" data-location="Limerick, Ireland">
+                <div class="map-wrapper mt-3" data-location="Limerick, Ireland" data-i18n-data-location="mapLocation">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1711.004051660929!2d-8.623141627620814!3d52.664942127824645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c68ee01b481%3A0x2af1139416c0adac!2sGreengate%20House%2C%20Carr%20St%2C%20Irishtown%2C%20Limerick%2C%20V94%20C9D6!5e0!3m2!1sen!2sie!4v1774826688033!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
@@ -244,28 +263,28 @@
                 <input type="hidden" name="_captcha" value="false">
 
                 <div class="mb-3">
-                  <label class="form-label" for="name">Name</label>
+                  <label class="form-label" for="name" data-i18n="labelName">Name</label>
                   <input class="form-control" type="text" name="fname" id="name" autocomplete="off" required>
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label" for="email">Email</label>
+                  <label class="form-label" for="email" data-i18n="labelEmail">Email</label>
                   <input class="form-control" type="email" name="email" id="email" required>
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label" for="subject">Subject</label>
-                  <input class="form-control" type="text" name="subject" id="subject" autocomplete="off" required>
+                  <label class="form-label" for="subject" data-i18n="labelSubject">Subject</label>
+                  <input class="form-control" type="text" name="subject" id="subject" autocomplete="off" required data-i18n-placeholder="placeholderSubject" placeholder="Subject">
                 </div>
 
                 <div class="mb-3">
-                  <label class="form-label" for="comment">Message</label>
-                  <textarea class="form-control" id="comment" name="query" rows="5" required></textarea>
+                  <label class="form-label" for="comment" data-i18n="labelMessage">Message</label>
+                  <textarea class="form-control" id="comment" name="query" rows="5" required data-i18n-placeholder="placeholderMessage" placeholder="Your message"></textarea>
                 </div>
 
                 <div class="d-flex flex-wrap gap-2">
-                  <button type="submit" class="btn btn-brand">Submit</button>
-                  <button type="reset" class="btn btn-outline-brand">Reset</button>
+                  <button type="submit" class="btn btn-brand" data-i18n="submit">Submit</button>
+                  <button type="reset" class="btn btn-outline-brand" data-i18n="reset">Reset</button>
                 </div>
               </form>
             </div>
@@ -275,7 +294,7 @@
     </section>
   </main>
 
-  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top">
+  <button id="scrollToTopBtn" title="Go to top" aria-label="Scroll to top" data-i18n-title="goToTop" data-i18n-aria-label="scrollToTop">
     <i class="fas fa-arrow-up"></i>
   </button>
 
@@ -289,31 +308,31 @@
         </div>
 
         <div class="footer-contact">
-          <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+          <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footerLocation">Limerick, Ireland</span></p>
           <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
           <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
         </div>
 
         <div class="footer-copy">
-          <p>&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
+          <p data-i18n="footerCopy">&copy; 2026 Fabian Golebiowski. All rights reserved.</p>
         </div>
       </div>
     </div>
   </footer>
 
   <div id="paletteSwitcher" aria-label="Theme palette switcher">
-    <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider">
+    <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider" data-i18n-aria-label="openColorThemes">
       <i class="fas fa-palette"></i>
     </button>
-    <div id="paletteSlider" role="menu" aria-label="Color palettes">
+    <div id="paletteSlider" role="menu" aria-label="Color palettes" data-i18n-aria-label="colorPalettes">
       <ul>
-        <li data-step="0" title="Default" role="menuitem" tabindex="0"></li>
-        <li data-step="1" title="Gold" role="menuitem" tabindex="0"></li>
-        <li data-step="2" title="Rose" role="menuitem" tabindex="0"></li>
-        <li data-step="3" title="Obsidian" role="menuitem" tabindex="0"></li>
-        <li data-step="4" title="Ocean" role="menuitem" tabindex="0"></li>
-        <li data-step="5" title="Forest" role="menuitem" tabindex="0"></li>
-        <li data-step="6" title="Night" role="menuitem" tabindex="0"></li>
+        <li data-step="0" title="Default" role="menuitem" tabindex="0" data-i18n-title="paletteDefault"></li>
+        <li data-step="1" title="Gold" role="menuitem" tabindex="0" data-i18n-title="paletteGold"></li>
+        <li data-step="2" title="Rose" role="menuitem" tabindex="0" data-i18n-title="paletteRose"></li>
+        <li data-step="3" title="Obsidian" role="menuitem" tabindex="0" data-i18n-title="paletteObsidian"></li>
+        <li data-step="4" title="Ocean" role="menuitem" tabindex="0" data-i18n-title="paletteOcean"></li>
+        <li data-step="5" title="Forest" role="menuitem" tabindex="0" data-i18n-title="paletteForest"></li>
+        <li data-step="6" title="Night" role="menuitem" tabindex="0" data-i18n-title="paletteNight"></li>
       </ul>
     </div>
   </div>
@@ -322,6 +341,7 @@
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="Javascript/backgroundBubbles.js"></script>
   <script src="Javascript/themeSwitcher.js"></script>
+  <script src="Javascript/languageSwitcher.js"></script>
   <script src="Javascript/interactions.js"></script>
 </body>
 </html>

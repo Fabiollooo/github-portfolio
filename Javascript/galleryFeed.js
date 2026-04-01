@@ -34,6 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let cursor = 0;
   let observer;
 
+  const t = (sourceText) => {
+    if (typeof window.__portfolioTranslate === "function") {
+      return window.__portfolioTranslate(sourceText);
+    }
+    return sourceText;
+  };
+
   const parseDateFromText = (text) => {
     if (!text) {
       return null;
@@ -119,8 +126,8 @@ document.addEventListener("DOMContentLoaded", () => {
       lightboxImg.src = src;
       lightboxImg.alt = displayName;
       lightboxCaption.textContent = displayName;
-      lightboxLocation.textContent = location || "Unknown";
-      lightboxYear.textContent = year || "Unknown";
+      lightboxLocation.textContent = location || t("Unknown");
+      lightboxYear.textContent = year || t("Unknown");
       lightboxDescription.innerHTML = description || "-";
       lightbox.hidden = false;
       document.body.style.overflow = "hidden";
@@ -134,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!feed.querySelector(".gallery-empty")) {
         const empty = document.createElement("p");
         empty.className = "gallery-empty";
-        empty.textContent = "No images yet. Add your photos in the galleryFeed image array.";
+        empty.textContent = t("No images yet. Add your photos in the galleryFeed image array.");
         feed.appendChild(empty);
       }
       sentinel.hidden = true;
