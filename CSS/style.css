@@ -121,6 +121,16 @@ a:focus-visible {
 
 .custom-toggler {
     border: 1px solid var(--color-border-strong);
+    color: var(--color-gold-light);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image:
+        linear-gradient(var(--color-gold-light), var(--color-gold-light)),
+        linear-gradient(var(--color-gold-light), var(--color-gold-light)),
+        linear-gradient(var(--color-gold-light), var(--color-gold-light));
+    background-size: 100% 2px, 100% 2px, 100% 2px;
+    background-position: center calc(50% - 6px), center, center calc(50% + 6px);
 }
 
 .custom-toggler:focus,
