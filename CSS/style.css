@@ -886,6 +886,30 @@ footer {
 }
 
 /* Gallery page */
+.gallery-year-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+    column-span: all;
+    color: var(--color-gold);
+    font-family: var(--font-mono);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.gallery-card + .gallery-year-divider {
+    margin-top: 0.75rem;
+}
+
+.gallery-year-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-border-strong), transparent);
+}
+
 .gallery-controls {
     color: var(--color-text-muted);
 }
