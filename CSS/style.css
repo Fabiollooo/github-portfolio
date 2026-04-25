@@ -802,7 +802,9 @@ footer {
     color: var(--color-gold-light);
     font-weight: 600;
     text-align: left;
-    padding: 0.55rem;
+    /* padding: 0.55rem; */
+    padding : 0.55rem 0.65rem;
+    margin: 5px;
 }
 
 .dropdown ul {
@@ -849,7 +851,7 @@ footer {
     flex: 0 0 100%;
     width: 100%;
     aspect-ratio: 16/9;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     background: rgba(0, 0, 0, 0.25);
 }
