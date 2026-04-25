@@ -207,32 +207,364 @@
               <p class="eyebrow mb-1" data-i18n="selectedWork">Selected Work</p>
               <h2 class="section-title mb-0" data-i18n="portfolioTitle">Portfolio</h2>
             </div>
-            
           </div>
 
           <div class="row g-4 portfolio-grid">
+            <!-- Group Projects Category -->
             <div class="col-md-6 col-xl-4">
-              <article class="project-card h-100">
-                <h3 data-i18n="codingProjectsTitle">Coding Projects</h3>
-                <p data-i18n="codingProjectsDesc">Programming-focused builds using C++, C#, and problem-solving fundamentals.</p>
-                <a href="codingProjects.html" class="btn btn-outline-brand mt-auto" data-i18n="viewProjects">View Projects</a>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-xl-4">
-              <article class="project-card h-100">
-                <h3 data-i18n="webProjectsTitle">Web Development</h3>
-                <p data-i18n="webProjectsDesc">Responsive website projects built with HTML, CSS, JavaScript, and PHP patterns.</p>
-                <a href="webDevProjects.html" class="btn btn-outline-brand mt-auto" data-i18n="viewProjects">View Projects</a>
-              </article>
-            </div>
-
-            <div class="col-md-6 col-xl-4">
-              <article class="project-card h-100">
-                <h3 data-i18n="groupProjectsTitle">Group Projects</h3>
+              <article class="project-card category-card h-100" data-category="group">
+                <div class="category-header">
+                  <h3 data-i18n="groupProjectsTitle">Group Projects</h3>
+                  <span class="category-chevron"><i class="bi bi-chevron-down"></i></span>
+                </div>
                 <p data-i18n="groupProjectsDesc">Collaborative projects emphasizing planning, communication, and team delivery.</p>
-                <a href="groupProjects.html" class="btn btn-outline-brand mt-auto" data-i18n="viewProjects">View Projects</a>
               </article>
+            </div>
+
+            <!-- Web Development Category -->
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card category-card h-100" data-category="web">
+                <div class="category-header">
+                  <h3 data-i18n="webProjectsTitle">Web Development</h3>
+                  <span class="category-chevron"><i class="bi bi-chevron-down"></i></span>
+                </div>
+                <p data-i18n="webProjectsDesc">Responsive website projects built with HTML, CSS, JavaScript, and PHP patterns.</p>
+              </article>
+            </div>
+
+            <!-- Coding Projects Category -->
+            <div class="col-md-6 col-xl-4">
+              <article class="project-card category-card h-100" data-category="coding">
+                <div class="category-header">
+                  <h3 data-i18n="codingProjectsTitle">Coding Projects</h3>
+                  <span class="category-chevron"><i class="bi bi-chevron-down"></i></span>
+                </div>
+                <p data-i18n="codingProjectsDesc">Programming-focused builds using C++, C#, and problem-solving fundamentals.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Expandable Project Content Sections -->
+          <div id="portfolio-expanded" class="portfolio-expanded mt-5">
+            <!-- Coding Projects Section -->
+            <div id="category-coding" class="category-projects hidden">
+              <h3 class="category-section-title mb-4" data-i18n="codingProjectsTitle">Coding Projects</h3>
+              <div class="projects-layout">
+                <aside>
+                  <h2 class="project-index-title">Project Index</h2>
+                  <div class="dropdown">
+                    <button aria-expanded="false">To Do App</button>
+                    <ul>
+                      <li><a href="#cd-project1-overview">Overview</a></li>
+                      <li><a href="#cd-project1-tech">Technologies</a></li>
+                      <li><a href="#cd-project1-features">Features</a></li>
+                      <li><a href="#cd-project1-screenshots">Screenshots</a></li>
+                      <li><a href="#cd-project1-learning">What I Learned</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button aria-expanded="false">Patient Management</button>
+                    <ul>
+                      <li><a href="#cd-project3-overview">Overview</a></li>
+                      <li><a href="#cd-project3-tech">Technologies</a></li>
+                      <li><a href="#cd-project3-features">Features</a></li>
+                      <li><a href="#cd-project3-screenshots">Screenshots</a></li>
+                      <li><a href="#cd-project3-learning">What I Learned</a></li>
+                    </ul>
+                  </div>
+                </aside>
+                <main>
+                  <section id="cd-project1" class="project-card">
+                    <div class="project-header">
+                      <h2>To Do App</h2>
+                      <div class="project-meta">
+                        <span class="meta-pill">WinForms</span>
+                        <span class="meta-pill">C#</span>
+                        <span class="meta-pill">Auth + CRUD</span>
+                      </div>
+                    </div>
+                    <h3 id="cd-project1-overview">Overview</h3>
+                    <p>A WinForms task management app built with a duo partner where users can create accounts, log in, and manage tasks in a simple daily workflow.</p>
+                    <h3 id="cd-project1-tech">Technologies Used</h3>
+                    <ul class="tech-list">
+                      <li>WinForms C#</li>
+                    </ul>
+                    <h3 id="cd-project1-features">Features</h3>
+                    <ul class="feature-list">
+                      <li>User account creation and login</li>
+                      <li>Add, edit, and remove tasks</li>
+                      <li>Export tasks for backup or sharing</li>
+                      <li>Dynamic task updates</li>
+                    </ul>
+                    <h3 id="cd-project1-screenshots">Project Glimpse</h3>
+                    <div class="carousel">
+                      <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                      <div class="carousel-track">
+                        <img src="img/projects/cd_projects/project1/cd_project_img1.png" alt="Log-In and Sign-Up page" class="carousel-image">
+                        <img src="img/projects/cd_projects/project1/cd_project_img2.png" alt="Main tasks dashboard" class="carousel-image">
+                        <img src="img/projects/cd_projects/project1/cd_project_img3.png" alt="Creating tasks" class="carousel-image">
+                        <img src="img/projects/cd_projects/project1/cd_project_img4.png" alt="Editing tasks" class="carousel-image">
+                        <img src="img/projects/cd_projects/project1/cd_project_img5.png" alt="Viewing newly added tasks" class="carousel-image">
+                      </div>
+                      <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                    </div>
+                    <h3 id="cd-project1-learning">What I Learned</h3>
+                    <p>Improved my C# WinForms skills, implemented authentication and task flows, and gained experience collaborating effectively on a duo project.</p>
+                    <p class="project-links"><a href="https://github.com/Fabiollooo/winforms-todo-app" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                  </section>
+
+                  <section id="cd-project3" class="project-card">
+                    <div class="project-header">
+                      <h2>Patient Management System</h2>
+                      <div class="project-meta">
+                        <span class="meta-pill">C++</span>
+                        <span class="meta-pill">Heap Queue</span>
+                        <span class="meta-pill">OOP</span>
+                      </div>
+                    </div>
+                    <h3 id="cd-project3-overview">Overview</h3>
+                    <p>A C++ console application for Accident & Emergency triage where patient priority determines service order via a heap-based queue.</p>
+                    <h3 id="cd-project3-tech">Technologies Used</h3>
+                    <ul class="tech-list">
+                      <li>C++</li>
+                      <li>Priority Queue and Heap</li>
+                      <li>Object-Oriented Programming</li>
+                    </ul>
+                    <h3 id="cd-project3-features">Features</h3>
+                    <ul class="feature-list">
+                      <li>Add patients with priority levels from 1-5</li>
+                      <li>Automatically queue by severity</li>
+                      <li>Call and remove next patient</li>
+                      <li>Search for patients by name</li>
+                      <li>Display queue status with priorities</li>
+                    </ul>
+                    <h3 id="cd-project3-screenshots">Project Glimpse</h3>
+                    <div class="carousel">
+                      <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                      <div class="carousel-track">
+                        <img src="img/projects/cd_projects/project2/cd_project2_img1.png" alt="Program menu" class="carousel-image">
+                        <img src="img/projects/cd_projects/project2/cd_project2_img2.png" alt="Adding patients" class="carousel-image">
+                        <img src="img/projects/cd_projects/project2/cd_project2_img3.png" alt="Calling each patient" class="carousel-image">
+                        <img src="img/projects/cd_projects/project2/cd_project2_img4.png" alt="Printing current queue" class="carousel-image">
+                        <img src="img/projects/cd_projects/project2/cd_project2_img5.png" alt="Searching for patient" class="carousel-image">
+                        <img src="img/projects/cd_projects/project2/cd_project2_img6.png" alt="Displaying all patients" class="carousel-image">
+                      </div>
+                      <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                    </div>
+                    <h3 id="cd-project3-learning">What I Learned</h3>
+                    <p>I strengthened my understanding of heaps and queue behavior, practiced object-oriented C++ design, and improved validation and dynamic update handling.</p>
+                    <p class="project-links"><a href="https://github.com/Fabiollooo/HospitalQueue" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                  </section>
+                </main>
+              </div>
+            </div>
+
+            <!-- Web Development Projects Section -->
+            <div id="category-web" class="category-projects hidden">
+              <h3 class="category-section-title mb-4" data-i18n="webProjectsTitle">Web Development</h3>
+              <div class="projects-layout">
+                <aside>
+                  <h2 class="project-index-title">Project Index</h2>
+                  <div class="dropdown">
+                    <button aria-expanded="false">FurEverPets</button>
+                    <ul>
+                      <li><a href="#wd-project1-overview">Overview</a></li>
+                      <li><a href="#wd-project1-tech">Technologies</a></li>
+                      <li><a href="#wd-project1-features">Features</a></li>
+                      <li><a href="#wd-project1-screenshots">Screenshots</a></li>
+                      <li><a href="#wd-project1-learning">What I Learned</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button aria-expanded="false">Expense Tracker</button>
+                    <ul>
+                      <li><a href="#wd-project2-overview">Overview</a></li>
+                      <li><a href="#wd-project2-tech">Technologies</a></li>
+                      <li><a href="#wd-project2-features">Features</a></li>
+                      <li><a href="#wd-project2-screenshots">Screenshots</a></li>
+                      <li><a href="#wd-project2-learning">What I Learned</a></li>
+                    </ul>
+                  </div>
+                </aside>
+                <main>
+                  <section id="wd-project1" class="project-card">
+                    <div class="project-header">
+                      <h2>FurEverPets</h2>
+                      <div class="project-meta">
+                        <span class="meta-pill">CodeIgniter</span>
+                        <span class="meta-pill">PHP</span>
+                        <span class="meta-pill">MySQL</span>
+                      </div>
+                    </div>
+                    <h3 id="wd-project1-overview">Overview</h3>
+                    <p>FurEverPets is an e-commerce style website prototype for browsing pet products such as food, toys, and accessories without full checkout integration.</p>
+                    <h3 id="wd-project1-tech">Technologies Used</h3>
+                    <ul class="tech-list">
+                      <li>CodeIgniter (PHP Framework)</li>
+                      <li>MySQL</li>
+                      <li>HTML and CSS</li>
+                    </ul>
+                    <h3 id="wd-project1-features">Features</h3>
+                    <ul class="feature-list">
+                      <li>Browse and filter products by category</li>
+                      <li>View product details and images</li>
+                      <li>Simulated cart and wishlist interactions</li>
+                    </ul>
+                    <h3 id="wd-project1-screenshots">Project Glimpse</h3>
+                    <div class="carousel">
+                      <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                      <div class="carousel-track">
+                        <img src="img/default/placeholder.png" alt="FurEverPets project placeholder screenshot" class="carousel-image">
+                      </div>
+                      <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                    </div>
+                    <h3 id="wd-project1-learning">What I Learned</h3>
+                    <p>I gained hands-on experience using MVC structure in CodeIgniter, connecting SQL-backed data flows, and refining responsive UI behavior.</p>
+                    <p class="project-links"><a href="https://github.com/Fabiollooo/FurEverPetSupplies/tree/main" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                  </section>
+
+                  <section id="wd-project2" class="project-card">
+                    <div class="project-header">
+                      <h2>Expense Tracker</h2>
+                      <div class="project-meta">
+                        <span class="meta-pill">PHP</span>
+                        <span class="meta-pill">MySQL</span>
+                        <span class="meta-pill">JavaScript</span>
+                      </div>
+                    </div>
+                    <h3 id="wd-project2-overview">Overview</h3>
+                    <p>A database-driven PHP application for tracking and managing personal expenses with an approachable interface for day-to-day budgeting.</p>
+                    <h3 id="wd-project2-tech">Technologies Used</h3>
+                    <ul class="tech-list">
+                      <li>PHP</li>
+                      <li>MySQL</li>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+                    <h3 id="wd-project2-features">Features</h3>
+                    <ul class="feature-list">
+                      <li>Salary input and baseline budgeting</li>
+                      <li>Add, edit, and delete expenses</li>
+                      <li>Expense categorization for clearer tracking</li>
+                    </ul>
+                    <h3 id="wd-project2-screenshots">Project Glimpse</h3>
+                    <div class="carousel">
+                      <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                      <div class="carousel-track">
+                        <img src="img/projects/wd_projects/project1/wd_project1_img1.png" alt="Entry screen to budget system" class="carousel-image">
+                        <img src="img/projects/wd_projects/project1/wd_project1_img2.png" alt="Adding a new expense" class="carousel-image">
+                        <img src="img/projects/wd_projects/project1/wd_project1_img3.png" alt="Viewing all expenses" class="carousel-image">
+                        <img src="img/projects/wd_projects/project1/wd_project1_img4.png" alt="Managing an expense" class="carousel-image">
+                      </div>
+                      <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                    </div>
+                    <h3 id="wd-project2-learning">What I Learned</h3>
+                    <p>I improved PHP and MySQL development skills, practiced structuring web app logic cleanly, and focused on creating a practical financial UI.</p>
+                    <p class="project-links"><a href="https://github.com/Fabiollooo/ExpenseTracker" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                  </section>
+                </main>
+              </div>
+            </div>
+
+            <!-- Group Projects Section -->
+            <div id="category-group" class="category-projects hidden">
+              <h3 class="category-section-title mb-4" data-i18n="groupProjectsTitle">Group Projects</h3>
+              <div class="projects-layout">
+                <aside>
+                  <h2 class="project-index-title">Project Index</h2>
+                  <div class="dropdown">
+                    <button aria-expanded="false">Claddaghwatch</button>
+                    <ul>
+                      <li><a href="#gp-project2-overview">Overview</a></li>
+                      <li><a href="#gp-project2-status">Status</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button aria-expanded="false">Campus Sync</button>
+                    <ul>
+                      <li><a href="#gp-project1-overview">Overview</a></li>
+                      <li><a href="#gp-project1-roles">Roles</a></li>
+                      <li><a href="#gp-project1-team-collaboration">Team Collaboration</a></li>
+                      <li><a href="#gp-project1-screenshots">Screenshots</a></li>
+                      <li><a href="#gp-project1-tech">Technologies</a></li>
+                      <li><a href="#gp-project1-features">Features</a></li>
+                      <li><a href="#gp-project1-learning">What I Learned</a></li>
+                    </ul>
+                  </div>
+                </aside>
+                <main>
+                  <section id="gp-project2" class="project-card">
+                    <div class="project-header">
+                      <h2>Claddaghwatch</h2>
+                      <div class="project-meta">
+                        <span class="meta-pill">In Progress</span>
+                        <span class="meta-pill">Team Project</span>
+                      </div>
+                    </div>
+                    <h3 id="gp-project2-overview">Overview</h3>
+                    <p>Claddaghwatch is currently in active development. Full scope, screenshots, and delivery notes will be added after the next milestone.</p>
+                    <h3 id="gp-project2-status">Status</h3>
+                    <p>Build and planning phase. Roadmap details will be published once architecture and prototype screens are finalized.</p>
+                  </section>
+
+                  <section id="gp-project1" class="project-card">
+                    <div class="project-header">
+                      <h2>Campus Sync</h2>
+                      <div class="project-meta">
+                        <span class="meta-pill">Team of 3</span>
+                        <span class="meta-pill">WinForms</span>
+                        <span class="meta-pill">Leadership</span>
+                      </div>
+                    </div>
+                    <h3 id="gp-project1-overview">Overview</h3>
+                    <p>A WinForms application for college room booking where students and staff reserve library spaces for study and meetings with role-based access.</p>
+                    <h3 id="gp-project1-roles">Role and Contribution</h3>
+                    <ul class="feature-list">
+                      <li>Group lead with weekly planning and communication workflows</li>
+                      <li>UI designer for all role-specific interfaces</li>
+                      <li>Core developer across booking and validation logic</li>
+                      <li>Documentation owner for setup guides and progress reporting</li>
+                      <li>Database administration across Azure, college server, and local backup</li>
+                    </ul>
+                    <h3 id="gp-project1-team-collaboration">Team Collaboration</h3>
+                    <ul class="feature-list">
+                      <li>Team size: 3 active members</li>
+                      <li>Tooling: GitHub, DevOps, Teams, WhatsApp, Discord</li>
+                      <li>Weekly review meetings and feedback loop sessions</li>
+                    </ul>
+                    <h3 id="gp-project1-screenshots">Project Glimpse</h3>
+                    <div class="carousel">
+                      <button class="carousel-btn prev" aria-label="Previous screenshot">&#10094;</button>
+                      <div class="carousel-track">
+                        <img src="img/default/placeholder.png" alt="Campus Sync preview placeholder" class="carousel-image">
+                      </div>
+                      <button class="carousel-btn next" aria-label="Next screenshot">&#10095;</button>
+                    </div>
+                    <h3 id="gp-project1-tech">Technologies Used</h3>
+                    <ul class="tech-list">
+                      <li>C# WinForms</li>
+                      <li>MySQL (Azure, college server, local)</li>
+                      <li>DevOps and GitHub</li>
+                    </ul>
+                    <h3 id="gp-project1-features">Key Features</h3>
+                    <ul class="feature-list">
+                      <li>Role-based flows: Admin, Staff, Student</li>
+                      <li>Admin-side full CRUD for users and rooms</li>
+                      <li>Real-time booking validation and availability checks</li>
+                      <li>Dedicated UI workflows for each user type</li>
+                    </ul>
+                    <h3 id="gp-project1-learning">What I Learned</h3>
+                    <ul class="feature-list">
+                      <li>Prioritizing team delivery under semester constraints</li>
+                      <li>Coordinating code quality with a smaller team</li>
+                      <li>Managing multiple live database environments simultaneously</li>
+                      <li>Practical leadership and real-world collaboration habits</li>
+                    </ul>
+                    <p class="project-links"><a href="https://github.com/Fabiollooo/TUSAssetManagementSystem" target="_blank" rel="noreferrer">GitHub Repository</a></p>
+                  </section>
+                </main>
+              </div>
             </div>
           </div>
         </div>
@@ -252,8 +584,7 @@
                 </p>
 
                 <div class="map-wrapper mt-3" data-location="Limerick, Ireland" data-i18n-data-location="mapLocation">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1711.004051660929!2d-8.623141627620814!3d52.664942127824645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c68ee01b481%3A0x2af1139416c0adac!2sGreengate%20House%2C%20Carr%20St%2C%20Irishtown%2C%20Limerick%2C%20V94%20C9D6!5e0!3m2!1sen!2sie!4v1774826688033!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116393.74852615867!2d-8.683191821866489!3d52.675191196408306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b5c611f545113%3A0xa00c7a997317330!2sLimerick!5e1!3m2!1sen!2sie!4v1777138680176!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
               </div>
             </div>
 
@@ -343,5 +674,9 @@
   <script src="Javascript/themeSwitcher.js"></script>
   <script src="Javascript/languageSwitcher.js"></script>
   <script src="Javascript/interactions.js"></script>
+  <script src="Javascript/portfolioExpand.js"></script>
 </body>
 </html>
+
+
+
