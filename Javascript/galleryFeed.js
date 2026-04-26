@@ -1,39 +1,41 @@
 document.addEventListener("DOMContentLoaded", () => {
   const galleryImages = [
-    { src: "img/gallery/2026/01-01-26.jpg", name: "New Year Day - 01/01/26", location: "Alanya, Turkey", year: "2026", description: "New Years day flight !" + "<br>" + "New Year new me" },
-    { src: "img/gallery/2026/02-01-26.jpg", name: "02/01/26", location: "Alanya, Turkey", year: "2026", description: "-" },
+    { src: "img/gallery/2026/01-01-26.jpg", name: "New Year Day - Flight to Antalya", location: "Alanya, Turkey", year: "2026", description: "New Years day flight !" + "<br>" + "New Year new me" },
+    { src: "img/gallery/2026/02-01-26.jpg", name: "Antalya Waterfront Fortress", location: "Alanya, Turkey", year: "2026", description: "-" },//02/01/26
     /* { src: "img/gallery/2026/2026-3.jpg", name: "Alanya Moment 3", location: "Alanya, Turkey", year: "2026", description: "-" }, */
-    { src: "img/gallery/2026/06-01-26.jpg", name: "06/01/26", location: "Alanya, Turkey", year: "2026", description: "-" },
+    { src: "img/gallery/2026/06-01-26.jpg", name: "Gozukucuklu Peak - Mountain & Sea", location: "Alanya, Turkey", year: "2026", description: "-" },//06/01/26
     /* { src: "img/gallery/2026/2026-5.jpg", name: "Alanya Moment 5", location: "Alanya, Turkey", year: "2026", description: "-" }, */
-    /* { src: "img/gallery/2026/2026-6.jpg", name: "Alanya Moment 6", location: "Alanya, Turkey", year: "2026", description: "-" },*/ { src: "img/gallery/2026/06-01-26 (2).jpg", name: "06/01/26", location: "Alanya, Turkey", year: "2026", description: "-" },
+    /* { src: "img/gallery/2026/2026-6.jpg", name: "Alanya Moment 6", location: "Alanya, Turkey", year: "2026", description: "-" },*/ 
+    { src: "img/gallery/2026/06-01-26 (2).jpg", name: "Mahmultlar Strip & Coast", location: "Alanya, Turkey", year: "2026", description: "-" },
     /* { src: "img/gallery/2026/2026-8.jpg", name: "Alanya Moment 8", location: "Alanya, Turkey", year: "2026", description: "-" }, */
-    { src: "img/gallery/2026/06-01-26(1).jpg", name: "06/01/26", location: "Alanya, Turkey", year: "2026", description: "-" },
+    { src: "img/gallery/2026/06-01-26(1).jpg", name: "Mahmultar - Beachside rd", location: "Alanya, Turkey", year: "2026", description: "-" },//06/01/26
     /* { src: "img/gallery/2026/2026-10.jpg", name: "Alanya Moment 10", location: "Alanya, Turkey", year: "2026", description: "-" }, */
-    { src: "img/gallery/2026/08-01-26.jpg", name: "08/01/26", location: "Alanya, Turkey", year: "2026", description: "-" },
+    { src: "img/gallery/2026/08-01-26.jpg", name: "Antalya Departure - Sunrise flight", location: "Alanya, Turkey", year: "2026", description: "-" }, //08/01/26
     /* { src: "img/gallery/2026/2026-12.jpg", name: "Alanya Moment 12", location: "Alanya, Turkey", year: "2026", description: "-" }, */
-    { src: "img/gallery/2026/08-01-26(1).jpg", name: "08/01/26", location: "Alanya, Turkey", year: "2026", description: "-" },
+    { src: "img/gallery/2026/08-01-26(1).jpg", name: " Taurus Mountain(s) - Antalya", location: "Alanya, Turkey", year: "2026", description: "-" },//08/01/26
 
+   
     /* 2025 */
     /*{ src: "img/gallery/2025/20250913_193542000_iOS 1.jpg", name: "13/09/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    { src: "img/gallery/2025/20250913_193542000_iOS.jpg", name: "13/09/25", location: "Szczecin, Poland", year: "2025", description: "Areal photo of the Mercedes block," + "<br>" + " I live in the northern block in the image." },
+    { src: "img/gallery/2025/20250913_193542000_iOS.jpg", name: "Gwiazda Block - Szczecin", location: "Szczecin, Poland", year: "2025", description: "Areal photo of the Mercedes block," + "<br>" + " I live in the northern block in the image." },
     /* { src: "img/gallery/2025/20250904_225823329_iOS.jpg", name: "04/09/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    { src: "img/gallery/2025/20250822_164452492_iOS.jpg", name: "22/08/25", location: "Szczecin, Poland", year: "2025", description: "Bogusława Rd." + "<br>" + " Popular pedestrian street in Szczecin." },
+    { src: "img/gallery/2025/20250822_164452492_iOS.jpg", name: "Bogusława Street - Szczecin", location: "Szczecin, Poland", year: "2025", description: "Bogusława Rd." + "<br>" + " Popular pedestrian street in Szczecin." },
     /* { src: "img/gallery/2025/20250815_174511895_iOS.jpg", name: "15/08/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     /* { src: "img/gallery/2025/20250815_174506610_iOS.jpg", name: "15/08/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    { src: "img/gallery/2025/20250629_195641190_iOS.jpg", name: "29/06/25", location: "Szczecin, Poland", year: "2025", description: "-" },
-    { src: "img/gallery/2025/20250623_025957806_iOS.jpg", name: "23/06/25", location: "Szczecin, Poland", year: "2025", description: "-" },
-    { src: "img/gallery/2025/20250604_185458159_iOS.jpg", name: "04/06/25", location: "Szczecin, Poland", year: "2025", description: "-" },
+    { src: "img/gallery/2025/20250629_195641190_iOS.jpg", name: "Szczecin Urban Scene", location: "Szczecin, Poland", year: "2025", description: "-" },
+    { src: "img/gallery/2025/20250623_025957806_iOS.jpg", name: "Purple Lightning - Szczecin", location: "Szczecin, Poland", year: "2025", description: "The second most rare colour of lightning to ever exist." },
+    { src: "img/gallery/2025/20250604_185458159_iOS.jpg", name: "Industrial Sunset", location: "Szczecin, Poland", year: "2025", description: "-" },
     /* { src: "img/gallery/2025/20250603_184647903_iOS.jpg", name: "03/06/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     /* { src: "img/gallery/2025/20250519_193152124_iOS.jpg", name: "19/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    { src: "img/gallery/2025/20250519_192959666_iOS.jpg", name: "19/05/25", location: "Szczecin, Poland", year: "2025", description: "Wały Chrobrego," + "<br>" + " A grand Neo-Baroque government building built between 1902-1921." },
-    { src: "img/gallery/2025/20250519_192754762_iOS.jpg", name: "19/05/25", location: "Szczecin, Poland", year: "2025", description: "National Museum," + "<br>" + " Beside the Wały Chrobrego government building." },
-    { src: "img/gallery/2025/20250519_191904193_iOS.jpg", name: "19/05/25", location: "Szczecin, Poland", year: "2025", description: "St.James cathedral, " + "<br>" + " built in 1187 (110m)." },
-    { src: "img/gallery/2025/20250519_182101256_iOS.jpg", name: "19/05/25", location: "Szczecin, Poland", year: "2025", description: "PŻM Tower," + "<br>" + " One of Europe's largest bulk cargo shippings operators (128m)." },
-    { src: "img/gallery/2025/20250509_201531053_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "St.James cathedral, " + "<br>" + " closer POV (110m)." },
+    { src: "img/gallery/2025/20250519_192959666_iOS.jpg", name: "Wały Chrobrego Palace", location: "Szczecin, Poland", year: "2025", description: "Wały Chrobrego," + "<br>" + " A grand Neo-Baroque government building built between 1902-1921." },
+    { src: "img/gallery/2025/20250519_192754762_iOS.jpg", name: "National Museum - Szczecin", location: "Szczecin, Poland", year: "2025", description: "National Museum," + "<br>" + " Beside the Wały Chrobrego government building." },
+    { src: "img/gallery/2025/20250519_191904193_iOS.jpg", name: "St. James Cathedral - Szczecin", location: "Szczecin, Poland", year: "2025", description: "St.James cathedral, " + "<br>" + " built in 1187 (110m)." },
+    { src: "img/gallery/2025/20250519_182101256_iOS.jpg", name: "PŻM Tower - Shipping Headquarters", location: "Szczecin, Poland", year: "2025", description: "PŻM Tower," + "<br>" + " One of Europe's largest bulk cargo shippings operators (128m)." },
+    { src: "img/gallery/2025/20250509_201531053_iOS.jpg", name: "St. James Cathedral - Detail View", location: "Szczecin, Poland", year: "2025", description: "St.James cathedral, " + "<br>" + " closer POV (110m)." },
     /* { src: "img/gallery/2025/20250509_195934908_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     /* { src: "img/gallery/2025/20250509_195929567_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     /* { src: "img/gallery/2025/20250509_195837243_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    { src: "img/gallery/2025/20250509_195753837_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "Philharmonic Hall, " + "<br>" + " A historic concert venue in Szczecin." }
+    { src: "img/gallery/2025/20250509_195753837_iOS.jpg", name: "Philharmonic Hall - Szczecin", location: "Szczecin, Poland", year: "2025", description: "Philharmonic Hall, " + "<br>" + " A historic concert venue in Szczecin." }
   ];
 
   const feed = document.getElementById("galleryFeed");
