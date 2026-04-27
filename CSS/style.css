@@ -1185,6 +1185,10 @@ footer {
         padding: 2rem 0;
     }
 
+    .nav-language-item {
+        margin-top: 0.75rem;
+    }
+
     .hero-panel,
     .section-panel {
         border-radius: 16px;
@@ -1217,9 +1221,30 @@ footer {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .footer-grid {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+
     .masonry-feed {
         grid-template-columns: 1fr;
         gap: 0.75rem;
+    }
+
+    .gallery-card--landscape {
+        grid-column: span 1;
+    }
+
+    .gallery-year-divider {
+        grid-column: 1 / -1;
+        margin-bottom: 0.5rem;
     }
 
     .lightbox-shell {
