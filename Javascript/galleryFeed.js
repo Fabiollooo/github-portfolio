@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     { src: "img/gallery/2024/20241228_154645392_iOS.jpg", name: "Winter Holiday 9", location: "Unknown", year: "2024", description: "-", type: "vertical" },
     /* { src: "img/gallery/2024/20250102_152152526_iOS.jpg", name: "New Year 2025 - 1", location: "Unknown", year: "2024", description: "-" }, */
     { src: "img/gallery/2024/20250105_202434874_iOS.jpg", name: "New Year 2025 - 2", location: "Unknown", year: "2024", description: "-", type: "vertical" }, //Dec
-    { src: "img/gallery/2024/20250105_202440448_iOS.jpg", name: "New Year 2025 - 3", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    /* { src: "img/gallery/2024/20250105_202440448_iOS.jpg", name: "New Year 2025 - 3", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
     { src: "img/gallery/2024/20250105_202928293_iOS.jpg", name: "New Year 2025 - 4", location: "Unknown", year: "2024", description: "-", type: "vertical" }
   ];
 
