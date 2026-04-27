@@ -608,11 +608,15 @@ footer {
 
 .footer-contact p,
 .footer-copy p {
-    margin: 0.25rem 0;
+    margin: 0;
     color: var(--color-text-main);
 }
 
 .footer-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     align-self: end;
 }
 
@@ -903,8 +907,7 @@ footer {
     align-items: center;
     gap: 0.7rem;
     margin-bottom: 1rem;
-    break-inside: avoid;
-    column-span: all;
+    grid-column: 1 / -1;
     color: var(--color-gold);
     font-family: var(--font-mono);
     font-weight: 600;
@@ -939,12 +942,12 @@ footer {
 }
 
 .masonry-feed {
-    column-count: 3;
-    column-gap: 1.1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
 }
 
 .gallery-card {
-    break-inside: avoid;
     margin: 0 0 1rem;
     border-radius: 14px;
     border: 1px solid var(--color-border-soft);
@@ -953,6 +956,10 @@ footer {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.24);
     cursor: zoom-in;
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-card--landscape {
+    grid-column: span 2;
 }
 
 .gallery-card:hover {
@@ -967,11 +974,28 @@ footer {
     display: block;
 }
 
+.gallery-card:not(.gallery-card--landscape) img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.gallery-card--landscape img {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
+}
+
 .gallery-card-caption {
     margin: 0;
     padding: 0.55rem 0.7rem 0.65rem;
     color: var(--color-text-main);
     font-size: 0.82rem;
+    line-height: 1.4;
+    height: 2.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .gallery-sentinel {
@@ -1127,7 +1151,7 @@ footer {
     }
 
     .masonry-feed {
-        column-count: 2;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .lightbox-layout {
@@ -1194,8 +1218,8 @@ footer {
     }
 
     .masonry-feed {
-        column-count: 1;
-        column-gap: 0.75rem;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
     }
 
     .lightbox-shell {
@@ -1271,7 +1295,7 @@ footer {
 
 @media (min-width: 2000px) {
     .masonry-feed {
-        column-count: 4;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
