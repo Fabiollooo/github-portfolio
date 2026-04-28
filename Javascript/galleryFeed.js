@@ -40,40 +40,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* 2024 */
 
-    { src: "img/gallery/2024/20240415_192708425_iOS.jpg", name: "Spring Day 1", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240415_192708425_iOS.jpg", name: "Above the Sunset", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     /* { src: "img/gallery/2024/20240416_083942639_iOS.jpg", name: "Spring Day 2", location: "Unknown", year: "2024", description: "-" }, */
     /* { src: "img/gallery/2024/20240416_085753514_iOS.jpg", name: "Spring Day 3", location: "Unknown", year: "2024", description: "-" }, */
-
-
-    { src: "img/gallery/2024/20240416_104615195_iOS.jpg", name: "Spring Day 4", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240416_105221780_iOS.jpg", name: "Spring Day 5", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240416_125426720_iOS.jpg", name: "Spring Day 6", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240416_125530430_iOS.jpg", name: "Spring Day 7", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240416_134158245_iOS.jpg", name: "Spring Day 8", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240417_142207294_iOS.jpg", name: "April Moment 1", location: "Unknown", year: "2024", description: "-", type: "vertical" }, //April
-    { src: "img/gallery/2024/20240418_095557046_iOS.jpg", name: "April Moment 2", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240419_133807523_iOS.jpg", name: "April Moment 3", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240416_104615195_iOS.jpg", name: "Roof & Palms - Summer Blue Sky 2", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240416_105221780_iOS.jpg", name: "Summer Refreshment - Paradise View", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240416_125426720_iOS.jpg", name: "Steps to the Sea", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240416_125530430_iOS.jpg", name: "Resort View - Maspalomas Beach", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
+    /* { src: "img/gallery/2024/20240416_134158245_iOS.jpg", name: "Spring Day 8", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
+    { src: "img/gallery/2024/20240417_142207294_iOS.jpg", name: "Roof & Palms - Summer Blue Sky", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" }, //April
+    { src: "img/gallery/2024/20240418_095557046_iOS.jpg", name: "Puerto Rico WhiteWash - Mountain Architecture", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "From distance the buildings appear to look like exposed limestone in the mountains.", type: "vertical" },
+    { src: "img/gallery/2024/20240419_133807523_iOS.jpg", name: "Palm Pathway - Maspalomas Dunes", location: "Maspalomas, Gran Canaria, Spain ", year: "2024", description: "-", type: "vertical" },
     /* { src: "img/gallery/2024/20240419_141711048_iOS.jpg", name: "April Moment 4", location: "Unknown", year: "2024", description: "-" }, */
-    { src: "img/gallery/2024/20240523_201454886_iOS.jpg", name: "Summer Scene 1", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240523_201454886_iOS.jpeg", name: "Crimson Moon", location: "Szczecin Miedwie lake, Poland", year: "2024", description: "-", type: "vertical" },
     /* { src: "img/gallery/2024/20240523_201519144_iOS.jpg", name: "Summer Scene 2", location: "Unknown", year: "2024", description: "-" }, */
-    { src: "img/gallery/2024/20240525_185801237_iOS.jpg", name: "Summer Scene 3", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240529_202743930_iOS.jpg", name: "Summer Scene 4", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    /* { src: "img/gallery/2024/20240525_185801237_iOS.jpg", name: "Summer Scene 3", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
+    { src: "img/gallery/2024/20240529_202743930_iOS.jpg", name: "Szczecin Beach - Bold Contrast", location: "Szczecin, Poland", year: "2024", description: "Fun fact, this image is <b>not</b> colour enhanced in any way. The colours are all natural.", type: "vertical" },
     /* { src: "img/gallery/2024/20240529_202749917_iOS.jpg", name: "Summer Scene 5", location: "Unknown", year: "2024", description: "-" },*/    
     /* { src: "img/gallery/2024/20260619_155919530_iOS.jpg", name: "Summer Scene 6", location: "Unknown", year: "2024", description: "-" }, */
-    { src: "img/gallery/2024/20240630_192430858_iOS.jpg", name: "Summer Scene 7", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20240630_192430858_iOS.jpg", name: "Golden Sky", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" },
     /* { src: "img/gallery/2024/20241218_170000202_iOS.jpg", name: "Winter Holiday 1", location: "Unknown", year: "2024", description: "-" }, */
-    { src: "img/gallery/2024/20241227_172531732_iOS.jpg", name: "Winter Holiday 2", location: "Unknown", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20241227_173436167_iOS.jpg", name: "Winter Holiday 3", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20241227_172531732_iOS.jpg", name: "Evening Walk", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20241227_173436167_iOS.jpg", name: "Wały Chrobrego & Museum", location: "Szczecin, Poland", year: "2024", description: "A scenic view of the both building eminating their lights into the void of the cold christmas fog.", type: "vertical" },
     /* { src: "img/gallery/2024/20241227_173453661_iOS.jpg", name: "Winter Holiday 4", location: "Unknown", year: "2024", description: "-" }, */
     // { src: "img/gallery/2024/20241227_174126296_iOS.jpg", name: "Winter Holiday 5", location: "Unknown", year: "2024", description: "-" },
-    { src: "img/gallery/2024/20241227_174133734_iOS.jpg", name: "Winter Holiday 6", location: "Unknown", year: "2024", description: "-", type: "horizontal" },
-    { src: "img/gallery/2024/20241227_174225948_iOS.jpg", name: "Winter Holiday 7", location: "Unknown", year: "2024", description: "-", type: "horizontal" },
-    { src: "img/gallery/2024/20241227_175052230_iOS.jpg", name: "Winter Holiday 8", location: "Unknown", year: "2024", description: "-", type: "vertical" }, //Dec
-    { src: "img/gallery/2024/20241228_154645392_iOS.jpg", name: "Winter Holiday 9", location: "Unknown", year: "2024", description: "-", type: "vertical" },
+    { src: "img/gallery/2024/20241227_174133734_iOS.jpg", name: "Warm & Cold Lights", location: "Szczecin, Poland", year: "2024", description: "-", type: "horizontal" },
+    { src: "img/gallery/2024/20241227_174225948_iOS.jpeg", name: "City Lights - Christmas Glow", location: "Szczecin, Poland", year: "2024", description: "-", type: "horizontal" },
+    { src: "img/gallery/2024/20241227_175052230_iOS.jpg", name: "Heritage & Pride", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" }, //Dec
+    { src: "img/gallery/2024/20241228_154645392_iOS.jpg", name: "Festive Transit - Illuminated Tram", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" },
     /* { src: "img/gallery/2024/20250102_152152526_iOS.jpg", name: "New Year 2025 - 1", location: "Unknown", year: "2024", description: "-" }, */
-    { src: "img/gallery/2024/20250105_202434874_iOS.jpg", name: "New Year 2025 - 2", location: "Unknown", year: "2024", description: "-", type: "vertical" }, //Dec
+    { src: "img/gallery/2024/20250105_202434874_iOS.jpg", name: "Winter Bus Stop - Holiday Vibes", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" }, //Dec
     /* { src: "img/gallery/2024/20250105_202440448_iOS.jpg", name: "New Year 2025 - 3", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
-    { src: "img/gallery/2024/20250105_202928293_iOS.jpg", name: "New Year 2025 - 4", location: "Unknown", year: "2024", description: "-", type: "vertical" }
+    { src: "img/gallery/2024/20250105_202928293_iOS.jpg", name: "Silent Snowy Path - Winter Night", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" }
   ];
 
   const feed = document.getElementById("galleryFeed");

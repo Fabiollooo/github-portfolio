@@ -1,2 +1,4 @@
+Have like a hidden "Press me" button that fades the screen black for a second, and then play like a gif or "live" photo of the purple lightening 
+Fix the descriptions of the third batch of images
 Add Zelora (Coding project). + IMGs
 Add FurEverPets (WebDev). + IMGs
