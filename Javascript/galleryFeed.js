@@ -2,75 +2,47 @@ document.addEventListener("DOMContentLoaded", () => {
   const galleryImages = [
     { src: "img/gallery/2026/20260101_151615227_iOS.jpg", name: "New Year Day - Flight to Antalya", location: "Alanya, Turkey", year: "2026", description: "New Years day flight !" + "<br>" + "New Year new me", type: "vertical" },
     { src: "img/gallery/2026/20260102_104254141_iOS.jpg", name: "Antalya Waterfront Fortress", location: "Alanya, Turkey", year: "2026", description: "-", type: "horizontal" },//02/01/26
-    /* { src: "img/gallery/2026/2026-3.jpg", name: "Alanya Moment 3", location: "Alanya, Turkey", year: "2026", description: "-" }, */
     { src: "img/gallery/2026/20260106_124708085_iOS.jpg", name: "Gozukucuklu Peak - Mountain & Sea", location: "Alanya, Turkey", year: "2026", description: "-", type: "horizontal" },//06/01/26
-    /* { src: "img/gallery/2026/2026-5.jpg", name: "Alanya Moment 5", location: "Alanya, Turkey", year: "2026", description: "-" }, */
-    /* { src: "img/gallery/2026/2026-6.jpg", name: "Alanya Moment 6", location: "Alanya, Turkey", year: "2026", description: "-" },*/ 
     { src: "img/gallery/2026/20260106_131606556_iOS.jpg", name: "Mahmultlar Strip & Coast", location: "Alanya, Turkey", year: "2026", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2026/2026-8.jpg", name: "Alanya Moment 8", location: "Alanya, Turkey", year: "2026", description: "-" }, */
     { src: "img/gallery/2026/20260106_132906902_iOS.jpg", name: "Mahmultar - Beachside rd", location: "Alanya, Turkey", year: "2026", description: "-", type: "vertical" },//06/01/26
-    /* { src: "img/gallery/2026/2026-10.jpg", name: "Alanya Moment 10", location: "Alanya, Turkey", year: "2026", description: "-" }, */
     { src: "img/gallery/2026/20260108_052923268_iOS.jpg", name: "Antalya Departure - Sunrise flight", location: "Alanya, Turkey", year: "2026", description: "-", type: "vertical" }, //08/01/26
-    /* { src: "img/gallery/2026/2026-12.jpg", name: "Alanya Moment 12", location: "Alanya, Turkey", year: "2026", description: "-" }, */
     { src: "img/gallery/2026/20260108_053345557_iOS.jpg", name: " Taurus Mountain(s) - Antalya", location: "Alanya, Turkey", year: "2026", description: "-", type: "horizontal" },//08/01/26
 
    
     /* 2025 */
-    /*{ src: "img/gallery/2025/20250913_193542000_iOS 1.jpg", name: "13/09/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     { src: "img/gallery/2025/20250913_193542000_iOS.jpg", name: "Gwiazda Block - Szczecin", location: "Szczecin, Poland", year: "2025", description: "Areal photo of the Mercedes block," + "<br>" + " I live in the northern block in the image.", type: "horizontal" },
-    /* { src: "img/gallery/2025/20250904_225823329_iOS.jpg", name: "04/09/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     { src: "img/gallery/2025/20250822_164452492_iOS.jpg", name: "Bogusława Street - Szczecin", location: "Szczecin, Poland", year: "2025", description: "Bogusława Rd." + "<br>" + " Popular pedestrian street in Szczecin.", type: "vertical" },
-    /* { src: "img/gallery/2025/20250815_174511895_iOS.jpg", name: "15/08/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    /* { src: "img/gallery/2025/20250815_174506610_iOS.jpg", name: "15/08/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     { src: "img/gallery/2025/20250629_195641190_iOS.jpg", name: "Szczecin Urban Scene", location: "Szczecin, Poland", year: "2025", description: "-", type: "vertical" },
     { src: "img/gallery/2025/20250623_025957806_iOS.jpg", name: "Purple Lightning - Szczecin", location: "Szczecin, Poland", year: "2025", description: "The second most rare colour of lightning to ever exist.", type: "horizontal" },
     { src: "img/gallery/2025/20250604_185458159_iOS.jpg", name: "Industrial Sunset", location: "Szczecin, Poland", year: "2025", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2025/20250603_184647903_iOS.jpg", name: "03/06/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    /* { src: "img/gallery/2025/20250519_193152124_iOS.jpg", name: "19/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     { src: "img/gallery/2025/20250519_192959666_iOS.jpg", name: "Wały Chrobrego Palace", location: "Szczecin, Poland", year: "2025", description: "Wały Chrobrego," + "<br>" + " A grand Neo-Baroque government building built between 1902-1921.", type: "vertical" },
     { src: "img/gallery/2025/20250519_192754762_iOS.jpg", name: "National Museum - Szczecin", location: "Szczecin, Poland", year: "2025", description: "National Museum," + "<br>" + " Beside the Wały Chrobrego government building.", type: "horizontal" },
     { src: "img/gallery/2025/20250519_191904193_iOS.jpg", name: "St. James Cathedral - Szczecin", location: "Szczecin, Poland", year: "2025", description: "St.James cathedral, " + "<br>" + " built in 1187 (110m).", type: "vertical" },
     { src: "img/gallery/2025/20250519_182101256_iOS.jpg", name: "PŻM Tower - Shipping Headquarters", location: "Szczecin, Poland", year: "2025", description: "PŻM Tower," + "<br>" + " One of Europe's largest bulk cargo shippings operators (128m).", type: "vertical" },
     { src: "img/gallery/2025/20250509_201531053_iOS.jpg", name: "St. James Cathedral - Detail View", location: "Szczecin, Poland", year: "2025", description: "St.James cathedral, " + "<br>" + " closer POV (110m).", type: "vertical" },
-    /* { src: "img/gallery/2025/20250509_195934908_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    /* { src: "img/gallery/2025/20250509_195929567_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
-    /* { src: "img/gallery/2025/20250509_195837243_iOS.jpg", name: "09/05/25", location: "Szczecin, Poland", year: "2025", description: "-" }, */
     { src: "img/gallery/2025/20250509_195753837_iOS.jpg", name: "Philharmonic Hall - Szczecin", location: "Szczecin, Poland", year: "2025", description: "Philharmonic Hall, " + "<br>" + " A historic concert venue in Szczecin.", type: "horizontal" },
 
 
     /* 2024 */
 
     { src: "img/gallery/2024/20240415_192708425_iOS.jpg", name: "Above the Sunset", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2024/20240416_083942639_iOS.jpg", name: "Spring Day 2", location: "Unknown", year: "2024", description: "-" }, */
-    /* { src: "img/gallery/2024/20240416_085753514_iOS.jpg", name: "Spring Day 3", location: "Unknown", year: "2024", description: "-" }, */
     { src: "img/gallery/2024/20240416_104615195_iOS.jpg", name: "Roof & Palms - Summer Blue Sky 2", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20240416_105221780_iOS.jpg", name: "Summer Refreshment - Paradise View", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20240416_125426720_iOS.jpg", name: "Steps to the Sea", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20240416_125530430_iOS.jpg", name: "Resort View - Maspalomas Beach", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2024/20240416_134158245_iOS.jpg", name: "Spring Day 8", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
     { src: "img/gallery/2024/20240417_142207294_iOS.jpg", name: "Roof & Palms - Summer Blue Sky", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" }, //April
     { src: "img/gallery/2024/20240418_095557046_iOS.jpg", name: "Puerto Rico WhiteWash - Mountain Architecture", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "From distance the buildings appear to look like exposed limestone in the mountains.", type: "vertical" },
     { src: "img/gallery/2024/20240419_133807523_iOS.jpg", name: "Palm Pathway - Maspalomas Dunes", location: "Maspalomas, Gran Canaria, Spain ", year: "2024", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2024/20240419_141711048_iOS.jpg", name: "April Moment 4", location: "Unknown", year: "2024", description: "-" }, */
     { src: "img/gallery/2024/20240523_201454886_iOS.jpeg", name: "Crimson Moon", location: "Szczecin Miedwie lake, Poland", year: "2024", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2024/20240523_201519144_iOS.jpg", name: "Summer Scene 2", location: "Unknown", year: "2024", description: "-" }, */
-    /* { src: "img/gallery/2024/20240525_185801237_iOS.jpg", name: "Summer Scene 3", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
     { src: "img/gallery/2024/20240529_202743930_iOS.jpg", name: "Szczecin Beach - Bold Contrast", location: "Szczecin, Poland", year: "2024", description: "Fun fact, this image is <b>not</b> colour enhanced in any way. The colours are all natural.", type: "vertical" },
-    /* { src: "img/gallery/2024/20240529_202749917_iOS.jpg", name: "Summer Scene 5", location: "Unknown", year: "2024", description: "-" },*/    
-    /* { src: "img/gallery/2024/20260619_155919530_iOS.jpg", name: "Summer Scene 6", location: "Unknown", year: "2024", description: "-" }, */
     { src: "img/gallery/2024/20240630_192430858_iOS.jpg", name: "Golden Sky", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2024/20241218_170000202_iOS.jpg", name: "Winter Holiday 1", location: "Unknown", year: "2024", description: "-" }, */
     { src: "img/gallery/2024/20241227_172531732_iOS.jpg", name: "Evening Walk", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20241227_173436167_iOS.jpg", name: "Wały Chrobrego & Museum", location: "Szczecin, Poland", year: "2024", description: "A scenic view of the both building eminating their lights into the void of the cold christmas fog.", type: "vertical" },
-    /* { src: "img/gallery/2024/20241227_173453661_iOS.jpg", name: "Winter Holiday 4", location: "Unknown", year: "2024", description: "-" }, */
-    // { src: "img/gallery/2024/20241227_174126296_iOS.jpg", name: "Winter Holiday 5", location: "Unknown", year: "2024", description: "-" },
     { src: "img/gallery/2024/20241227_174133734_iOS.jpg", name: "Warm & Cold Lights", location: "Szczecin, Poland", year: "2024", description: "-", type: "horizontal" },
     { src: "img/gallery/2024/20241227_174225948_iOS.jpeg", name: "City Lights - Christmas Glow", location: "Szczecin, Poland", year: "2024", description: "-", type: "horizontal" },
     { src: "img/gallery/2024/20241227_175052230_iOS.jpg", name: "Heritage & Pride", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" }, //Dec
     { src: "img/gallery/2024/20241228_154645392_iOS.jpg", name: "Festive Transit - Illuminated Tram", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" },
-    /* { src: "img/gallery/2024/20250102_152152526_iOS.jpg", name: "New Year 2025 - 1", location: "Unknown", year: "2024", description: "-" }, */
     { src: "img/gallery/2024/20250105_202434874_iOS.jpg", name: "Winter Bus Stop - Holiday Vibes", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" }, //Dec
-    /* { src: "img/gallery/2024/20250105_202440448_iOS.jpg", name: "New Year 2025 - 3", location: "Unknown", year: "2024", description: "-", type: "vertical" }, */
     { src: "img/gallery/2024/20250105_202928293_iOS.jpg", name: "Silent Snowy Path - Winter Night", location: "Szczecin, Poland", year: "2024", description: "-", type: "vertical" }
   ];
 
