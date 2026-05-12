@@ -1439,6 +1439,21 @@ footer {
     margin: 0 0 1.5rem;
 }
 
+/* Gallery CTA Section */
+.gallery-cta-panel {
+    border-color: var(--color-border-strong);
+    box-shadow: var(--shadow-soft), var(--shadow-glow);
+}
+
+.gallery-cta-text {
+    color: var(--color-text-main);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 992px) {
     .category-header {
         flex-direction: row;
