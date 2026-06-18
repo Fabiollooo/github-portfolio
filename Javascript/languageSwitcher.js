@@ -77,7 +77,7 @@
       goToTop: "Go to top",
       scrollToTop: "Scroll to top",
       footerLocation: "Limerick, Ireland",
-      footerCopy: "(c) 2026 Fabian Golebiowski. All rights reserved.",
+      footerCopy: "&#169; 2026 Fabian Golebiowski. All rights reserved.",
       openColorThemes: "Open color themes",
       colorPalettes: "Color palettes",
       paletteDefault: "Default",
@@ -86,7 +86,11 @@
       paletteObsidian: "Obsidian",
       paletteOcean: "Ocean",
       paletteForest: "Forest",
-      paletteNight: "Night"
+      paletteNight: "Night",
+      paletteNeon: "Neon",
+      paletteRegal: "Regal",
+      paletteCoral: "Coral",
+      paletteCyberpunk: "Cyberpunk"
     },
     pl: {
       pageTitle: "Fabian G | Portfolio",
@@ -158,16 +162,16 @@
       goToTop: "Do gory",
       scrollToTop: "Przewin do gory",
       footerLocation: "Limerick, Irlandia",
-      footerCopy: "(c) 2026 Fabian Golebiowski. Wszelkie prawa zastrzezone.",
+      footerCopy: \"&#169; 2026 Fabian Golebiowski. Wszelkie prawa zastrzezone.\",
       openColorThemes: "Otworz motywy kolorystyczne",
       colorPalettes: "Palety kolorow",
       paletteDefault: "Domyslna",
       paletteGold: "Zlota",
-      paletteRose: "Rozana",
+      paletteNeon: "Neon",
       paletteObsidian: "Obsydian",
-      paletteOcean: "Ocean",
-      paletteForest: "Las",
-      paletteNight: "Noc"
+      paletteRegal: "Krolewska",
+      paletteCoral: "Koral",
+      paletteCyberpunk: "Cyberpunk"
     }
   };
 

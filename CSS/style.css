@@ -556,8 +556,8 @@ a:focus-visible {
     position: fixed;
     bottom: 1.2rem;
     right: 1.2rem;
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
     border: 1px solid var(--color-border-strong);
     border-radius: 50%;
     background: rgba(12, 12, 12, 0.85);
@@ -677,6 +677,9 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #paletteSlider li {
@@ -699,12 +702,12 @@ footer {
 }
 
 #paletteSlider li[data-step="0"] { background: linear-gradient(130deg, #080808, #ff7a00); }
-#paletteSlider li[data-step="1"] { background: linear-gradient(130deg, #0d0d0d, #ffd700); }
-#paletteSlider li[data-step="2"] { background: linear-gradient(130deg, #330e24, #ff4f81); }
-#paletteSlider li[data-step="3"] { background: linear-gradient(130deg, #0c0a0f, #9e6eff); }
-#paletteSlider li[data-step="4"] { background: linear-gradient(130deg, #0f2027, #00c3ff); }
-#paletteSlider li[data-step="5"] { background: linear-gradient(130deg, #0f2e2c, #6df29a); }
-#paletteSlider li[data-step="6"] { background: linear-gradient(130deg, #0d1117, #4c9aff); }
+#paletteSlider li[data-step="1"] { background: linear-gradient(130deg, #1a0033, #ff0080); }
+#paletteSlider li[data-step="2"] { background: linear-gradient(130deg, #111827, #FF6B5B); }
+#paletteSlider li[data-step="3"] { background: linear-gradient(130deg, #200A5E, #FFE566); }
+#paletteSlider li[data-step="4"] { background: linear-gradient(130deg, #0F2D0F, #9BFF00); }
+#paletteSlider li[data-step="5"] { background: linear-gradient(130deg, #0c0a0f, #9e6eff); }
+#paletteSlider li[data-step="6"] { background: linear-gradient(130deg, #0d0d0d, #ffd700); }
 
 /* Compatibility styles for projects pages */
 .page-hero {
