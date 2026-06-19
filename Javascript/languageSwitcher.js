@@ -162,7 +162,7 @@
       goToTop: "Do gory",
       scrollToTop: "Przewin do gory",
       footerLocation: "Limerick, Irlandia",
-      footerCopy: \"&#169; 2026 Fabian Golebiowski. Wszelkie prawa zastrzezone.\",
+      footerCopy: "&#169; 2026 Fabian Golebiowski. Wszelkie prawa zastrzezone.",
       openColorThemes: "Otworz motywy kolorystyczne",
       colorPalettes: "Palety kolorow",
       paletteDefault: "Domyslna",
@@ -499,6 +499,14 @@
 
   const savedLanguage = localStorage.getItem(STORAGE_KEY);
   const initialLanguage = translations[savedLanguage] ? savedLanguage : DEFAULT_LANGUAGE;
+
+  // Immediately set active state before translation happens
+  if (langToggle) {
+    const options = Array.from(langToggle.querySelectorAll(".lang-option"));
+    options.forEach((option) => {
+      option.classList.toggle("active", option.getAttribute("data-lang") === initialLanguage);
+    });
+  }
 
   applyLanguage(initialLanguage);
 
