@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n-title="pageTitle">Fabian G | Gallery</title>
-  <meta name="description" content="Continuous photo gallery by Fabian Golebiowski in a Pinterest-style masonry feed." data-i18n-meta-description="pageDescription">
+  <title data-i18n-title="pageTitle">Fabian G | Galeria</title>
+  <meta name="description" content="Ciągła galeria zdjęć autorstwa Fabiána Golebiowskiego w stylu masonry Pinterest." data-i18n-meta-description="pageDescription">
 
-  <link rel="icon" type="image/x-icon" href="img/icons/favicon2.ico">
+  <link rel="icon" type="image/x-icon" href="../img/icons/favicon2.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/style.css">
 </head>
 <body>
   <div id="particles-js" aria-hidden="true"></div>
@@ -29,16 +29,16 @@
 
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto gap-lg-2">
-            <li class="nav-item"><a class="nav-link" href="index.html#home"><i class="bi bi-house-door me-1" aria-hidden="true"></i><span data-i18n="navHome">Home</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#about"><i class="bi bi-person me-1" aria-hidden="true"></i><span data-i18n="navAbout">About</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#home"><i class="bi bi-house-door me-1" aria-hidden="true"></i><span data-i18n="navHome">Strona główna</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about"><i class="bi bi-person me-1" aria-hidden="true"></i><span data-i18n="navAbout">O mnie</span></a></li>
             <li class="nav-item"><a class="nav-link" href="index.html#portfolio"><i class="bi bi-briefcase me-1" aria-hidden="true"></i><span data-i18n="navPortfolio">Portfolio</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html#contact"><i class="bi bi-envelope me-1" aria-hidden="true"></i><span data-i18n="navContact">Contact</span></a></li>
-            <li class="nav-item"><a class="nav-link active" href="gallery.html"><i class="bi bi-images me-1" aria-hidden="true"></i><span data-i18n="navGallery">Gallery</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact"><i class="bi bi-envelope me-1" aria-hidden="true"></i><span data-i18n="navContact">Kontakt</span></a></li>
+            <li class="nav-item"><a class="nav-link active" href="gallery.html"><i class="bi bi-images me-1" aria-hidden="true"></i><span data-i18n="navGallery">Galeria</span></a></li>
             <li class="nav-item nav-language-item">
               <div class="lang-toggle">
-                <span class="lang-option active">EN</span>
+                <a href="/gallery.html" class="lang-option">EN</a>
                 <span class="lang-separator">/</span>
-                <a href="/pl/gallery.html" class="lang-option">PL</a>
+                <span class="lang-option active">PL</span>
               </div>
             </li>
           </ul>
@@ -51,10 +51,10 @@
     <section class="section-shell">
       <div class="container">
         <div class="glass-panel section-panel page-hero">
-          <p class="eyebrow mb-2">Personal Feed</p>
-          <h1 class="page-title">Photo Gallery</h1>
-          <p class="page-subtitle mb-0">A continuous Pinterest-style stream for photos that i personally have taken.</p>
-          <p class="page-subtitle mb-0">Most images taken from the iPhone 16 Pro.</p>
+          <p class="eyebrow mb-2">Osobista kolekcja</p>
+          <h1 class="page-title">Galeria zdjęć</h1>
+          <p class="page-subtitle mb-0">Ciągły strumień w stylu Pinterest dla zdjęć, które osobiście wykonałem.</p>
+          <p class="page-subtitle mb-0">Większość zdjęć zrobiono iPhone'em 16 Pro.</p>
         </div>
       </div>
     </section>
@@ -62,7 +62,7 @@
     <section class="section-shell pt-0">
       <div class="container">
         <div class="gallery-controls d-flex flex-wrap align-items-center gap-3 mb-3">
-          <p class="mb-0 gallery-hint"><i class="fas fa-camera-retro"></i> Scroll continuously. Click an image to view it larger & for more information.</p>
+          <p class="mb-0 gallery-hint"><i class="fas fa-camera-retro"></i> Przewijaj w dół. Kliknij zdjęcie, aby je powiększyć i zobaczyć więcej informacji.</p>
         </div>
 
         <div id="galleryFeed" class="masonry-feed" aria-live="polite"></div>
@@ -71,27 +71,27 @@
     </section>
   </main>
 
-  <div id="galleryLightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+  <div id="galleryLightbox" class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia" hidden>
     <div class="lightbox-shell glass-panel" role="document">
-      <button id="galleryLightboxClose" class="lightbox-close" type="button" aria-label="Close image preview">
+      <button id="galleryLightboxClose" class="lightbox-close" type="button" aria-label="Zamknij podgląd zdjęcia">
         <i class="fas fa-xmark"></i>
       </button>
 
       <div class="lightbox-layout"> 
-        <img id="galleryLightboxImg" src="" alt="Expanded gallery image">
+        <img id="galleryLightboxImg" src="" alt="Powiększone zdjęcie z galerii">
 
         <div class="lightbox-meta">
           <p id="galleryLightboxCaption" class="lightbox-title"></p>
           <div class="meta-row">
-            <span class="meta-label">Location</span>
-            <span id="galleryLightboxLocation" class="meta-value">Unknown</span>
+            <span class="meta-label">Lokalizacja</span>
+            <span id="galleryLightboxLocation" class="meta-value">Nieznane</span>
           </div>
           <div class="meta-row">
-            <span class="meta-label">Year</span>
-            <span id="galleryLightboxYear" class="meta-value">Unknown</span>
+            <span class="meta-label">Rok</span>
+            <span id="galleryLightboxYear" class="meta-value">Nieznane</span>
           </div>
           <div class="meta-row">
-            <span class="meta-label">Description</span>
+            <span class="meta-label">Opis</span>
             <span id="galleryLightboxDescription" class="meta-value">-</span>
           </div>
         </div>
@@ -99,17 +99,6 @@
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-  
   <footer>
     <div class="container py-4">
       <div class="footer-grid">
@@ -119,24 +108,24 @@
           <a href="https://www.instagram.com/fabiollooo" target="_blank" rel="noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a> -->
         </div>
         <div class="footer-contact">
-          <p><i class="fas fa-map-marker-alt"></i> Limerick, Ireland</p>
+          <p><i class="fas fa-map-marker-alt"></i> Limerick, Irlandia</p>
           <p><i class="fas fa-envelope"></i> <a href="mailto:fabiollo2006@gmail.com">fabiollo2006@gmail.com</a></p>
           <p><i class="fas fa-phone"></i> (+353) 089 970 9174</p>
         </div>
         <div class="footer-copy">
-          <p data-i18n-html="footerCopy">&#169; 2026 Fabian Golebiowski. All rights reserved.</p>
+          <p data-i18n-html="footerCopy">&#169; 2026 Fabian Golebiowski. Wszystkie prawa zastrzeżone.</p>
         </div>
       </div>
     </div>
   </footer>
 
   <div id="paletteSwitcher" aria-label="Theme palette switcher">
-    <button id="paletteBtn" type="button" aria-label="Open color themes" aria-expanded="false" aria-controls="paletteSlider">
+    <button id="paletteBtn" type="button" aria-label="Otwórz paletę kolorów" aria-expanded="false" aria-controls="paletteSlider">
       <i class="fas fa-palette"></i>
     </button>
-    <div id="paletteSlider" role="menu" aria-label="Color palettes">
+    <div id="paletteSlider" role="menu" aria-label="Palety kolorów">
       <ul>
-        <li data-step="0" title="Default" role="menuitem" tabindex="0"></li>
+        <li data-step="0" title="Domyślnie" role="menuitem" tabindex="0"></li>
         <li data-step="1" title="Cyberpunk" role="menuitem" tabindex="0"></li>
         <li data-step="2" title="Coral" role="menuitem" tabindex="0"></li>
         <li data-step="3" title="Regal" role="menuitem" tabindex="0"></li>
@@ -149,8 +138,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="Javascript/backgroundBubbles.js"></script>
-  <script src="Javascript/themeSwitcher.js"></script>
-  <script src="Javascript/galleryFeed.js"></script>
+  <script src="../Javascript/backgroundBubbles.js"></script>
+  <script src="../Javascript/themeSwitcher.js"></script>
+  <script src="../Javascript/galleryFeed.js"></script>
 </body>
 </html>

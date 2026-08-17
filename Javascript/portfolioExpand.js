@@ -5,16 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!categoryCards.length || !categoryProjects.length) return;
 
-  // Initialize all projects as hidden
+  
   categoryProjects.forEach((section) => {
     section.classList.add("hidden");
     section.classList.remove("visible");
   });
 
-  // Handle category card clicks
+  
   categoryCards.forEach((card) => {
     card.addEventListener("click", (e) => {
-      // Don't toggle if clicking on a link or button
+      
       if (e.target.tagName === "A" || e.target.tagName === "BUTTON") return;
 
       const category = card.getAttribute("data-category");
@@ -22,10 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!targetSection) return;
 
-      // Get all category sections
+      
       const isCurrentlyExpanded = card.classList.contains("expanded");
 
-      // Close all other expanded sections
+      
       categoryCards.forEach((otherCard) => {
         if (otherCard !== card && otherCard.classList.contains("expanded")) {
           otherCard.classList.remove("expanded");
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
-      // Toggle current section
+      
       if (isCurrentlyExpanded) {
         card.classList.remove("expanded");
         targetSection.classList.remove("visible");
@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
         targetSection.classList.remove("hidden");
         targetSection.classList.add("visible");
         
-        // Re-initialize carousels in the revealed section
+        
         initializeCarousels(targetSection);
         
-        // Re-initialize dropdowns in the revealed section
+        
         initializeDropdowns(targetSection);
 
-        // Scroll to the expanded section smoothly
+        
         setTimeout(() => {
           targetSection.scrollIntoView({ behavior: "smooth", block: "nearest" });
         }, 100);
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Initialize carousels in a specific container
+  
   function initializeCarousels(container) {
     const carousels = container.querySelectorAll(".carousel");
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Remove any existing event listeners by cloning
+      
       const newPrevBtn = prevBtn.cloneNode(true);
       const newNextBtn = nextBtn.cloneNode(true);
       prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initialize dropdowns in a specific container
+  
   function initializeDropdowns(container) {
     const dropdowns = container.querySelectorAll(".dropdown");
 
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const btn = dropdown.querySelector("button");
       if (!btn) return;
 
-      // Remove existing listener by cloning
+      
       const newBtn = btn.cloneNode(true);
       btn.parentNode.replaceChild(newBtn, btn);
 
