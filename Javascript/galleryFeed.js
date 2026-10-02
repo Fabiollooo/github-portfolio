@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* 2024 */
 
     { src: "img/gallery/2024/20240415_192708425_iOS.jpg", name: "Above the Sunset", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
-    { src: "img/gallery/2024/20240416_104615195_iOS.jpg", name: "Roof & Palms - Summer Blue Sky 2", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
+    //{ src: "img/gallery/2024/20240416_104615195_iOS.jpg", name: "Roof & Palms - Summer Blue Sky 2", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20240416_105221780_iOS.jpg", name: "Summer Refreshment - Paradise View", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20240416_125426720_iOS.jpg", name: "Steps to the Sea", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
     { src: "img/gallery/2024/20240416_125530430_iOS.jpg", name: "Resort View - Maspalomas Beach", location: "Maspalomas, Gran Canaria, Spain", year: "2024", description: "-", type: "vertical" },
@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const feed = document.getElementById("galleryFeed");
   const sentinel = document.getElementById("gallerySentinel");
+  const galleryAssetPrefix = document.documentElement.lang === "pl" ? "../" : "";
 
   const lightbox = document.getElementById("galleryLightbox");
   const lightboxImg = document.getElementById("galleryLightboxImg");
@@ -163,14 +164,17 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\b\w/g, (char) => char.toUpperCase());
   };
 
+  const resolveGalleryAsset = (src) => `${galleryAssetPrefix}${src}`;
+
   const createCard = (imageData) => {
     const { src, name, location, year, description = "-", type = "vertical" } = imageData;
     const displayName = name || toCaption(src);
+    const resolvedSrc = resolveGalleryAsset(src);
     const card = document.createElement("article");
     card.className = "gallery-card" + (type === "horizontal" ? " gallery-card--landscape" : "");
 
     const img = document.createElement("img");
-    img.src = src;
+    img.src = resolvedSrc;
     img.alt = displayName;
     img.loading = "lazy";
     img.decoding = "async";
@@ -186,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!lightbox || !lightboxImg || !lightboxCaption || !lightboxLocation || !lightboxYear || !lightboxDescription) {
         return;
       }
-      lightboxImg.src = src;
+      lightboxImg.src = resolvedSrc;
       lightboxImg.alt = displayName;
       lightboxCaption.textContent = displayName;
       lightboxLocation.textContent = location || t("Unknown");
