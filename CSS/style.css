@@ -332,6 +332,32 @@ a:focus-visible {
     background: rgba(255, 255, 255, 0.03);
 }
 
+.about-lower-grid {
+    display: grid;
+    gap: 1rem 2rem;
+}
+
+@media (min-width: 1200px) {
+    #aboutDetails {
+        width: calc(150% + 0.75rem);
+        margin-left: calc(-50% - 0.75rem);
+        margin-top: 3rem;
+    }
+
+    .about-lower-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-lower-grid .subsection-title,
+    .about-lower-grid .skills-heading {
+        margin-top: 0 !important;
+    }
+
+    .cert-list-results {
+        columns: 2;
+    }
+}
+
 .skills-heading {
     color: var(--color-gold-light);
     font-size: 0.92rem;
@@ -656,6 +682,17 @@ footer {
     background: var(--color-gold);
     color: #1b1b1b;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+    z-index: 1000;
+}
+
+#paletteBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 #paletteSlider {

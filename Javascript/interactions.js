@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+	const paletteBtn = document.getElementById("paletteBtn");
 	const navLinks = Array.from(document.querySelectorAll(".professional-nav .nav-link"));
 	const sections = Array.from(document.querySelectorAll(".reveal-section"));
 
@@ -17,19 +18,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	};
 
-	if (scrollToTopBtn) {
+	if (scrollToTopBtn || paletteBtn) {
 		window.addEventListener("scroll", () => {
-			if (window.scrollY > 300) {
-				scrollToTopBtn.classList.add("show");
-			} else {
-				scrollToTopBtn.classList.remove("show");
+			const hasScrolled = window.scrollY > 300;
+
+			if (scrollToTopBtn) {
+				scrollToTopBtn.classList.toggle("show", hasScrolled);
 			}
+
+			if (paletteBtn) {
+				paletteBtn.classList.toggle("show", hasScrolled);
+			}
+
 			setActiveLink();
 		});
 
-		scrollToTopBtn.addEventListener("click", () => {
-			window.scrollTo({ top: 0, behavior: "smooth" });
-		});
+		if (scrollToTopBtn) {
+			scrollToTopBtn.addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		}
 	}
 
 	const revealObserver = new IntersectionObserver(
